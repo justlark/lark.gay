@@ -52,3 +52,11 @@ table.post-list tbody td:last-child {
 table.post-list tbody td {
   padding-right: 1ch;
 }
+
+nav.top-nav {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}

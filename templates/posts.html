@@ -1,8 +1,9 @@
-{% extends "base.html" %}
+{% extends "page.html" %}
+
+{% block title %}Log | {{ super() }}{% endblock %}
+{% block heading %}Log{% endblock %}
 
 {% block content %}
-<h1 class="page-title">Posts</h1>
-
 <pre><code><span class="bright-white">$</span> ls -la ./log/</code></pre>
 
 <table class="post-list">
