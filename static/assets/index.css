@@ -37,6 +37,10 @@ a {
   text-underline-offset: 2px;
 }
 
+a:hover {
+  text-decoration-thickness: 3px;
+}
+
 table.post-list tbody td {
   text-align: right;
 }

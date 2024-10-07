@@ -52,43 +52,54 @@
   --color-bg: var(--color-black);
 }
 
-.black {
+.black,
+.red,
+.green,
+.yellow,
+.blue,
+.magenta,
+.cyan,
+.white {
   font-weight: normal;
+}
+
+a:is(.black, .red, .green, .yellow, .blue, .magenta, .cyan, .white) {
+  text-decoration-thickness: 1px;
+}
+
+a:is(.black, .red, .green, .yellow, .blue, .magenta, .cyan, .white):hover {
+  text-decoration-thickness: 2px;
+}
+
+.black {
   color: var(--color-black);
 }
 
 .red {
-  font-weight: normal;
   color: var(--color-red);
 }
 
 .green {
-  font-weight: normal;
   color: var(--color-green);
 }
 
 .yellow {
-  font-weight: normal;
   color: var(--color-yellow);
 }
 
 .blue {
-  font-weight: normal;
   color: var(--color-blue);
 }
 
 .magenta {
-  font-weight: normal;
   color: var(--color-magenta);
 }
 
 .cyan {
-  font-weight: normal;
   color: var(--color-cyan);
 }
 
 .white {
-  font-weight: normal;
   color: var(--color-white);
 }
 

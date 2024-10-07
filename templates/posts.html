@@ -17,8 +17,9 @@
       </td>
       <td><span class="bright-yellow">{{ post.authors[0] | lower }}</span></td>
       <td><span class="bright-green">{{ post.word_count }}</span></td>
-      <td><span class="bright-blue">{{ post.date | date(format="%e %b %Y %H:%M") }}</span></td>
-      <td><a class="white" style="text-decoration-thickness: 1px;" href="{{ post.permalink }}">{{ post.title }}</a></td>
+      <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
+      <td><span class="bright-blue">{{ post.date | date(timezone="Etc/UCT", format="%e %b %Y %H:%M") }}</span></td>
+      <td><a class="white" href="{{ post.permalink }}">{{ post.title }}</a></td>
     </tr>
     {% endfor %}
 </table>
