@@ -1,0 +1,22 @@
+{% extends "page.html" %}
+
+{% block title %}{{ page.title }} | {{ super() }}{% endblock %}
+{% block heading %}{{ page.title }}{% endblock %}
+
+{% block content %}
+<div class="text-center">
+  <p>
+    If you want to reach out for any reason, feel free to shoot me an email.
+  </p>
+
+  <p>
+    I love hearing from folks!
+  </p>
+
+  <p>
+    <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+  </p>
+
+  <p></p>
+</div>
+{% endblock %}

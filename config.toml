@@ -13,4 +13,4 @@ build_search_index = true
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+email = "lark@lark.gay"

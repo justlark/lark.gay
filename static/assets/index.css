@@ -60,3 +60,7 @@ nav.top-nav {
   align-items: center;
   margin-bottom: 4rem;
 }
+
+.text-center {
+  text-align: center;
+}
