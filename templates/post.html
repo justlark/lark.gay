@@ -7,20 +7,32 @@
 {% endblock %}
 
 {% block content %}
+{% set vim_file_path = "./log/" ~ page.slug %}
 <article aria-labelledby="post-title">
   <h2 id="post-title">{{ page.title }}</h2>
 
   <p>
-    <code><span class="bright-white">$</span> vim ./log/{{ page.slug }}</code>
+    <code><span class="bright-white">$</span> vim {{ vim_file_path }}</code>
   </p>
 
   <div class="post-body">
     {{ page.content | safe }}
-    <div aria-hidden="true" class="vim-eob">~</div>
-    <div aria-hidden="true" class="vim-eob">~</div>
-    <div aria-hidden="true" class="vim-eob">~</div>
-    <div aria-hidden="true" class="vim-eob">~</div>
-    <div aria-hidden="true" class="vim-eob">~</div>
+
+    <div class="vim-eob">~</div>
+    <div class="vim-eob">~</div>
+    <div class="vim-eob">~</div>
+    <div class="vim-eob">~</div>
+    <div class="vim-eob">~</div>
+
+    <div class="vim-statusline">
+      <div>
+        <span class="bright-green-reverse">&nbsp;NORMAL&nbsp;</span>
+        <span>{{ vim_file_path }}</span>
+      </div>
+      <div>
+        <span>&nbsp;{{ page.word_count }} words&nbsp;</span>
+      </div>
+    </div>
   </div>
 </article>
 {% endblock %}

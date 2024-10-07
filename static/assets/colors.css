@@ -38,7 +38,7 @@
   --color-magenta: var(--catppuccin-mauve);
   --color-cyan: var(--catppuccin-teal);
   --color-white: var(--catppuccin-text);
-  --color-bright-black: var(--catppuccin-base);
+  --color-bright-black: var(--catppuccin-surface0);
   --color-bright-red: var(--catppuccin-red);
   --color-bright-green: var(--catppuccin-green);
   --color-bright-yellow: var(--catppuccin-yellow);
@@ -103,42 +103,133 @@ a:is(.black, .red, .green, .yellow, .blue, .magenta, .cyan, .white):hover {
   color: var(--color-white);
 }
 
-.bright-black {
+.black-reverse {
+  color: var(--color-fg);
+  background-color: var(--color-black);
+}
+
+.red-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-red);
+}
+
+.green-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-green);
+}
+
+.yellow-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-yellow);
+}
+
+.blue-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-blue);
+}
+
+.magenta-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-magenta);
+}
+
+.cyan-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-cyan);
+}
+
+.white-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-white);
+}
+
+.bright-black,
+.bright-red,
+.bright-green,
+.bright-yellow,
+.bright-blue,
+.bright-magenta,
+.bright-cyan,
+.bright-white,
+.bright-black-reverse,
+.bright-red-reverse,
+.bright-green-reverse,
+.bright-yellow-reverse,
+.bright-blue-reverse,
+.bright-magenta-reverse,
+.bright-cyan-reverse,
+.bright-white-reverse {
   font-weight: bold;
+}
+
+.bright-black {
   color: var(--color-bright-black);
 }
 
 .bright-red {
-  font-weight: bold;
   color: var(--color-bright-red);
 }
 
 .bright-green {
-  font-weight: bold;
   color: var(--color-bright-green);
 }
 
 .bright-yellow {
-  font-weight: bold;
   color: var(--color-bright-yellow);
 }
 
 .bright-blue {
-  font-weight: bold;
   color: var(--color-bright-blue);
 }
 
 .bright-magenta {
-  font-weight: bold;
   color: var(--color-bright-magenta);
 }
 
 .bright-cyan {
-  font-weight: bold;
   color: var(--color-bright-cyan);
 }
 
 .bright-white {
-  font-weight: bold;
   color: var(--color-bright-white);
+}
+
+.bright-black-reverse {
+  color: var(--color-fg);
+  background-color: var(--color-bright-black);
+}
+
+.bright-red-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-bright-red);
+}
+
+.bright-green-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-bright-green);
+}
+
+.bright-yellow-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-bright-yellow);
+}
+
+.bright-blue-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-bright-blue);
+}
+
+.bright-magenta-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-bright-magenta);
+}
+
+.bright-cyan-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-bright-cyan);
+}
+
+.bright-white-reverse {
+  color: var(--color-bg);
+  background-color: var(--color-bright-white);
 }

@@ -101,7 +101,7 @@ nav.top-nav {
 
 /* "eob" means "end of buffer" */
 
-.post-body *:not(.vim-eob):last-of-type::after {
+.post-body p:last-of-type::after {
   content: " █";
   animation: blink 1s step-start infinite;
 }
@@ -111,6 +111,18 @@ nav.top-nav {
   color: var(--color-bright-blue);
 }
 
+.post-body .vim-statusline {
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-fg);
+  background-color: var(--color-bright-black);
+}
+
+.post-body .vim-statusline span {
+  display: inline-block;
+}
+
 @keyframes blink {
   50% {
     opacity: 0;
@@ -118,7 +130,7 @@ nav.top-nav {
 }
 
 @media (prefers-reduced-motion) {
-  .post-body *:not(.vim-eob):last-of-type::after {
+  .post-body p:last-of-type::after {
     animation: none;
   }
 }
