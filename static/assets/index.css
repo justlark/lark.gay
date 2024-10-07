@@ -16,7 +16,16 @@ h1 {
   font-weight: 700;
 }
 
-h1.site-title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-bright-magenta);
+}
+
+h1.page-title {
   color: var(--color-bright-magenta);
   text-align: center;
   text-decoration: underline;
