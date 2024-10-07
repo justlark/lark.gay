@@ -1,1 +1,25 @@
-k
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="page-title">Posts</h1>
+
+<pre><code><span class="bright-white">$</span> ls -la ./log/</code></pre>
+
+<table class="post-list">
+  <tbody>
+    {% for post in section.pages %}
+    <tr>
+      <td>
+        <span class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
+          class="white">-</span><span class="white">-</span><span class="bright-yellow">r</span><span
+          class="bright-red">w</span><span class="white">-</span><span class="white">-</span><span
+          class="bright-yellow">r</span><span class="white">-</span><span class="white">-</span>
+      </td>
+      <td><span class="bright-yellow">{{ post.authors[0] | lower }}</span></td>
+      <td><span class="bright-green">{{ post.word_count }}</span></td>
+      <td><span class="bright-blue">{{ post.date | date(format="%e %b %Y %H:%M") }}</span></td>
+      <td><a class="white" style="text-decoration-thickness: 1px;" href="{{ post.permalink }}">{{ post.title }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

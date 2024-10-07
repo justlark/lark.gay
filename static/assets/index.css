@@ -4,7 +4,7 @@
 body {
   color: var(--color-fg);
   background-color: var(--color-bg);
-  font-family: "Fira Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   min-width: 200px;
   max-width: 1200px;
   margin: 0 auto;
@@ -26,10 +26,25 @@ h6 {
 }
 
 h1.page-title {
-  color: var(--color-bright-magenta);
   text-align: center;
+}
+
+a {
+  font-weight: bold;
+  color: var(--color-bright-blue);
   text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 3px;
-  text-shadow: var(--color-bright-magenta) 1px 0 4px;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+table.post-list tbody td {
+  text-align: right;
+}
+
+table.post-list tbody td:last-child {
+  text-align: left;
+}
+
+table.post-list tbody td {
+  padding-right: 1ch;
 }

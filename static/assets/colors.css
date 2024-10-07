@@ -51,3 +51,83 @@
   --color-fg: var(--color-white);
   --color-bg: var(--color-black);
 }
+
+.black {
+  font-weight: normal;
+  color: var(--color-black);
+}
+
+.red {
+  font-weight: normal;
+  color: var(--color-red);
+}
+
+.green {
+  font-weight: normal;
+  color: var(--color-green);
+}
+
+.yellow {
+  font-weight: normal;
+  color: var(--color-yellow);
+}
+
+.blue {
+  font-weight: normal;
+  color: var(--color-blue);
+}
+
+.magenta {
+  font-weight: normal;
+  color: var(--color-magenta);
+}
+
+.cyan {
+  font-weight: normal;
+  color: var(--color-cyan);
+}
+
+.white {
+  font-weight: normal;
+  color: var(--color-white);
+}
+
+.bright-black {
+  font-weight: bold;
+  color: var(--color-bright-black);
+}
+
+.bright-red {
+  font-weight: bold;
+  color: var(--color-bright-red);
+}
+
+.bright-green {
+  font-weight: bold;
+  color: var(--color-bright-green);
+}
+
+.bright-yellow {
+  font-weight: bold;
+  color: var(--color-bright-yellow);
+}
+
+.bright-blue {
+  font-weight: bold;
+  color: var(--color-bright-blue);
+}
+
+.bright-magenta {
+  font-weight: bold;
+  color: var(--color-bright-magenta);
+}
+
+.bright-cyan {
+  font-weight: bold;
+  color: var(--color-bright-cyan);
+}
+
+.bright-white {
+  font-weight: bold;
+  color: var(--color-bright-white);
+}
