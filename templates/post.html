@@ -10,6 +10,17 @@
 <article aria-labelledby="post-title">
   <h2 id="post-title">{{ page.title }}</h2>
 
-  {{ page.content | safe }}
+  <p>
+    <code><span class="bright-white">$</span> vim ./log/{{ page.slug }}</code>
+  </p>
+
+  <div class="post-body">
+    {{ page.content | safe }}
+    <div aria-hidden="true" class="vim-eob">~</div>
+    <div aria-hidden="true" class="vim-eob">~</div>
+    <div aria-hidden="true" class="vim-eob">~</div>
+    <div aria-hidden="true" class="vim-eob">~</div>
+    <div aria-hidden="true" class="vim-eob">~</div>
+  </div>
 </article>
 {% endblock %}

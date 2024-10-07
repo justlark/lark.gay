@@ -85,9 +85,30 @@ nav.top-nav {
   text-align: center;
 }
 
-article p:last-child::after {
+.post-body {
+  text-align: justify;
+  border: 1px solid var(--color-fg);
+  padding: 1.5rem;
+}
+
+.post-body p:first-child {
+  margin-top: 0;
+}
+
+.post-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* "eob" means "end of buffer" */
+
+.post-body *:not(.vim-eob):last-of-type::after {
   content: " █";
   animation: blink 1s step-start infinite;
+}
+
+.post-body .vim-eob {
+  font-weight: bold;
+  color: var(--color-bright-blue);
 }
 
 @keyframes blink {
@@ -97,7 +118,7 @@ article p:last-child::after {
 }
 
 @media (prefers-reduced-motion) {
-  article p:last-child::after {
+  .post-body *:not(.vim-eob):last-of-type::after {
     animation: none;
   }
 }
