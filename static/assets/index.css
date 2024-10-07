@@ -1,0 +1,25 @@
+@import url("/assets/normalize.css");
+@import url("/assets/colors.css");
+
+body {
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  font-family: "Fira Mono", monospace;
+  min-width: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h1.site-title {
+  color: var(--color-bright-magenta);
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3px;
+}

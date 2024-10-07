@@ -1,0 +1,53 @@
+:root {
+  /* Catppuccin Mocha */
+
+  /* Theme colors */
+  --catppuccin-rosewater: #f5e0dc;
+  --catppuccin-flamingo: #f2cdcd;
+  --catppuccin-pink: #f5c2e7;
+  --catppuccin-mauve: #cba6f7;
+  --catppuccin-red: #f38ba8;
+  --catppuccin-maroon: #eba0ac;
+  --catppuccin-peach: #fab387;
+  --catppuccin-yellow: #f9e2af;
+  --catppuccin-green: #a6e3a1;
+  --catppuccin-teal: #94e2d5;
+  --catppuccin-sky: #89dceb;
+  --catppuccin-sapphire: #74c7ec;
+  --catppuccin-blue: #89b4fa;
+  --catppuccin-lavender: #b4befe;
+  --catppuccin-text: #cdd6f4;
+  --catppuccin-subtext1: #bac2de;
+  --catppuccin-subtext0: #a6adc8;
+  --catppuccin-overlay2: #9399b2;
+  --catppuccin-overlay1: #7f849c;
+  --catppuccin-overlay0: #6c7086;
+  --catppuccin-surface2: #585b70;
+  --catppuccin-surface1: #45475a;
+  --catppuccin-surface0: #313244;
+  --catppuccin-base: #1e1e2e;
+  --catppuccin-mantle: #181825;
+  --catppuccin-crust: #11111b;
+
+  /* ANSI terminal colors */
+  --color-black: var(--catppuccin-mantle);
+  --color-red: var(--catppuccin-red);
+  --color-green: var(--catppuccin-green);
+  --color-yellow: var(--catppuccin-yellow);
+  --color-blue: var(--catppuccin-blue);
+  --color-magenta: var(--catppuccin-mauve);
+  --color-cyan: var(--catppuccin-teal);
+  --color-white: var(--catppuccin-text);
+  --color-bright-black: var(--catppuccin-base);
+  --color-bright-red: var(--catppuccin-red);
+  --color-bright-green: var(--catppuccin-green);
+  --color-bright-yellow: var(--catppuccin-yellow);
+  --color-bright-blue: var(--catppuccin-blue);
+  --color-bright-magenta: var(--catppuccin-mauve);
+  --color-bright-cyan: var(--catppuccin-teal);
+  --color-bright-white: var(--catppuccin-text);
+
+  /* Semantic colors */
+  --color-fg: var(--color-white);
+  --color-bg: var(--color-black);
+}
