@@ -11,6 +11,13 @@
 <table class="post-list">
   <tbody>
     {% for post in section.pages %}
+
+    {% if post.authors | length > 0 %}
+    {% set author = post.authors[0] %}
+    {% else %}
+    {% set author = config.author %}
+    {% endif %}
+
     <tr>
       <td>
         <span class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
@@ -18,7 +25,7 @@
           class="bright-red">w</span><span class="white">-</span><span class="white">-</span><span
           class="bright-yellow">r</span><span class="white">-</span><span class="white">-</span>
       </td>
-      <td><span class="bright-yellow">{{ post.authors[0] | lower }}</span></td>
+      <td><span class="bright-yellow">{{ author | lower }}</span></td>
       <td><span class="bright-green">{{ post.word_count }} words</span></td>
       <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
       <td><span class="bright-blue">{{ post.date | date(timezone="Etc/UCT", format="%e %b %Y %H:%M") }}</span></td>
