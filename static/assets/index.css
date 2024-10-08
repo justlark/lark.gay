@@ -91,6 +91,13 @@ nav.top-nav {
   padding: 1.5rem;
 }
 
+@media (max-width: 640px) {
+  .post-body {
+    border: none;
+    padding: 0;
+  }
+}
+
 .post-body p:first-child {
   margin-top: 0;
 }
@@ -106,12 +113,20 @@ nav.top-nav {
   animation: blink 1s step-start infinite;
 }
 
+@media (prefers-reduced-motion) {
+  .post-body p:last-of-type::after {
+    animation: none;
+  }
+}
+
 .post-body .vim-eob {
   font-weight: bold;
   color: var(--color-bright-blue);
 }
 
 .post-body .vim-statusline {
+  overflow: hidden;
+  white-space: nowrap;
   line-height: 1.5;
   display: flex;
   justify-content: space-between;
@@ -123,14 +138,14 @@ nav.top-nav {
   display: inline-block;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
+@media (max-width: 640px) {
+  .post-body .vim-statusline .vim-word-count {
+    display: none;
   }
 }
 
-@media (prefers-reduced-motion) {
-  .post-body p:last-of-type::after {
-    animation: none;
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
