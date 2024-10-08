@@ -61,16 +61,38 @@ a:hover {
   text-decoration-thickness: 3px;
 }
 
+table.post-list {
+  border-spacing: 0 1ch;
+}
+
+@media (max-width: 768px) {
+  table.post-list {
+    border-spacing: 0 2ch;
+  }
+}
+
 table.post-list tbody td {
   text-align: right;
+  white-space: nowrap;
+  padding-right: 1ch;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  table.post-list tbody td {
+    display: inline-block;
+  }
 }
 
 table.post-list tbody td:last-child {
   text-align: left;
+  white-space: normal;
 }
 
-table.post-list tbody td {
-  padding-right: 1ch;
+@media (max-width: 768px) {
+  table.post-list tbody td:last-child {
+    width: 100%;
+  }
 }
 
 nav.top-nav {
