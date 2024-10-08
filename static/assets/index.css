@@ -49,6 +49,10 @@ h1.page-title {
   text-align: center;
 }
 
+p {
+  margin: 1lh 0;
+}
+
 a {
   font-weight: bold;
   color: var(--color-bright-blue);
@@ -61,13 +65,9 @@ a:hover {
   text-decoration-thickness: 3px;
 }
 
-table.post-list {
-  border-spacing: 0 1ch;
-}
-
 @media (max-width: 768px) {
   table.post-list {
-    border-spacing: 0 2ch;
+    border-spacing: 0 1lh;
   }
 }
 
