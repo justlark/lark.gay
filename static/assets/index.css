@@ -128,10 +128,6 @@ table.post-list tbody td:last-child {
   }
 }
 
-.text-center {
-  text-align: center;
-}
-
 .post-body {
   text-align: justify;
   border: 1px solid var(--color-fg);
@@ -212,7 +208,11 @@ table.post-list tbody td:last-child {
   margin: 0;
 }
 
-.now-body {
-  margin-top: 2rem;
+.lead {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-body {
   text-align: justify;
 }

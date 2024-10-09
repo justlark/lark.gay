@@ -3,7 +3,7 @@
 {% block title %}{{ page.title }} | {{ super() }}{% endblock %}
 {% block heading %}{{ page.title }}{% endblock %} {% block content %}
 
-<div class="text-center">
+<div class="lead">
   <p>
     This is my <a href="https://sive.rs/nowff" target="_blank">Now Page</a>.
   </p>
@@ -17,7 +17,6 @@
       {{ page.date | date(timezone="Etc/UCT", format="%e %b %Y") }}
     </time>
   </p>
-
 </div>
 
 <div class="now-body">
