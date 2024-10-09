@@ -1,0 +1,23 @@
+{% extends "page.html" %}
+
+{% block title %}{{ page.title }} | {{ super() }}{% endblock %}
+{% block heading %}{{ page.title }}{% endblock %} {% block content %}
+
+<div class="text-center">
+  <p>
+    This is my <a href="https://sive.rs/nowff" target="_blank">Now Page</a>.
+  </p>
+
+  <p>
+    Here's what I'm doing now.
+  </p>
+
+  <p>
+    Last updated: <time datetime="{{ page.date | date(timezone='Etc/UCT', format='%F') }}">
+      {{ page.date | date(timezone="Etc/UCT", format="%e %b %Y") }}
+    </time>
+  </p>
+
+  {{ page.content | safe }}
+</div>
+{% endblock %}
