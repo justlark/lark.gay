@@ -1,14 +1,26 @@
 @import url("/assets/normalize.css");
 @import url("/assets/colors.css");
 
+:root {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   color: var(--color-fg);
   background-color: var(--color-bg);
   font-family: "JetBrains Mono", monospace;
+  height: 100%;
   min-width: 200px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.4rem;
+}
+
+main {
+  flex-grow: 1;
 }
 
 h1 {

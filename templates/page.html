@@ -1,16 +1,23 @@
 {% extends "base.html" %}
 
 {% block body %}
-<h1 class="page-title">{% block heading %} {% endblock %}</h1>
+<header>
+  <h1 class="page-title">{% block heading %} {% endblock %}</h1>
 
-<nav class="top-nav">
-  <a href="/">Home</a>
-  <a href="/log">Log</a>
-  <a href="/now">Now</a>
-  <a href="/contact">Contact</a>
-</nav>
+  <nav class="top-nav">
+    <a href="/">Home</a>
+    <a href="/log">Log</a>
+    <a href="/now">Now</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
 
 <main>
   {% block content %} {% endblock %}
 </main>
+
+<footer>
+  &copy; Lark 2024
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
+</footer>
 {% endblock %}
