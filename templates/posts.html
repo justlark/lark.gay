@@ -4,6 +4,10 @@
 {% block heading %}{{ section.title }}{% endblock %}
 
 {% block content %}
+
+{% set datetime_format = "%e %b %Y" %}
+{% set latest_publish_time = section.pages | first | get(key='date') %}
+
 <p>
   <code><span class="bright-white">$</span> ls -la ./log/</code>
 </p>
@@ -19,8 +23,13 @@
       </td>
       <td><span class="bright-yellow">nobody</span></td>
       <td><span class="bright-green">0 words</span></td>
-      <td><span class="bright-blue">{{ section.pages | first | get(key='date') | date(timezone="Etc/UCT",
-          format="%e %b %Y %H:%M") }}</span></td>
+      <td>
+        <span class="bright-blue">
+          <time datetime="{{ latest_publish_time | date(timezone='Etc/UCT', format='%F') }}">
+            {{ latest_publish_time | date(timezone="Etc/UCT", format=datetime_format) }}
+          </time>
+        </span>
+      </td>
       <td><a class="white" href="/atom.xml">.RSS Feed</a></td>
     </tr>
 
@@ -42,7 +51,7 @@
       <td><span class="bright-yellow">{{ author | lower }}</span></td>
       <td><span class="bright-green">{{ post.word_count }} words</span></td>
       <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
-      <td><span class="bright-blue">{{ post.date | date(timezone="Etc/UCT", format="%e %b %Y %H:%M") }}</span></td>
+      <td><span class="bright-blue">{{ post.date | date(timezone="Etc/UCT", format=datetime_format) }}</span></td>
       <td><a class="white" href="{{ post.permalink }}">{{ post.title }}</a></td>
     </tr>
     {% endfor %}
