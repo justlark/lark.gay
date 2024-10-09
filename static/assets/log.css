@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+  table.post-list {
+    border-spacing: 0 1lh;
+  }
+}
+
+table.post-list tbody td {
+  text-align: right;
+  white-space: nowrap;
+  padding-right: 1ch;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  table.post-list tbody td {
+    display: inline-block;
+  }
+}
+
+table.post-list tbody td:last-child {
+  text-align: left;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  table.post-list tbody td:last-child {
+    width: 100%;
+  }
+}
+
+.post-body {
+  text-align: justify;
+  border: 1px solid var(--color-fg);
+  padding: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .post-body {
+    text-align: left;
+    border: none;
+    padding: 0;
+  }
+}
+
+.post-body p:first-child {
+  margin-top: 0;
+}
+
+.post-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* "eob" means "end of buffer" */
+
+.post-body p:last-of-type::after {
+  content: " █";
+  animation: blink 1s step-start infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .post-body p:last-of-type::after {
+    animation: none;
+  }
+}
+
+.post-body .vim-eob {
+  font-weight: bold;
+  color: var(--color-bright-blue);
+}
+
+.post-body .vim-statusline {
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-fg);
+  background-color: var(--color-bright-black);
+}
+
+.post-body .vim-statusline span {
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .post-body .vim-statusline .vim-word-count {
+    display: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

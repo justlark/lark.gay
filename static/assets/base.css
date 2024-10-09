@@ -1,0 +1,75 @@
+:root {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  font-family: "JetBrains Mono", monospace;
+  height: 100%;
+  min-width: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.4rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-bright-magenta);
+  font-weight: 700;
+}
+
+p {
+  margin: 1lh 0;
+}
+
+a {
+  font-weight: bold;
+  color: var(--color-bright-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 3px;
+}
