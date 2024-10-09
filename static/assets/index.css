@@ -172,3 +172,11 @@ nav.top-nav {
     opacity: 0;
   }
 }
+
+.ascii-banner {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
