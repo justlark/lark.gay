@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-{% set vim_file_path = "./log/" ~ page.slug %}
+{% set vim_file_path = "./log/" ~ page.slug ~ ".md" %}
 <article aria-labelledby="post-title">
   <h2 id="post-title">{{ page.title }}</h2>
 
