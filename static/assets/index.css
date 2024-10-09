@@ -115,6 +115,7 @@ nav.top-nav {
 
 @media (max-width: 640px) {
   .post-body {
+    text-align: left;
     border: none;
     padding: 0;
   }
