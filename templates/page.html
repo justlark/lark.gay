@@ -2,13 +2,16 @@
 
 {% block body %}
 <header>
-  <h1 class="page-title">{% block heading %} {% endblock %}</h1>
+  <h1 class="page-title"><a href="/">Lark Space</a></h1>
+
+  {% set curent_path = page.path | default(value=section.path) %}
 
   <nav class="top-nav">
+    <!-- The home link is deliberately never highlighted as active. -->
     <a href="/">Home</a>
-    <a href="/log">Log</a>
-    <a href="/now">Now</a>
-    <a href="/contact">Contact</a>
+    <a href="/log" class="{% if current_path == '/log/' %}active{% endif %}">Log</a>
+    <a href="/now" class="{% if current_path == '/now/' %}active{% endif %}">Now</a>
+    <a href="/contact" class="{% if current_path == '/contact/' %}active{% endif %}">Contact</a>
   </nav>
 </header>
 

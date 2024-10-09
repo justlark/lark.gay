@@ -18,3 +18,23 @@ nav.top-nav {
 h1.page-title {
   text-align: center;
 }
+
+h1.page-title a {
+  /*
+   * Clicking on the site title is not the only way to navigate home, so it is
+   * not imperative that it be easily distinguishable as a link.
+   */
+  text-decoration: none;
+}
+
+header nav a {
+  position: relative;
+}
+
+header nav a.active::after {
+  content: "^^^";
+  color: var(--color-fg);
+  position: absolute;
+  left: calc(50% - 1.5ch);
+  bottom: -1.5em;
+}
