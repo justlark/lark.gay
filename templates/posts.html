@@ -10,6 +10,20 @@
 
 <table class="post-list">
   <tbody>
+    <tr>
+      <td>
+        <span class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
+          class="bright-green">x</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
+          class="bright-green">x</span><span class="bright-yellow">r</span><span class="white">-</span><span
+          class="bright-green">x</span>
+      </td>
+      <td><span class="bright-yellow">nobody</span></td>
+      <td><span class="bright-green">0 words</span></td>
+      <td><span class="bright-blue">{{ section.pages | first | get(key='date') | date(timezone="Etc/UCT",
+          format="%e %b %Y %H:%M") }}</span></td>
+      <td><a class="white" href="/atom.xml">.RSS Feed</a></td>
+    </tr>
+
     {% for post in section.pages %}
 
     {% if post.authors | length > 0 %}
@@ -21,9 +35,9 @@
     <tr>
       <td>
         <span class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
-          class="white">-</span><span class="white">-</span><span class="bright-yellow">r</span><span
-          class="bright-red">w</span><span class="white">-</span><span class="white">-</span><span
-          class="bright-yellow">r</span><span class="white">-</span><span class="white">-</span>
+          class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
+          class="white">-</span><span class="bright-yellow">r</span><span class="white">-</span><span
+          class="white">-</span>
       </td>
       <td><span class="bright-yellow">{{ author | lower }}</span></td>
       <td><span class="bright-green">{{ post.word_count }} words</span></td>
