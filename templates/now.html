@@ -6,16 +6,15 @@
 <div class="page-lead">
   <p>
     This is my <a href="https://nownownow.com/about" target="_blank">Now Page</a>.
+    Here's what I'm up to right now.
   </p>
 
   <p>
-    Here's what I'm doing right now.
-  </p>
-
-  <p>
-    Last updated: <time datetime="{{ page.date | date(timezone='Etc/UCT', format='%F') }}">
-      {{ page.date | date(timezone="Etc/UCT", format="%e %b %Y") }}
-    </time>
+    <i>
+      Last updated: <time datetime="{{ page.date | date(timezone='Etc/UCT', format='%F') }}">
+        {{ page.date | date(timezone="Etc/UCT", format="%e %b %Y") }}
+      </time>
+    </i>
   </p>
 </div>
 
