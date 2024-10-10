@@ -13,7 +13,10 @@ body {
   min-width: 200px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
 }
 
 main {
@@ -24,7 +27,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 h1 {
