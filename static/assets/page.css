@@ -19,4 +19,12 @@
 
 .page-body {
   text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .page-body {
+    text-align: left;
+  }
 }
