@@ -4,4 +4,4 @@
     Content-Security-Policy: default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-ancestors 'none';
     Referrer-Policy: strict-origin
     Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-    Cache-Control: no-cache
+    Cache-Control: public, max-age=900
