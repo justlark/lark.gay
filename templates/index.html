@@ -1,5 +1,10 @@
 {% extends "page.html" %}
 
+{% block meta_vars %}
+{% set title = config.extra.site_title %}
+{% set description = config.extra.site_description %}
+{% endblock %}
+
 {% block heading %}Home{% endblock %}
 
 {% block content %}

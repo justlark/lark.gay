@@ -1,3 +1,9 @@
+{% block meta_vars %}{% endblock %}
+
+{% set social_icon = "/assets/icon-padded.webp" %}
+{% set social_icon_type = "image/webp" %}
+{% set social_icon_alt = "A rocket ship taking off" %}
+
 <!DOCTYPE html>
 <html>
 
@@ -6,8 +12,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>{% block title %}Lark Space{% endblock %}</title>
-  <meta name="description" content="Lark's blog and personal site" />
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="icon" href="/assets/favicon.webp" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +25,20 @@
 
   <link rel="alternate" type="application/atom+xml" title="Feed"
     href="{{ get_url(path='atom.xml', trailing_slash=false) }}" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:image" content="{{ social_icon }}" />
+  <meta property="og:image:type" content="{{ social_icon_type }}" />
+  <meta property="og:image:alt" content="{{ social_icon_alt }}" />
+
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="{{ title }}" />
+  <meta property="twitter:description" content="{{ description }}" />
+  <meta property="twitter:image" content="{{ social_icon }}" />
+  <meta property="twitter:image:alt" content="{{ social_icon_alt }}" />
+
 </head>
 
 <body>
