@@ -13,21 +13,16 @@
   <nav class="top-nav">
     <!-- The home link is deliberately never highlighted as active. -->
     <a href="/">Home</a>
-    {% for path in config.extra.nav %}
-
-    {% set is_section = path is ending_with('/_index.md') %}
-
-    {% if is_section %}
-    {% set this = get_section(path=path, metadata_only=true) %}
-    {% else %}
-    {% set this = get_page(path=path) %}
-    {% endif %}
-
-    <a href="{{ get_url(path='@/' ~ path) }}"
-      class="{% if (is_section and current_path is matching('^/' ~ path)) or (current_path == path) %}active{% endif %}">
-      {{ this.title }}
+    <a class="{% if current_path is matching('^/log/') %}active{% endif %}"
+      href="{{ get_url(path='@/log/_index.md') }}">
+      Log
     </a>
-    {% endfor %}
+    <a class="{% if current_path == '/now/' %}active{% endif %}" href="{{ get_url(path='@/now.md') }}">
+      Now
+    </a>
+    <a class="{% if current_path == '/contact/' %}active{% endif %}" href="{{ get_url(path='@/contact.md') }}">
+      Contact
+    </a>
   </nav>
 </header>
 

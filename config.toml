@@ -21,4 +21,3 @@ highlight_code = true
 site_title = "Lark Space"
 site_description = "Lark's blog and personal site"
 email = "lark@lark.gay"
-nav = ["log/_index.md", "now.md", "contact.md"]
