@@ -19,3 +19,4 @@ highlight_code = true
 
 [extra]
 email = "lark@lark.gay"
+nav = ["log/_index.md", "now.md", "contact.md"]
