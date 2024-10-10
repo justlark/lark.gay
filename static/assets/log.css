@@ -28,6 +28,10 @@ table.post-list tbody td:last-child {
   }
 }
 
+table.post-list tbody tr:first-child td {
+  padding-bottom: 1lh;
+}
+
 .post-body {
   text-align: justify;
   border: 1px solid var(--color-fg);
