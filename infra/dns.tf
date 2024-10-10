@@ -2,7 +2,7 @@ resource "cloudflare_record" "apex_cname" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "CNAME"
   name    = "@"
-  value   = "larkspace.pages.dev"
+  value   = "lark-space.pages.dev"
   proxied = true
 }
 
