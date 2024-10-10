@@ -22,6 +22,20 @@ resource "cloudflare_pages_project" "lark" {
       preview_branch_includes       = ["dev"]
     }
   }
+
+  deployment_configs {
+    production {
+      environment_variables = {
+        ZOLA_VERSION = "0.19.2"
+      }
+    }
+
+    preview {
+      environment_variables = {
+        ZOLA_VERSION = "0.19.2"
+      }
+    }
+  }
 }
 
 resource "cloudflare_pages_domain" "lark" {
