@@ -48,10 +48,15 @@
         </span>
       </td>
       <td class="ls-filename">
-        <a class="white" href="{% if term is defined %}{{ " /tags/" ~ term.slug ~ "/atom.xml" }} {% else %} {{
-          get_url(path='log/atom.xml' , trailing_slash=false) }}{% endif %}">
+        {% if term is defined %}
+        <a class="white" href="{{ '/tags/' ~ term.slug ~ '/atom.xml' }}">
+          .RSS Feed (#{{ term.name }})
+        </a>
+        {% else %}
+        <a class="white" href="{{ get_url(path='log/atom.xml' , trailing_slash=false) }}">
           .RSS Feed
         </a>
+        {% endif %}
       </td>
     </tr>
 
