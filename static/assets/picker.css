@@ -1,0 +1,21 @@
+.theme-picker {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.theme-picker button {
+  all: unset;
+  font-weight: bold;
+  color: var(--color-bright-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.theme-picker button:hover {
+  text-decoration-thickness: 3px;
+}

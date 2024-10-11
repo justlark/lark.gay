@@ -39,4 +39,12 @@
 <div class="page-body">
   {{ get_page(path="home.md") | get(key="content") | safe }}
 </div>
+
+<div class="page-tail">
+  <p>Choose your color scheme!</p>
+  <ul class="theme-picker">
+    <li><button class="theme-button" data-theme="catppuccin-mocha">Catppuccin</button></li>
+    <li><button class="theme-button" data-theme="nord-polar">Nord</button></li>
+  </ul>
+</div>
 {% endblock %}

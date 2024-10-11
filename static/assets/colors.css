@@ -1,7 +1,9 @@
+/*
+ * Theme colors
+ */
+
 :root {
   /* Catppuccin Mocha */
-
-  /* Theme colors */
   --catppuccin-rosewater: #f5e0dc;
   --catppuccin-flamingo: #f2cdcd;
   --catppuccin-pink: #f5c2e7;
@@ -29,7 +31,30 @@
   --catppuccin-mantle: #181825;
   --catppuccin-crust: #11111b;
 
-  /* ANSI terminal colors */
+  /* Nord */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+}
+
+/*
+ * ANSI terminal colors
+ */
+
+body[data-theme="catppuccin-mocha"] {
   --color-black: var(--catppuccin-mantle);
   --color-red: var(--catppuccin-red);
   --color-green: var(--catppuccin-green);
@@ -46,8 +71,32 @@
   --color-bright-magenta: var(--catppuccin-mauve);
   --color-bright-cyan: var(--catppuccin-teal);
   --color-bright-white: var(--catppuccin-text);
+}
 
-  /* Semantic colors */
+body[data-theme="nord-polar"] {
+  --color-black: var(--nord0);
+  --color-red: var(--nord11);
+  --color-green: var(--nord14);
+  --color-yellow: var(--nord13);
+  --color-blue: var(--nord9);
+  --color-magenta: var(--nord15);
+  --color-cyan: var(--nord8);
+  --color-white: var(--nord6);
+  --color-bright-black: var(--nord1);
+  --color-bright-red: var(--nord11);
+  --color-bright-green: var(--nord14);
+  --color-bright-yellow: var(--nord13);
+  --color-bright-blue: var(--nord9);
+  --color-bright-magenta: var(--nord15);
+  --color-bright-cyan: var(--nord8);
+  --color-bright-white: var(--nord6);
+}
+
+/*
+ * Semantic colors
+ */
+
+body {
   --color-fg: var(--color-white);
   --color-bg: var(--color-black);
 }

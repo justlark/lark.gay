@@ -13,7 +13,8 @@
 }
 
 .page-lead,
-.page-body {
+.page-body,
+.page-tail {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -25,6 +26,11 @@
 
 .page-body {
   text-align: justify;
+}
+
+.page-tail {
+  text-align: center;
+  margin-top: 3rem;
 }
 
 @media (max-width: 640px) {
