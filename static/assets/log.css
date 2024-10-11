@@ -28,7 +28,13 @@ table.post-list tbody td:last-child {
   }
 }
 
-table.post-list tbody tr:first-child td {
+table.post-list tbody tr.feed-entry td:last-child {
+  /*
+   * Show a blank line between the table row for the RSS feed and the table
+   * rows for the actual blog posts. However, we only apply the padding to the
+   * final column, to prevent unwanted internal spacing when the row wraps on
+   * narrow screens.
+   */
   padding-bottom: 1lh;
 }
 
