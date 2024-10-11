@@ -79,6 +79,34 @@
   --dracula-purple: #bd93f9;
   --dracula-red: #ff5555;
   --dracula-yellow: #f1fa8c;
+
+  /* Gruvbox */
+  --gruvbox-bg0h: #1d2021;
+  --gruvbox-bg0s: #32302f;
+  --gruvbox-bg0: #282828;
+  --gruvbox-bg1: #3c3836;
+  --gruvbox-bg2: #504945;
+  --gruvbox-bg3: #665c54;
+  --gruvbox-bg4: #7c6f64;
+  --gruvbox-fg0: #fbf1c7;
+  --gruvbox-fg1: #ebdbb2;
+  --gruvbox-fg2: #d5c4a1;
+  --gruvbox-fg3: #bdae93;
+  --gruvbox-fg4: #a89984;
+  --gruvbox-red: #cc241d;
+  --gruvbox-orange: #d65d0e;
+  --gruvbox-yellow: #d79921;
+  --gruvbox-green: #98971a;
+  --gruvbox-aqua: #689d6a;
+  --gruvbox-blue: #458588;
+  --gruvbox-purple: #b16286;
+  --gruvbox-bright-red: #fb4934;
+  --gruvbox-bright-orange: #fe8019;
+  --gruvbox-bright-yellow: #fabd2f;
+  --gruvbox-bright-green: #b8bb26;
+  --gruvbox-bright-aqua: #8ec07c;
+  --gruvbox-bright-blue: #83a598;
+  --gruvbox-bright-purple: #d3869b;
 }
 
 /*
@@ -159,6 +187,25 @@ body[data-theme="dracula"] {
   --color-bright-magenta: var(--dracula-pink);
   --color-bright-cyan: var(--dracula-cyan);
   --color-bright-white: var(--dracula-foreground);
+}
+
+body[data-theme="gruvbox"] {
+  --color-black: var(--gruvbox-bg0);
+  --color-red: var(--gruvbox-red);
+  --color-green: var(--gruvbox-green);
+  --color-yellow: var(--gruvbox-yellow);
+  --color-blue: var(--gruvbox-blue);
+  --color-magenta: var(--gruvbox-purple);
+  --color-cyan: var(--gruvbox-aqua);
+  --color-white: var(--gruvbox-fg0);
+  --color-bright-black: var(--gruvbox-bg1);
+  --color-bright-red: var(--gruvbox-bright-red);
+  --color-bright-green: var(--gruvbox-bright-green);
+  --color-bright-yellow: var(--gruvbox-bright-yellow);
+  --color-bright-blue: var(--gruvbox-bright-blue);
+  --color-bright-magenta: var(--gruvbox-bright-purple);
+  --color-bright-cyan: var(--gruvbox-bright-aqua);
+  --color-bright-white: var(--gruvbox-fg0);
 }
 
 /*
