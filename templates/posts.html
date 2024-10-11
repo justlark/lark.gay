@@ -20,12 +20,7 @@
 <table class="post-list">
   <tbody>
     <tr class="feed-entry">
-      <td>
-        <span class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
-          class="bright-green">x</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
-          class="bright-green">x</span><span class="bright-yellow">r</span><span class="white">-</span><span
-          class="bright-green">x</span>
-      </td>
+      <td><span class="red">0775</span></td>
       <td><span class="bright-yellow">nobody</span></td>
       <td><span class="bright-green">0 words</span></td>
       <td>
@@ -35,7 +30,8 @@
           </time>
         </span>
       </td>
-      <td><a class="white" href="{{ get_url(path='log/atom.xml', trailing_slash=false) }}">.RSS Feed</a></td>
+      <td class="ls-filename"><a class="white" href="{{ get_url(path='log/atom.xml', trailing_slash=false) }}">.RSS
+          Feed</a></td>
     </tr>
 
     {% for post in section.pages %}
@@ -47,17 +43,12 @@
     {% endif %}
 
     <tr>
-      <td>
-        <span class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
-          class="white">-</span><span class="bright-yellow">r</span><span class="bright-red">w</span><span
-          class="white">-</span><span class="bright-yellow">r</span><span class="white">-</span><span
-          class="white">-</span>
-      </td>
+      <td><span class="red">0664</span></td>
       <td><span class="bright-yellow">{{ author | lower }}</span></td>
       <td><span class="bright-green">{{ post.word_count }} words</span></td>
       <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
       <td><span class="bright-blue">{{ post.date | date(timezone="Etc/UCT", format=datetime_format) }}</span></td>
-      <td><a class="white" href="{{ post.permalink }}">{{ post.title }}</a></td>
+      <td class="ls-filename"><a class="white" href="{{ post.permalink }}">{{ post.title }}</a></td>
     </tr>
     {% endfor %}
 </table>
