@@ -137,3 +137,9 @@ ul.tag-list li {
 .comments {
   margin-top: 3rem;
 }
+
+footer.post-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

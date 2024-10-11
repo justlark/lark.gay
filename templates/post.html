@@ -64,12 +64,20 @@
     </div>
   </div>
 
-  <p>
-    &lt;-
-    <a href="{{ get_url(path='@/log/_index.md') }}">
-      Back
-    </a>
-  </p>
+  <footer class="post-footer">
+    <span>
+      &lt;-
+      <a href="{{ get_url(path='@/log/_index.md') }}">Back</a>
+    </span>
+
+    <ul class="tag-list">
+      {% for tag in page.taxonomies.tags | default(value=[]) %}
+      <li>
+        <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">#{{ tag }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </footer>
 </article>
 
 <!-- https://talk.hyvor.com/ -->
