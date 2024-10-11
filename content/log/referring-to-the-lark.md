@@ -4,7 +4,7 @@ description = "How I like my friends to refer to me"
 date = 2024-10-11
 
 [taxonomies]
-tags = ["Identity"]
+tags = ["identity"]
 +++
 
 I love experimenting with pronouns and the ways in which we refer to one
