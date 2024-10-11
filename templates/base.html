@@ -51,14 +51,14 @@
     {
       "@context": "http://schema.org",
       "@type": "WebPage",
-      "name": "{{ title }}",
-      "description": "{{ description }}",
+      "name": {{ title | json_encode() | safe }},
+      "description": {{ description | json_encode() | safe }},
       "author": {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "Lark"
+        "name": {{ config.author | json_encode() | safe }}
       },
-      "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+      "license": {{ config.extra.license_link | json_encode() | safe }}
     }
   </script>
   {% endblock %}

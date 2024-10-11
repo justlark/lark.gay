@@ -5,19 +5,19 @@
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "@id": "{{ page.permalink }}#post",
-    "name": "{{ page.title }}",
-    "description": "{{ page.description }}",
-    "wordCount": "{{ page.word_count }}",
-    "keywords": "{{ page.taxonomies.tags | default(value=[]) | join(sep=', ') }}",
-    "datePublished": "{{ page.date | date(timezone='Etc/UCT', format='%F') }}",
-    "dateModified": "{{ page.updated | default(value=page.date) | date(timezone='Etc/UCT', format='%F') }}",
+    "@id": {{ page.permalink ~ "#post" | json_encode() | safe }},
+    "name": {{ page.title | json_encode() | safe }},
+    "description": {{ page.description | json_encode() | safe }},
+    "wordCount": {{ page.word_count | json_encode() | safe }},
+    "keywords": {{ page.taxonomies.tags | default(value=[]) | join(sep=', ') | json_encode() | safe }},
+    "datePublished": {{ page.date | date(timezone='Etc/UCT', format='%F') | json_encode() | safe }},
+    "dateModified": {{ page.updated | default(value=page.date) | date(timezone='Etc/UCT', format='%F') | json_encode() | safe }},
     "author": {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Lark"
+      "name": {{ config.author | json_encode() | safe }}
     },
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+    "license": {{ config.extra.license_link | json_encode() | safe }}
   }
 </script>
 {% endblock %}

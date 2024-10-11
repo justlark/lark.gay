@@ -24,3 +24,4 @@ feed = true
 site_title = "Lark Space"
 site_description = "Lark's blog and personal site"
 email = "lark@lark.gay"
+license_link = "https://creativecommons.org/licenses/by-nc/4.0/"
