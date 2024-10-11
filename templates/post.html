@@ -10,8 +10,8 @@
     "description": {{ page.description | json_encode() | safe }},
     "wordCount": {{ page.word_count | json_encode() | safe }},
     "keywords": {{ page.taxonomies.tags | default(value=[]) | join(sep=', ') | json_encode() | safe }},
-    "datePublished": {{ page.date | date(timezone='Etc/UCT', format='%F') | json_encode() | safe }},
-    "dateModified": {{ page.updated | default(value=page.date) | date(timezone='Etc/UCT', format='%F') | json_encode() | safe }},
+    "datePublished": {{ page.date | date(timezone='Etc/UCT', format='%+') | json_encode() | safe }},
+    "dateModified": {{ page.updated | default(value=page.date) | date(timezone='Etc/UCT', format='%+') | json_encode() | safe }},
     "author": {
       "@context": "https://schema.org",
       "@type": "Person",
