@@ -117,3 +117,14 @@ table.post-list tbody tr.feed-entry td.ls-filename {
     opacity: 0;
   }
 }
+
+ul.tag-list {
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.tag-list li {
+  display: inline;
+}

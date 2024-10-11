@@ -3,15 +3,32 @@
 {% block heading %}{{ section.title }}{% endblock %}
 
 {% block content %}
-
+{% set pages = term.pages | default(value=section.pages) %}
 {% set datetime_format = "%e %b %Y" %}
-{% set latest_publish_time = section.pages | first | get(key='date') %}
+{% set latest_publish_time = pages | first | get(key='date') %}
 
 <div class="page-lead">
+  {% block lead %}
   <p>
     Here's what I've been writing about lately.
   </p>
+  {% endblock %}
 </div>
+
+<p>
+  <code><span class="bright-white">$</span> ls ./tags/</code>
+</p>
+
+<p>
+<ul class="tag-list">
+  {% set tags = get_taxonomy(kind="tags") %}
+  {% for term in tags.items %}
+  <li>
+    <a href="/tags/{{ term.slug }}">#{{ term.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+</p>
 
 <p>
   <code><span class="bright-white">$</span> ls -la ./log/</code>
@@ -30,11 +47,15 @@
           </time>
         </span>
       </td>
-      <td class="ls-filename"><a class="white" href="{{ get_url(path='log/atom.xml', trailing_slash=false) }}">.RSS
-          Feed</a></td>
+      <td class="ls-filename">
+        <a class="white" href="{% if term is defined %}{{ " /tags/" ~ term.slug ~ "/atom.xml" }} {% else %} {{
+          get_url(path='log/atom.xml' , trailing_slash=false) }}{% endif %}">
+          .RSS Feed
+        </a>
+      </td>
     </tr>
 
-    {% for post in section.pages %}
+    {% for post in pages %}
 
     {% if post.authors | length > 0 %}
     {% set author = post.authors[0] %}
@@ -43,7 +64,8 @@
     {% endif %}
 
     <tr>
-      <td><span class="red">0664</span></td>
+      <td><span class=" red">0664</span>
+      </td>
       <td><span class="bright-yellow">{{ author | lower }}</span></td>
       <td><span class="bright-green">{{ post.word_count }} words</span></td>
       <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->

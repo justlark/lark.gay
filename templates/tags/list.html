@@ -1,0 +1,30 @@
+{% extends "page.html" %}
+
+{% block meta_vars %}
+{% set title = "Tags" %}
+{% set description = "All tags for log posts" %}
+{% endblock %}
+
+{% block heading %}Tags{% endblock %}
+
+{% block content %}
+<div class="page-lead">
+  <p>
+    See log posts by tag.
+  </p>
+</div>
+
+<p>
+  <code><span class="bright-white">$</span> ls ./tags/</code>
+</p>
+
+<p>
+<ul class="tag-list">
+  {% for term in terms %}
+  <li>
+    <a href="/tags/{{ term.slug }}">#{{ term.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+</p>
+{% endblock %}
