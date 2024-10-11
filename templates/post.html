@@ -19,21 +19,25 @@
   </p>
 
   <div class="post-body">
-    {{ page.content | safe }}
+    <div class="post-content">
+      {{ page.content | safe }}
+    </div>
 
-    <div class="vim-eob">~</div>
-    <div class="vim-eob">~</div>
-    <div class="vim-eob">~</div>
-    <div class="vim-eob">~</div>
-    <div class="vim-eob">~</div>
+    <div class="post-decoration">
+      <div class="vim-eob">~</div>
+      <div class="vim-eob">~</div>
+      <div class="vim-eob">~</div>
+      <div class="vim-eob">~</div>
+      <div class="vim-eob">~</div>
 
-    <div class="vim-statusline">
-      <div>
-        <span id="vim-mode" class="bright-green-reverse">&nbsp;NORMAL&nbsp;</span>
-        <span>{{ vim_file_path }}</span>
-      </div>
-      <div class="vim-word-count">
-        <span>&nbsp;{{ page.word_count }} words&nbsp;</span>
+      <div class="vim-statusline">
+        <div>
+          <span id="vim-mode" class="bright-green-reverse">&nbsp;NORMAL&nbsp;</span>
+          <span>{{ vim_file_path }}</span>
+        </div>
+        <div class="vim-word-count">
+          <span>&nbsp;{{ page.word_count }} words&nbsp;</span>
+        </div>
       </div>
     </div>
   </div>

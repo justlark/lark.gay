@@ -66,33 +66,38 @@ table.post-list tbody tr.feed-entry td.ls-filename {
   }
 }
 
-.post-body p:first-child {
+/*
+ * We're making the assumption that posts will end with a <p></p>. This isn't
+ * necessarily true, but it's difficult to do this any other way.
+ */
+
+.post-content > p:first-of-type {
   margin-top: 0;
 }
 
-.post-body p:last-of-type {
+.post-content > p:last-of-type {
   margin-bottom: 0;
 }
 
-/* "eob" means "end of buffer" */
-
-.post-body p:last-of-type::after {
+.post-body .post-content > p:last-of-type::after {
   content: " █";
   animation: blink 1s step-start infinite;
 }
 
 @media (prefers-reduced-motion) {
-  .post-body p:last-of-type::after {
+  .post-body .post-content > p:last-of-type::after {
     animation: none;
   }
 }
 
-.post-body .vim-eob {
+/* "eob" means "end of buffer" */
+
+.post-decoration .vim-eob {
   font-weight: bold;
   color: var(--color-bright-blue);
 }
 
-.post-body .vim-statusline {
+.post-decoration .vim-statusline {
   overflow: hidden;
   white-space: nowrap;
   line-height: 1.5;
@@ -102,12 +107,12 @@ table.post-list tbody tr.feed-entry td.ls-filename {
   background-color: var(--color-bright-black);
 }
 
-.post-body .vim-statusline span {
+.post-decoration .vim-statusline span {
   display: inline-block;
 }
 
 @media (max-width: 640px) {
-  .post-body .vim-statusline .vim-word-count {
+  .post-decoration .vim-statusline .vim-word-count {
     display: none;
   }
 }
