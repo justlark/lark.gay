@@ -46,6 +46,22 @@
   <meta property="twitter:image" content="{{ social_icon }}" />
   <meta property="twitter:image:alt" content="{{ social_icon_alt }}" />
 
+  {% block jsonld %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebPage",
+      "name": "{{ title }}",
+      "description": "{{ description }}",
+      "author": {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lark"
+      },
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+    }
+  </script>
+  {% endblock %}
 </head>
 
 <body data-theme="catppuccin-mocha">

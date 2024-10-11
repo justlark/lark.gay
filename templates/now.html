@@ -10,7 +10,8 @@
 
   <p>
     <i>
-      Last updated: <time datetime="{{ page.date | date(timezone='Etc/UCT', format='%F') }}">
+      Last updated: <time
+        datetime="{{ page.updated | default(value=page.date) | date(timezone='Etc/UCT', format='%F') }}">
         {{ page.date | date(timezone="Etc/UCT", format="%e %b %Y") }}
       </time>
     </i>

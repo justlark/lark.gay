@@ -1,5 +1,27 @@
 {% extends "page.html" %}
 
+{% block jsonld %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "name": "{{ section.title }}",
+    "description": "{{ section.description }}",
+    "blogPost": [
+      {% for post in section.pages %}
+      { "@id": "{{ post.permalink }}#post" }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    "author": {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lark"
+    },
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+  }
+</script>
+{% endblock %}
+
 {% block heading %}{{ section.title }}{% endblock %}
 
 {% block content %}

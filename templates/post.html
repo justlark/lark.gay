@@ -1,5 +1,27 @@
 {% extends "page.html" %}
 
+{% block jsonld %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "@id": "{{ page.permalink }}#post",
+    "name": "{{ page.title }}",
+    "description": "{{ page.description }}",
+    "wordCount": "{{ page.word_count }}",
+    "keywords": "{{ page.taxonomies.tags | default(value=[]) | join(sep=', ') }}",
+    "datePublished": "{{ page.date | date(timezone='Etc/UCT', format='%F') }}",
+    "dateModified": "{{ page.updated | default(value=page.date) | date(timezone='Etc/UCT', format='%F') }}",
+    "author": {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lark"
+    },
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+  }
+</script>
+{% endblock %}
+
 {% block heading %}
 {% set section = get_section(path="log/_index.md", metadata_only=true) %}
 {{ section.title }}
