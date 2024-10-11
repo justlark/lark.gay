@@ -1,6 +1,7 @@
 {% extends "posts.html" %}
 
 {% block meta_vars %}
+{% set canonical_url = current_url %}
 {% set title = "Tag: " ~ term.name %}
 {% set description = "Log posts tagged '" ~ term.name ~ "'" %}
 {% endblock %}

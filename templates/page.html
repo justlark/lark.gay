@@ -2,6 +2,7 @@
 
 {% block meta_vars %}
 {% set this = page | default(value=section) %}
+{% set canonical_url = this.permalink %}
 {% set title = this.title | default(value=config.extra.site_title) %}
 {% set description = this.description | default(value=config.extra.site_description) %}
 {% endblock %}
