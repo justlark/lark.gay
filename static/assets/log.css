@@ -125,7 +125,10 @@ table.post-list tbody tr.feed-entry td.ls-filename {
 
 ul.tag-list {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: right;
+  column-gap: 1.2rem;
+  row-gap: 0.2rem;
   padding-left: 0;
   list-style: none;
 }
@@ -140,6 +143,11 @@ ul.tag-list li {
 
 footer.post-footer {
   display: flex;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
+}
+
+footer.post-footer .back-link {
+  white-space: nowrap;
 }
