@@ -66,6 +66,19 @@
   --solarized-blue: #268bd2;
   --solarized-cyan: #2aa198;
   --solarized-green: #859900;
+
+  /* Dracula */
+  --dracula-background: #282a36;
+  --dracula-current-line: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --draula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
 }
 
 /*
@@ -127,6 +140,25 @@ body[data-theme="solarized-dark"] {
   --color-bright-magenta: var(--solarized-magenta);
   --color-bright-cyan: var(--solarized-cyan);
   --color-bright-white: var(--solarized-base3);
+}
+
+body[data-theme="dracula"] {
+  --color-black: var(--dracula-background);
+  --color-red: var(--dracula-red);
+  --color-green: var(--dracula-green);
+  --color-yellow: var(--dracula-yellow);
+  --color-blue: var(--dracula-purple);
+  --color-magenta: var(--dracula-pink);
+  --color-cyan: var(--dracula-cyan);
+  --color-white: var(--dracula-foreground);
+  --color-bright-black: var(--dracula-current-line);
+  --color-bright-red: var(--dracula-red);
+  --color-bright-green: var(--dracula-green);
+  --color-bright-yellow: var(--dracula-yellow);
+  --color-bright-blue: var(--dracula-purple);
+  --color-bright-magenta: var(--dracula-pink);
+  --color-bright-cyan: var(--dracula-cyan);
+  --color-bright-white: var(--dracula-foreground);
 }
 
 /*
