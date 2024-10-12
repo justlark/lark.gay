@@ -4,7 +4,7 @@ description = "How I like my friends to refer to me"
 date = 2024-10-11
 
 [taxonomies]
-tags = ["identity", "pronouns", "language"]
+tags = ["identity", "language"]
 +++
 
 I love experimenting with pronouns and the ways in which we refer to one
@@ -30,9 +30,9 @@ Using my name as a common noun could mean saying things like:
 Using third-person pronouns in second-person contexts means that, when
 addressing me directly, people use the third person, like this:
 
-> Would Lark like to go out to eat?
+> "Would Lark like to go out to eat?"
 
-> I need to talk to Lark about something.
+> "I need to talk to Lark about something."
 
 I've come to quite enjoy being referred to this way. A surprising number of my
 friends have picked it up; once a few started doing it consistently, others
