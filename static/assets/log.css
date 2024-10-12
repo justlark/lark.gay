@@ -12,10 +12,20 @@ table.post-list tbody td.ls-filename {
 
 @media (max-width: 768px) {
   /*
-   * On narrow screens, the table rows needs to be able to wrap.
+   * On narrow screens, the table rows needs to be able to wrap. See below to
+   * understand why we need to explicitly set the font size.
    */
   table.post-list tbody td {
     display: inline-block;
+    font-size: var(--font-size-base);
+  }
+
+  /*
+   * Firefox implicitly adds a whitespace between the table cells when they're
+   * `display: inline-block`, but Chrome does not. This messes up the layout.
+   */
+  table.post-list tbody tr {
+    font-size: 0;
   }
 
   /*
@@ -23,14 +33,6 @@ table.post-list tbody td.ls-filename {
    */
   table.post-list tbody td.ls-filename {
     width: 100%;
-  }
-
-  /*
-   * Save space so that on the narrowest screens, the table row only takes up
-   * two lines: one for the "metadata" and one for the "filename".
-   */
-  table.post-list tbody td {
-    padding-right: 0;
   }
 
   /*
