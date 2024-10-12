@@ -123,14 +123,28 @@ table.post-list tbody tr.feed-entry td.ls-filename {
   }
 }
 
+footer.post-footer {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer.post-footer .back-link {
+  white-space: nowrap;
+}
+
 ul.tag-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
   column-gap: 1.2rem;
   row-gap: 0.2rem;
   padding-left: 0;
   list-style: none;
+}
+
+footer.post-footer ul.tag-list {
+  justify-content: right;
 }
 
 ul.tag-list li {
@@ -139,15 +153,4 @@ ul.tag-list li {
 
 .comments {
   margin-top: 3rem;
-}
-
-footer.post-footer {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer.post-footer .back-link {
-  white-space: nowrap;
 }
