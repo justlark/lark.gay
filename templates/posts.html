@@ -44,9 +44,10 @@
 <p>
 <ul class="tag-list">
   {% set tags = get_taxonomy(kind="tags") %}
-  {% for term in tags.items %}
+  {% for tag in tags.items %}
   <li>
-    <a href="{{ get_taxonomy_url(kind='tags', name=term.name) }}">#{{ term.name }}</a>
+    <a class="{% if term is defined and term.name == tag.name %}current-tag{% endif %}"
+      href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">#{{ tag.name }}</a>
   </li>
   {% endfor %}
 </ul>
@@ -71,7 +72,7 @@
       </td>
       <td class="ls-filename">
         {% if term is defined %}
-        <a class="white" href="{{ get_taxonomy_url(kind='tags', name=term.name) }}/atom.xml">
+        <a class="white" href="{{ get_taxonomy_url(kind='tags', name=term.name) }}atom.xml">
           .RSS Feed (#{{ term.name }})
         </a>
         {% else %}

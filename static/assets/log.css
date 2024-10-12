@@ -151,6 +151,18 @@ ul.tag-list li {
   display: inline;
 }
 
+ul.tag-list .current-tag {
+  color: var(--color-bright-cyan);
+}
+
+ul.tag-list .current-tag::before {
+  content: "[";
+}
+
+ul.tag-list .current-tag::after {
+  content: "]";
+}
+
 .comments {
   margin-top: 3rem;
 }
