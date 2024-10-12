@@ -138,7 +138,7 @@ ul.tag-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1.2rem;
-  row-gap: 0.2rem;
+  row-gap: 0.6rem;
   padding-left: 0;
   list-style: none;
 }
