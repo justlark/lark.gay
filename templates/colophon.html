@@ -1,0 +1,17 @@
+{% extends "page.html" %}
+
+{% block heading %}{{ page.title }}{% endblock %}
+
+{% block content %}
+<div class="page-lead">
+  <p>
+    A colophon is a section at the back of a book which gives details about its
+    creation and publication. Here are some details about this site. Credit to
+    <a href="https://beeps.website/" target="_blank">beeps</a> for the idea.
+  </p>
+</div>
+
+<div class="page-body">
+  {{ page.content | safe }}
+</div>
+{% endblock %}

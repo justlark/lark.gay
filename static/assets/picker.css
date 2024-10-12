@@ -1,5 +1,4 @@
-.theme-picker {
-  cursor: pointer;
+#theme-picker ul {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -7,8 +6,9 @@
   list-style: none;
 }
 
-.theme-picker button {
+#theme-picker ul button {
   all: unset;
+  cursor: pointer;
   font-weight: bold;
   color: var(--color-bright-blue);
   text-decoration: underline;
@@ -16,6 +16,6 @@
   text-underline-offset: 2px;
 }
 
-.theme-picker button:hover {
+#theme-picker ul button:hover {
   text-decoration-thickness: 3px;
 }

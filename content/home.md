@@ -29,3 +29,9 @@ own little corner of the web where things are simpler.
 
 This site is just some HTML and CSS that I wrote with my own two paws. I'm
 always happy to have guests, so feel free to make yourself at home.
+
+## Stuff
+
+- [Log](/log)
+- [Now Page](/now)
+- [Colophon](/colophon)
