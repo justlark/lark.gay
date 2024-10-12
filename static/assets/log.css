@@ -34,21 +34,21 @@ table.post-list tbody td.ls-filename {
   }
 
   /*
-   * Add a bit more space between table rows to improve legibility on narrow
+   * Add a bit more space between the rows, to improve legibility on narrow
    * screens.
    */
-  table.post-list {
-    border-spacing: 0 1lh;
+  table.post-list tbody tr:not(.feed-entry) td.ls-filename {
+    padding-bottom: 1lh;
   }
 }
 
+/*
+ * Show a blank line between the table row for the RSS feed and the table
+ * rows for the actual blog posts. However, we only apply the padding to the
+ * final column, to prevent unwanted internal spacing when the row wraps on
+ * narrow screens.
+ */
 table.post-list tbody tr.feed-entry td.ls-filename {
-  /*
-   * Show a blank line between the table row for the RSS feed and the table
-   * rows for the actual blog posts. However, we only apply the padding to the
-   * final column, to prevent unwanted internal spacing when the row wraps on
-   * narrow screens.
-   */
   padding-bottom: 1lh;
 }
 
@@ -58,6 +58,9 @@ table.post-list tbody tr.feed-entry td.ls-filename {
   padding: 1.5rem;
 }
 
+/*
+ * Justified text looks bad on narrow screens.
+ */
 @media (max-width: 640px) {
   .post-body {
     text-align: left;
@@ -154,6 +157,11 @@ ul.tag-list li {
 ul.tag-list .current-tag {
   color: var(--color-bright-cyan);
 }
+
+/*
+ * Using `display: inline-block` prevents the text decoration from applying to
+ * the ::before and ::after pseudo-elements.
+ */
 
 ul.tag-list .current-tag::before {
   content: "[";
