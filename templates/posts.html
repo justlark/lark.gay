@@ -34,6 +34,15 @@
   <p>
     Here's what I've been writing about lately.
   </p>
+  <p>
+    <i>
+      {% if term is defined %}
+      Showing only posts tagged <strong class="bright-cyan">#{{ term.name }}</strong>.
+      {% else %}
+      Showing all posts.
+      {% endif %}
+    </i>
+  </p>
   {% endblock %}
 </div>
 
@@ -50,6 +59,11 @@
       href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">#{{ tag.name }}</a>
   </li>
   {% endfor %}
+  {% if term is defined %}
+  <li>
+    <a class="all-link" href="{{ get_url(path='@/log/_index.md') }}">all</a>
+  </li>
+  {% endif %}
 </ul>
 </p>
 

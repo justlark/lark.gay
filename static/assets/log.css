@@ -157,10 +157,22 @@ ul.tag-list .current-tag {
 
 ul.tag-list .current-tag::before {
   content: "[";
+  display: inline-block;
 }
 
 ul.tag-list .current-tag::after {
   content: "]";
+  display: inline-block;
+}
+
+ul.tag-list .all-link::before {
+  content: "(";
+  display: inline-block;
+}
+
+ul.tag-list .all-link::after {
+  content: ")";
+  display: inline-block;
 }
 
 .comments {
