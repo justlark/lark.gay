@@ -32,6 +32,7 @@ always happy to have guests, so feel free to make yourself at home.
 
 ## Stuff
 
-- [Log](/log)
+- [My Log](/log)
 - [Now Page](/now)
+- [Contact Lark](/contact)
 - [Colophon](/colophon)
