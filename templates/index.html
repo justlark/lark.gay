@@ -41,12 +41,12 @@
   {{ get_page(path="home.md") | get(key="content") | safe }}
 </div>
 
-<div id="theme-picker" class="page-tail">
-  <p>Choose your color scheme!</p>
+<section id="theme-picker" class="page-tail" aria-labelledby="theme-picker-title">
+  <p id="theme-picker-title">Choose your color scheme!</p>
   <ul>
     <li><button class="theme-button" data-theme="catppuccin-mocha">Catppuccin</button></li>
     <li><button class="theme-button" data-theme="dracula">Dracula</button></li>
     <li><button class="theme-button" data-theme="nord-polar">Nord</button></li>
   </ul>
-</div>
+</section>
 {% endblock %}
