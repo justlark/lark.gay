@@ -146,8 +146,8 @@ footer.post-footer .back-link {
 ul.tag-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 1.2rem;
-  row-gap: 0.6rem;
+  column-gap: var(--flow-list-column-gap);
+  row-gap: var(--flow-list-row-gap);
   padding-left: 0;
   list-style: none;
 }

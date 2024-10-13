@@ -10,7 +10,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  column-gap: var(--flow-list-column-gap);
+  row-gap: var(--flow-list-column-gap);
   padding-left: 0;
   list-style: none;
 }

@@ -1,6 +1,6 @@
 /* These must be imported first, in order. */
 @import url("/assets/normalize.css");
-@import url("/assets/colors.css");
+@import url("/assets/vars.css");
 
 /* These can be imported in any order. */
 @import url("/assets/base.css");
