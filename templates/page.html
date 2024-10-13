@@ -8,8 +8,8 @@
 {% endblock %}
 
 {% block body %}
-<header class="site-header">
-  <h1 class="page-title"><a href="/">{{ config.extra.site_title }}</a></h1>
+<header class="site-header" aria-labelledby="site-title">
+  <h1 id="site-title"><a href="/">{{ config.extra.site_title }}</a></h1>
 
   <nav class="top-nav">
     <!-- The home link is deliberately never highlighted as active. -->

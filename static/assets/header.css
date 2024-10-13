@@ -15,11 +15,11 @@ nav.top-nav {
   align-items: center;
 }
 
-h1.page-title {
+#site-title {
   text-align: center;
 }
 
-h1.page-title a {
+#site-title a {
   /*
    * Clicking on the site title is not the only way to navigate home, so it is
    * not imperative that it be easily distinguishable as a link.
