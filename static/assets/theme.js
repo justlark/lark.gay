@@ -1,3 +1,10 @@
+// Only show the theme picker when JS is enabled.
+const themePicker = document.getElementById("theme-picker");
+
+if (themePicker) {
+  themePicker.style.display = "block";
+}
+
 const themeButtons = document.querySelectorAll(".theme-button");
 
 for (const themeButton of themeButtons) {

@@ -1,3 +1,11 @@
+/*
+ * Only show the theme picker when JS is enabled. This style is overwritten in
+ * the JS when it loads.
+ */
+#theme-picker {
+  display: none;
+}
+
 #theme-picker ul {
   display: flex;
   justify-content: center;
