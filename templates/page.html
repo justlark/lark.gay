@@ -14,14 +14,21 @@
   <nav class="top-nav">
     <!-- The home link is deliberately never highlighted as active. -->
     <a href="/">Home</a>
-    <a class="{% if current_path is matching('^/(log|tags)/') %}active{% endif %}"
+
+    {% set log_path = get_section(path='log/_index.md') | get(key='path') %}
+    {% set tags_url = get_taxonomy(kind='tags') | get(key='permalink') %}
+    <a class="{% if current_path is matching('^' ~ log_path) or current_url is matching('^' ~ tags_url) %}active{% endif %}"
       href="{{ get_url(path='@/log/_index.md') }}">
       Log
     </a>
-    <a class="{% if current_path == '/now/' %}active{% endif %}" href="{{ get_url(path='@/now.md') }}">
+
+    {% set now_path = get_page(path='now.md') | get(key='path') %}
+    <a class="{% if current_path == now_path %}active{% endif %}" href="{{ get_url(path='@/now.md') }}">
       Now
     </a>
-    <a class="{% if current_path == '/contact/' %}active{% endif %}" href="{{ get_url(path='@/contact.md') }}">
+
+    {% set contact_path = get_page(path='contact.md') | get(key='path') %}
+    <a class="{% if current_path == contact_path %}active{% endif %}" href="{{ get_url(path='@/contact.md') }}">
       Contact
     </a>
   </nav>
