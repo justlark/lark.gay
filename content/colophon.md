@@ -5,9 +5,11 @@ template = "colophon.html"
 date = 2024-10-12
 +++
 
+## Colophon
+
 This is a static site built with [Zola](https://www.getzola.org/).
 
-## Philosophy
+### Philosophy
 
 I'm tired of complex, bloated websites. My goal for this site is to build
 something simple, hackable, and fast.
@@ -36,7 +38,7 @@ tracking scripts on this site. I use [Hyvor Talk](https://talk.hyvor.com/) for
 comments, which is a privacy-focused alternative to services like Disqus, and I
 have IP logging disabled.
 
-## Features
+### Features
 
 Here are some of the cool and less-obvious features of this site:
 

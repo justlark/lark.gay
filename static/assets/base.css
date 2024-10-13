@@ -40,16 +40,22 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem;
-}
-
-h4 {
   font-size: 1.4rem;
 }
 
-h5 {
+h4 {
   font-size: 1.2rem;
 }
+
+h5 {
+  font-size: 1rem;
+}
+
+/*
+ * I'm planning on not using <h6> on this site, so it doesn't need to be
+ * particularly distinct. I probably won't use <h5> either. Nesting that deep
+ * doesn't make sense for the kind of content I plan to write.
+ */
 
 h6 {
   font-size: 1rem;

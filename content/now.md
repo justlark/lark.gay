@@ -1,9 +1,11 @@
 +++
-title = "Now"
+title = "Lark Now"
 description = "What Lark is up to right now"
 template = "now.html"
 date = 2024-10-10
 +++
+
+## Lark Now
 
 I'm [building this site](https://github.com/justlark/lark.gay)! I'm trying out a
 static site generator called [Zola](https://www.getzola.org/), because Hugo is

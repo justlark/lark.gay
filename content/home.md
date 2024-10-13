@@ -32,7 +32,7 @@ always happy to have guests, so feel free to make yourself at home.
 
 ## Stuff
 
-- [My Log](/log)
-- [Now Page](/now)
-- [Contact Lark](/contact)
-- [Colophon](/colophon)
+- [Lark's Log](@/log/_index.md)
+- [Lark Now](@/now.md)
+- [Contact Lark](@/contact.md)
+- [Colophon](@/colophon.md)
