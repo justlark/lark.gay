@@ -1,4 +1,4 @@
-header {
+header.site-header {
   margin-bottom: 3rem;
 }
 
@@ -35,6 +35,6 @@ header nav a.active::after {
   content: "^^^";
   color: var(--color-fg);
   position: absolute;
-  left: calc(50% - 1.5ch);
+  left: calc(50% - (3ch / 2));
   bottom: -1.5em;
 }
