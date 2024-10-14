@@ -1,3 +1,8 @@
+/*
+ * Because this site is meant to be themed after a Linux terminal, we use a lot
+ * of `lh` and `ch` CSS units.
+ */
+
 /* These must be imported first, in order. */
 @import url("/assets/normalize.css");
 @import url("/assets/vars.css");

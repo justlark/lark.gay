@@ -1,3 +1,7 @@
+:root {
+  --selected-arrows-offset: 1.5em;
+}
+
 header.site-header {
   margin-bottom: 3rem;
 }
@@ -10,7 +14,9 @@ header.site-header {
 
 nav.top-nav {
   display: flex;
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  row-gap: var(--selected-arrows-offset);
+  column-gap: var(--flow-list-column-gap);
   justify-content: center;
   align-items: center;
 }
@@ -36,5 +42,5 @@ header nav a.active::after {
   color: var(--color-fg);
   position: absolute;
   left: calc(50% - (3ch / 2));
-  bottom: -1.5em;
+  bottom: calc(var(--selected-arrows-offset) * -1);
 }
