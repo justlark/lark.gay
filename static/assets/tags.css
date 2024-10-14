@@ -17,7 +17,7 @@ ul.tag-list .current-tag {
    * ::before and ::after pseudo-elements.
    */
   position: relative;
-  color: var(--color-bright-cyan);
+  color: var(--color-clickable-selected);
 }
 
 /*

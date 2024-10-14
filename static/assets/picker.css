@@ -20,7 +20,7 @@
   all: unset;
   cursor: pointer;
   font-weight: bold;
-  color: var(--color-bright-blue);
+  color: var(--color-clickable);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;

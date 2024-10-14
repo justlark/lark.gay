@@ -224,6 +224,9 @@ body[data-theme="gruvbox"] {
 body {
   --color-fg: var(--color-white);
   --color-bg: var(--color-black);
+  --color-heading: var(--color-bright-magenta);
+  --color-clickable: var(--color-bright-blue);
+  --color-clickable-selected: var(--color-bright-cyan);
 }
 
 .black,

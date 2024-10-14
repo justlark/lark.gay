@@ -67,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-bright-magenta);
+  color: var(--color-heading);
   font-weight: 700;
 }
 
@@ -77,7 +77,7 @@ p {
 
 a {
   font-weight: bold;
-  color: var(--color-bright-blue);
+  color: var(--color-clickable);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
