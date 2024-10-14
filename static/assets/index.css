@@ -4,7 +4,9 @@
 
 /* These can be imported in any order. */
 @import url("/assets/base.css");
-@import url("/assets/header.css");
 @import url("/assets/page.css");
-@import url("/assets/log.css");
+@import url("/assets/header.css");
+@import url("/assets/post.css");
+@import url("/assets/posts.css");
+@import url("/assets/tags.css");
 @import url("/assets/picker.css");

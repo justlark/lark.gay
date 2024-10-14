@@ -1,0 +1,58 @@
+table.post-list tbody td {
+  text-align: right;
+  white-space: nowrap;
+  padding-right: 1ch;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+table.post-list tbody td.ls-filename {
+  text-align: left;
+  white-space: normal;
+}
+
+/*
+ * Show some extra space between the table row for the RSS feed and the table
+ * rows for the actual blog posts. However, we only apply the padding to the
+ * final column, to prevent unwanted internal spacing when the row wraps on
+ * narrow screens.
+ */
+table.post-list tbody tr.feed-entry td.ls-filename {
+  padding-bottom: 0.5lh;
+}
+
+@media (max-width: 768px) {
+  /*
+   * On narrow screens, the table rows needs to be able to wrap. See below to
+   * understand why we need to explicitly set the font size.
+   */
+  table.post-list tbody td {
+    display: inline-block;
+    font-size: var(--font-size-base);
+  }
+
+  /*
+   * Firefox implicitly adds a whitespace character between the table cells
+   * when they're `display: inline-block`, but Chrome does not. To fix this, we
+   * set the font size to 0 for the table cell, and then overwrite the font
+   * size for the actual tag text.
+   */
+  table.post-list tbody tr {
+    font-size: 0;
+  }
+
+  /*
+   * Make sure the "filename" gets its own line, to improve legibility.
+   */
+  table.post-list tbody td.ls-filename {
+    width: 100%;
+  }
+
+  /*
+   * Add a bit more padding between the table rows, to improve legibility on
+   * narrow screens.
+   */
+  table.post-list tbody tr td.ls-filename {
+    padding-bottom: 0.5lh;
+  }
+}

@@ -1,0 +1,109 @@
+.post-body {
+  text-align: justify;
+  border: 1px solid var(--color-fg);
+  padding: 1.5rem;
+}
+
+/*
+ * Justified text looks bad on narrow screens and the left/right borders take
+ * up too much horizontal space.
+ */
+@media (max-width: 640px) {
+  .post-body {
+    text-align: left;
+    border: none;
+    border-top: 1px solid var(--color-fg);
+    padding: 0;
+    padding-top: 1lh;
+  }
+}
+
+/*
+ * We're making the assumption that posts will end with a <p></p>. This isn't
+ * necessarily true, but it's difficult to do this any other way.
+ */
+
+.post-content > p:first-of-type {
+  margin-top: 0;
+}
+
+.post-content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+/*
+ * Add the blinking cursor to the end of the post, but only if the user hasn't
+ * disabled animations.
+ */
+.post-body .post-content > p:last-of-type::after {
+  content: " █";
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .post-body .post-content > p:last-of-type::after {
+    animation: none;
+  }
+}
+
+/*
+ * "eob" means "end of buffer".
+ */
+
+.post-decoration .vim-eob {
+  font-weight: bold;
+  color: var(--color-bright-blue);
+}
+
+.post-decoration .vim-statusline {
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-fg);
+  background-color: var(--color-bright-black);
+}
+
+.post-decoration .vim-statusline span {
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  /*
+   * There's not enough horizontal space to display the word count on narrow
+   * screens. It's mostly just for flavor, and the word count is already
+   * displayed on the index page.
+   */
+  .post-decoration .vim-statusline .vim-word-count {
+    display: none;
+  }
+}
+
+footer.post-footer {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer.post-footer ul.tag-list {
+  justify-content: right;
+}
+
+/*
+ * Don't let the "Back" text and arrow wrap to different lines.
+ */
+footer.post-footer .back-link {
+  white-space: nowrap;
+}
+
+.comments {
+  margin-top: 3rem;
+}
