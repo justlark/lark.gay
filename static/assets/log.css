@@ -161,21 +161,38 @@ ul.tag-list li {
 }
 
 ul.tag-list .current-tag {
+  /*
+   * We use `position: relative` here so we can use `position: absolute` in the
+   * ::before and ::after pseudo-elements.
+   */
+  position: relative;
   color: var(--color-bright-cyan);
 }
 
 /*
  * Using `display: inline-block` prevents the text decoration from applying to
  * the ::before and ::after pseudo-elements.
+ *
+ * We use `position: absolute` so that the brackets we add around the currently
+ * selected tag don't shift the layout. It's frustrating for users when
+ * clicking a button/link shifts the layout of the buttons on the page.
  */
 
 ul.tag-list .current-tag::before {
   content: "[";
+  position: absolute;
   display: inline-block;
+
+  /*
+   * Otherwise, the opening bracket will overlap the first character of the
+   * tag.
+   */
+  left: -1ch;
 }
 
 ul.tag-list .current-tag::after {
   content: "]";
+  position: absolute;
   display: inline-block;
 }
 
