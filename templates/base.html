@@ -16,7 +16,8 @@
     {% endif %}
   </title>
   <meta name="description" content="{{ description }}" />
-  <link rel="icon" href="/assets/favicon.webp" />
+  <link rel="icon"
+    href="{{ resize_image(path='/assets/icon.webp', width=256, height=256, format='webp') | get(key='url') }}" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
