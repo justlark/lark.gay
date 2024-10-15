@@ -1,9 +1,5 @@
 {% block meta_vars %}{% endblock %}
 
-{% set social_icon = "/assets/icon-padded.webp" %}
-{% set social_icon_type = "image/webp" %}
-{% set social_icon_alt = "A rocket ship taking off" %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,15 +38,15 @@
   <meta property="og:site_name" content="{{ config.title }}" />
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description }}" />
-  <meta property="og:image" content="{{ social_icon }}" />
-  <meta property="og:image:type" content="{{ social_icon_type }}" />
-  <meta property="og:image:alt" content="{{ social_icon_alt }}" />
+  <meta property="og:image" content="{{ config.extra.social_icon }}" />
+  <meta property="og:image:type" content="{{ config.extra.social_icon_type }}" />
+  <meta property="og:image:alt" content="{{ config.extra.social_icon_alt }}" />
 
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:title" content="{{ title }}" />
   <meta property="twitter:description" content="{{ description }}" />
-  <meta property="twitter:image" content="{{ social_icon }}" />
-  <meta property="twitter:image:alt" content="{{ social_icon_alt }}" />
+  <meta property="twitter:image" content="{{ config.extra.social_icon }}" />
+  <meta property="twitter:image:alt" content="{{ config.extra.social_icon_alt }}" />
 
   {% block jsonld %}
   <script type="application/ld+json">

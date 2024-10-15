@@ -8,7 +8,7 @@ date = 2024-10-14
 tags = ["tech"]
 
 [extra]
-id = "a1184477-288e-446f-8cf3-41b389c0742b"
+uuid = "a1184477-288e-446f-8cf3-41b389c0742b"
 +++
 
 A few months ago I bought myself an electric typewriter. Friends were somewhat
