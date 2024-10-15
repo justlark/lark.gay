@@ -1,7 +1,7 @@
 +++
 title = "A case for typewriters"
 description = """Why I own and use an electric typewriter, and what I find
-fulfilling about it"""
+fulfilling about it."""
 date = 2024-10-14
 
 [taxonomies]

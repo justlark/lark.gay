@@ -1,6 +1,6 @@
 +++
 title = "Referring to the lark"
-description = "How I like my friends to refer to me"
+description = "How I like my friends to refer to me."
 date = 2024-10-11
 
 [taxonomies]
