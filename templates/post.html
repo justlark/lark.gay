@@ -22,11 +22,6 @@
 </script>
 {% endblock %}
 
-{% block heading %}
-{% set section = get_section(path="log/_index.md", metadata_only=true) %}
-{{ section.title }}
-{% endblock %}
-
 {% block content %}
 
 {% set vim_file_path = "./log/" ~ page.slug ~ ".md" %}
