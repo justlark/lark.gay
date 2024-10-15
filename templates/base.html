@@ -26,7 +26,10 @@
 
   <link rel="stylesheet" type="text/css" href="/assets/index.css" />
 
+  {% if canonical_url is defined %}
   <link rel="canonical" href="{{ canonical_url }}" />
+  {% endif %}
+
   {% if term is defined %}
   <link rel="alternate" type="application/atom+xml" title="Feed"
     href="{{ get_taxonomy_url(kind='tags', name=term.name) }}feed.xml" />
