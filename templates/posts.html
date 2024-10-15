@@ -86,11 +86,11 @@
       </td>
       <td class="ls-filename">
         {% if term is defined %}
-        <a class="white" href="{{ get_taxonomy_url(kind='tags', name=term.name) }}atom.xml">
+        <a class="white" href="{{ get_taxonomy_url(kind='tags', name=term.name) }}feed.xml">
           .RSS Feed (#{{ term.name }})
         </a>
         {% else %}
-        <a class="white" href="{{ get_url(path='log/atom.xml' , trailing_slash=false) }}">
+        <a class="white" href="{{ get_url(path='log/feed.xml' , trailing_slash=false) }}">
           .RSS Feed
         </a>
         {% endif %}

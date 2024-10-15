@@ -13,10 +13,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>
-    {% if title == config.extra.site_title %}
+    {% if title == config.title %}
     {{ title }}
     {% else %}
-    {{ title ~ " | " ~ config.extra.site_title }}
+    {{ title ~ " | " ~ config.title }}
     {% endif %}
   </title>
   <meta name="description" content="{{ description }}" />
@@ -30,11 +30,16 @@
   <link rel="stylesheet" type="text/css" href="/assets/index.css" />
 
   <link rel="canonical" href="{{ canonical_url }}" />
+  {% if term is defined %}
   <link rel="alternate" type="application/atom+xml" title="Feed"
-    href="{{ get_url(path='log/atom.xml', trailing_slash=false) }}" />
+    href="{{ get_taxonomy_url(kind='tags', name=term.name) }}feed.xml" />
+  {% else %}
+  <link rel="alternate" type="application/atom+xml" title="Feed"
+    href="{{ get_url(path='log/feed.xml', trailing_slash=false) }}" />
+  {% endif %}
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="{{ config.extra.site_title }}" />
+  <meta property="og:site_name" content="{{ config.title }}" />
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:image" content="{{ social_icon }}" />

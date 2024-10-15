@@ -3,13 +3,13 @@
 {% block meta_vars %}
 {% set this = page | default(value=section) %}
 {% set canonical_url = this.permalink %}
-{% set title = this.title | default(value=config.extra.site_title) %}
-{% set description = this.description | default(value=config.extra.site_description) %}
+{% set title = this.title | default(value=config.title) %}
+{% set description = this.description | default(value=config.description) %}
 {% endblock %}
 
 {% block body %}
 <header class="site-header" aria-labelledby="site-title">
-  <h1 id="site-title"><a href="/">{{ config.extra.site_title }}</a></h1>
+  <h1 id="site-title"><a href="/">{{ config.title }}</a></h1>
 
   <nav class="top-nav">
     <!-- The home link is deliberately never highlighted as active. -->
