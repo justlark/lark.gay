@@ -3,6 +3,7 @@ title = "A case for typewriters"
 description = """Why I own and use an electric typewriter, and what I find
 fulfilling about it."""
 date = 2024-10-14
+updated = 2024-10-15
 
 [taxonomies]
 tags = ["tech"]
@@ -11,54 +12,8 @@ tags = ["tech"]
 uuid = "a1184477-288e-446f-8cf3-41b389c0742b"
 +++
 
-A few months ago I bought myself an electric typewriter. Friends were somewhat
-baffled, given that I work in tech, but I've found that I actually really enjoy
-using it.
-
-For some background on what "electric typewriter" means, there are three main
-categories of typewriters:
-
-1. Manual typewriters
-2. Electric typewriters
-3. Electronic typewriters
-
-Manual typewriters are the ones I think most folks are familiar with; each
-keystroke moves a lever that causes the type element to strike the page, and
-then the carriage moves the page one space to the left.
-
-Electric typewriters are different in that pressing a key trips a sensor that
-triggers a motor to move the type element.
-
-With electronic typewriters, pressing a key adds the letter to an internal
-memory buffer and displays it on a screen. Once you've buffered enough letters
-(usually a single word), the typewriter types them all at once. This lets you
-correct typos by seeing what you're about to type before it's committed to
-paper.
-
-Electric and electronic typewriters often come with some additional features
-that aren't possible on a manual typewriter. Here are some of the notable
-features of mine:
-
-- **Correctable text**: There's a key to "erase" the previous character. Rather
-  than strike an ink ribbon to put ink on the page, the type element strikes a
-  piece of tape that lifts the ink back off the page.
-- **Auto-centering text**: You can automatically center text by typing a full
-  line into the memory buffer, after which it calculates what the offset should
-  be to center the text and types it all at once.
-- **Auto-return**: The typewriter automatically moves the carriage back to the
-  left margin when you reach the right margin.
-- **Bold and underline**: The typewriter can strike the page multiple times to
-  make text bold, or with a separate underline character to underline it.
-- **Superscript and subscript**: The typewriter feeds the page a half line up or
-  down.
-
-I like the my electronic typewriter because it's a good compromise between the
-manual and electronic ones; I get the stimmy tactile feedback as the type
-element strikes the page—which is a big part of the appeal for me—but I also
-don't have to be stressed about typos or wasting paper.
-
-But I still haven't answered the question of why own a typewriter in the first
-place.
+A few months ago I bought myself a typewriter. Friends were somewhat baffled,
+given that I work in tech, but I've found that I actually really enjoy using it.
 
 Between my job and hobbies, I spend a *lot* of time in front of a screen.
 Computers are attention-grabbing and pull me away from my physical environment;
