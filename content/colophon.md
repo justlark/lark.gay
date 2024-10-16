@@ -45,6 +45,11 @@ Here are some of the cool and less-obvious features of this site:
 - [Atom](https://validator.w3.org/feed/docs/atom.html) for web feeds (I use the
   term "RSS" on the site because it's more widely recognized). I love web feeds
   and wish more people used them.
+- [XSLT stylesheet](https://developer.mozilla.org/en-US/docs/Web/XSLT) to render
+  the Atom feed as a [web page](/log/feed.xml). This is a very cool and
+  underutilized feature of browsers that allows you to define a
+  [stylesheet](/assets/atom.xsl) which renders an XML document as an XHTML
+  document.
 - [Open Graph](https://ogp.me/) and [Twitter
   Card](https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards)
   metadata for rich previews when sharing links.
