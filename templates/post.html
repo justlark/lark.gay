@@ -30,6 +30,16 @@
 
 <div class="page-lead">
   <p>{{ page.description }}</p>
+  {% if page.updated and page.updated != page.date %}
+  <p>
+    <i>
+      {% set last_updated = page.updated | default(value=page.date) %}
+      Last updated: <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
+        {{ last_updated | date(timezone="Etc/UCT", format="%e %b %Y") }}
+      </time>
+    </i>
+  </p>
+  {% endif %}
 </div>
 
 <article aria-labelledby="post-title">
