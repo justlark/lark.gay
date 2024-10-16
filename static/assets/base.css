@@ -99,3 +99,14 @@ ol {
 address {
   font-style: normal;
 }
+
+hr {
+  border: none;
+  margin-bottom: 2lh;
+}
+
+hr::before {
+  content: "-----";
+  color: var(--color-fg);
+  font-weight: bold;
+}
