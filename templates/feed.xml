@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/atom.xsl" media="screen"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ lang }}">
   <title>{{ config.title }}
-    {%- if term %} | {{ term.name }}
+    {%- if term %} (#{{ term.name }})
     {%- endif -%}
   </title>
   {%- if config.description %}
