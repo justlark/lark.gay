@@ -1,7 +1,7 @@
 +++
 title = "A case for typewriters"
-description = """Why I own and use an electric typewriter, and what I find
-fulfilling about it."""
+description = """Why I own and use a typewriter, and what I find fulfilling
+about it."""
 date = 2024-10-14
 updated = 2024-10-15
 
