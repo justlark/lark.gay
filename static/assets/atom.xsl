@@ -34,21 +34,23 @@
       </head>
       <body data-theme="catppuccin-mocha">
         <main class="feed" aria-labelledby="site-title">
-          <h1 id="site-title">
-            <xsl:value-of select="atom:feed/atom:title" />
-          </h1>
-          <div class="page-lead">
-            <p>
-              This is a feed of log entries from Lark Space.
-            </p>
-            <p>
-              Copy this URL into your RSS reader.
-            </p>
-            <p>
-              <span>&lt;- </span>
-              <a href="/log/">Back</a>
-            </p>
-          </div>
+          <section aria-labelledby="site-title">
+            <h1 id="site-title">
+              <xsl:value-of select="atom:feed/atom:title" />
+            </h1>
+            <div class="page-lead">
+              <p>
+                This is a feed of log entries from Lark Space.
+              </p>
+              <p>
+                Copy this URL into your RSS reader.
+              </p>
+              <nav>
+                <span aria-hidden="true">&lt;- </span>
+                <a href="/log/">Back</a>
+              </nav>
+            </div>
+          </section>
           <xsl:apply-templates select="atom:feed/atom:entry" />
         </main>
       </body>
@@ -84,7 +86,14 @@
         </ul>
       </xsl:if>
     </article>
-    <hr />
+    <!--
+      We only use an <hr> here to visually distinguish entries, where it might
+      otherwise be difficult to see where one starts and the next begins.
+      Screen reader users, however, will be able to more easily distinguish them
+      because each is an <article>. So, we hide it from screen readers to reduce
+      semantic clutter.
+      -->
+    <hr aria-hidden="true" />
   </xsl:template>
   <xsl:template name="date">
     <xsl:param name="date" />

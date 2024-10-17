@@ -35,7 +35,7 @@
   <p>
     <i>
       {% if term is defined %}
-      Showing only posts tagged <strong class="bright-cyan">#{{ term.name }}</strong>.
+      Showing only posts tagged <strong class="selected-tag">#{{ term.name }}</strong>.
       {% else %}
       Showing all posts.
       {% endif %}
@@ -45,7 +45,7 @@
 </div>
 
 <p>
-  <code><span class="bright-white">$</span> ls ./tags/</code>
+  <code><span class="shell-prompt">$</span> ls ./tags/</code>
 </p>
 
 <p>
@@ -66,17 +66,17 @@
 </p>
 
 <p>
-  <code><span class="bright-white">$</span> ls -la ./log/</code>
+  <code><span class="shell-prompt">$</span> ls -la ./log/</code>
 </p>
 
 <table class="post-list">
   <tbody>
     <tr class="feed-entry">
-      <td><span class="bright-red">0775</span></td>
-      <td><span class="bright-yellow">nobody</span></td>
-      <td><span class="bright-green">0 words</span></td>
+      <td><span class="permissions">0775</span></td>
+      <td><span class="author">nobody</span></td>
+      <td><span class="word-count">0 words</span></td>
       <td>
-        <span class="bright-blue">
+        <span class="publish-date">
           <time datetime="{{ latest_publish_time | date(timezone='Etc/UCT', format='%F') }}">
             {{ latest_publish_time | date(timezone="Etc/UCT", format=datetime_format) }}
           </time>
@@ -104,13 +104,13 @@
     {% endif %}
 
     <tr>
-      <td><span class="bright-red">0664</span>
+      <td><span class="permissions">0664</span>
       </td>
-      <td><span class="bright-yellow">{{ author | lower }}</span></td>
-      <td><span class="bright-green">{{ post.word_count }} words</span></td>
+      <td><span class="author">{{ author | lower }}</span></td>
+      <td><span class="word-count">{{ post.word_count }} words</span></td>
       <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
       <td>
-        <span class="bright-blue">
+        <span class="publish-date">
           <time datetime="{{ post.date | date(timezone='Etc/UCT', format='%F') }}">
             {{ post.date | date(timezone="Etc/UCT", format=datetime_format) }}
           </time>

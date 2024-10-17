@@ -5,8 +5,6 @@ template = "colophon.html"
 date = 2024-10-12
 +++
 
-## Colophon
-
 This is a static site built with [Zola](https://www.getzola.org/).
 
 ### Philosophy

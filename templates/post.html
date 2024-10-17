@@ -55,11 +55,15 @@
     </div>
 
     <div class="post-decoration">
-      <div class="vim-eob">~</div>
-      <div class="vim-eob">~</div>
-      <div class="vim-eob">~</div>
-      <div class="vim-eob">~</div>
-      <div class="vim-eob">~</div>
+      <!--
+        This is noise that's not necessary to understand the content of the
+        document or the theming.
+      -->
+      <div class="vim-eob" aria-hidden="true">~</div>
+      <div class="vim-eob" aria-hidden="true">~</div>
+      <div class="vim-eob" aria-hidden="true">~</div>
+      <div class="vim-eob" aria-hidden="true">~</div>
+      <div class="vim-eob" aria-hidden="true">~</div>
 
       <div class="vim-statusline">
         <div>
@@ -73,9 +77,15 @@
     </div>
   </div>
 
-  <footer class="post-footer">
+  <!--
+    <footer> elements don't automatically get the `contentinfo` role when
+    they're not a top-level footer.
+  -->
+  <footer class="post-footer" role="contentinfo">
     <span class="back-link">
-      &lt;-
+      <span aria-hidden="true">
+        &lt;-
+      </span>
       <a href="{{ get_url(path='@/log/_index.md') }}">Back</a>
     </span>
 

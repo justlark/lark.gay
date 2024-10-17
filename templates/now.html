@@ -17,7 +17,8 @@
   </p>
 </div>
 
-<div class="page-body">
+<article aria-labelledby="article-title" class="page-body">
+  <h2 id="article-title">{{ page.title }}</h2>
   {{ page.content | safe }}
-</div>
+</article>
 {% endblock %}
