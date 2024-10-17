@@ -30,7 +30,6 @@
 
 <div class="page-lead">
   <p>{{ page.description }}</p>
-  {% if page.updated and page.updated != page.date %}
   <p>
     <i>
       {% set last_updated = page.updated | default(value=page.date) %}
@@ -39,7 +38,6 @@
       </time>
     </i>
   </p>
-  {% endif %}
 </div>
 
 <article aria-labelledby="post-title">
