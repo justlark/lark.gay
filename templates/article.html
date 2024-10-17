@@ -3,14 +3,14 @@
 {% block content %}
 <div class="page-lead">
   <p>
-    This is my <a href="https://nownownow.com/about" target="_blank">Now Page</a>.
-    Here's what I'm up to right now.
+    {{ page.description | markdown(inline=true) | safe }}
   </p>
 
   <p>
     <i>
       {% set last_updated = page.updated | default(value=page.date) %}
-      Last updated: <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
+      Last updated:
+      <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
         {{ last_updated | date(timezone="Etc/UCT", format="%e %b %Y") }}
       </time>
     </i>

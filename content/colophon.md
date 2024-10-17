@@ -1,7 +1,9 @@
 +++
 title = "Colophon"
-description = "About the making of this site"
-template = "colophon.html"
+description = """A colophon is a section at the back of a book which gives
+details about its creation and publication. Here are some details about this
+site. Credit to [beeps](https://beeps.website/) for the idea."""
+template = "article.html"
 date = 2024-10-12
 +++
 

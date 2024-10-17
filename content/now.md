@@ -1,7 +1,8 @@
 +++
 title = "Lark Now"
-description = "What Lark is up to right now"
-template = "now.html"
+description = """This is my [Now Page](https://nownownow.com/about). Here's what
+I'm up to right now."""
+template = "article.html"
 date = 2024-10-10
 +++
 
