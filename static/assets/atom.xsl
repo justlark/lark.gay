@@ -39,7 +39,7 @@
           </h1>
           <div class="page-lead">
             <p>
-              This is an feed of log entries from Lark Space.
+              This is a feed of log entries from Lark Space.
             </p>
             <p>
               Copy this URL into your RSS reader.
