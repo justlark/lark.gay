@@ -24,13 +24,13 @@ I don't like this sensation of realizing I've been absorbed for hours, and
 typewriters solve that for me. Using a typewriter is a very manual and
 intentional process that I find grounding and meditative. I'm sitting down to
 use it for a specific purpose, without any distractions to divert my attention.
-The process of it—lifting the bail, inserting the paper, turning the platen,
-setting margins—is a ritual I really enjoy.
+The process of it--lifting the bail, inserting the paper, turning the platen,
+setting margins--is a ritual I really enjoy.
 
 I mostly use it to write letters; I enjoy exchanging letters with my friends. I
 find them to be a more personal and thoughtful way to express my appreciation
-for someone—it's easier to be vulnerable the more asynchronous the communication
-method is.
+for someone--it's easier to be vulnerable the more asynchronous the
+communication method is.
 
 I also use it for taking notes occasionally. This one is situational, because I
 need most of my notes in my notes app so I always have them available and can

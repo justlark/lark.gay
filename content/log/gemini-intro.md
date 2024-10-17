@@ -6,7 +6,7 @@ private by default."""
 date = 2024-10-15
 
 [taxonomies]
-tags = ["tech"]
+tags = ["tech", "smallweb"]
 
 [extra]
 uuid = "6127366a-d257-48cc-bc3a-039402eb2cb9"
@@ -18,7 +18,7 @@ uuid = "6127366a-d257-48cc-bc3a-039402eb2cb9"
 to the web. I'll often jokingly refer to it as "Web 0.5", playing on terms like
 "Web 2.0" and "Web 3.0".
 
-Over the past few decades, the web has grown into a behemoth—a massive, global
+Over the past few decades, the web has grown into a behemoth--a massive, global
 platform for building rich applications and networks that serve billions of
 users. The smallweb movement presents an alternative: small websites and small
 networks. Tight-knit communities of peers. A focus on content over presentation.
@@ -33,7 +33,7 @@ and the commodification of our attention.
 
 Gemini is a return to the principles of the early web: a network of documents
 that link to one another. It's private, secure, and lightweight by
-default—deliberately designed to head off any attempts to expand its scope or
+default--deliberately designed to head off any attempts to expand its scope or
 complexity.
 
 Instead of massive social media networks controlled by big tech monopolies,
