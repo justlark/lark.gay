@@ -5,3 +5,6 @@
     Referrer-Policy: strict-origin
     Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
     Cache-Control: public, max-age=900
+
+/*/feed.xml
+  Content-Type: application/atom+xml
