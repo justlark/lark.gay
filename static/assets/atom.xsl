@@ -78,13 +78,16 @@
           </xsl:call-template>
         </time>
       </p>
-      <ul class="tag-list">
-        <xsl:for-each select="atom:category">
-          <li> #<xsl:value-of select="@label" />
-          </li>
-        </xsl:for-each>
-      </ul>
+      <xsl:if test="atom:category">
+        <ul class="tag-list">
+          <xsl:for-each select="atom:category">
+            <li> #<xsl:value-of select="@label" />
+            </li>
+          </xsl:for-each>
+        </ul>
+      </xsl:if>
     </article>
+    <hr />
   </xsl:template>
   <xsl:template name="date">
     <xsl:param name="date" />
