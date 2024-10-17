@@ -1,8 +1,9 @@
 {% extends "posts.html" %}
 
 {% block meta_vars %}
+{% set section = get_section(path="log/_index.md") %}
 {% set canonical_url = current_url %}
-{% set title = "Tag: " ~ term.name %}
+{% set title = section.title ~ " (#" ~ term.name ~ ")" %}
 {% set description = "Log posts tagged '" ~ term.name ~ "'" %}
 {% endblock %}
 
