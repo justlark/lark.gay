@@ -19,6 +19,9 @@
 }
 
 /*
+ * We want to avoid an unnecessary gap between the content and the border at
+ * the top and bottom of posts.
+ *
  * We're making the assumption that posts will end with a <p></p>. This isn't
  * necessarily true, but it's difficult to do this any other way.
  */
@@ -28,6 +31,14 @@
 }
 
 .post-content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+/*
+ * Handle the case where a post ends with footnotes.
+ */
+.post-content > ol:last-of-type,
+.post-content > ol:last-of-type > li:last-of-type > p {
   margin-bottom: 0;
 }
 
