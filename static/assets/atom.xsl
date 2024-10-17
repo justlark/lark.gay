@@ -33,7 +33,7 @@
         <link rel="stylesheet" href="/assets/index.css" />
       </head>
       <body data-theme="catppuccin-mocha">
-        <main aria-labelledby="site-title">
+        <main class="feed" aria-labelledby="site-title">
           <h1 id="site-title">
             <xsl:value-of select="atom:feed/atom:title" />
           </h1>

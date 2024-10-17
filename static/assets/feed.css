@@ -1,4 +1,4 @@
-article > h2 {
+.feed article > h2 {
   font-size: var(--font-size-base);
   font-weight: bold;
   color: var(--color-fg);
