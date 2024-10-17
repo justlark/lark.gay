@@ -57,12 +57,9 @@
   <xsl:template match="atom:feed/atom:entry">
     <article>
       <p>
-        <a>
-          <xsl:attribute name="href">
-            <xsl:value-of select="atom:link[@rel='alternate']/@href" />
-          </xsl:attribute>
+        <strong>
           <xsl:value-of select="atom:title" />
-        </a>
+        </strong>
       </p>
       <p>
         <span>
