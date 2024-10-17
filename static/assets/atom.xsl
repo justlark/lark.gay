@@ -56,11 +56,11 @@
   </xsl:template>
   <xsl:template match="atom:feed/atom:entry">
     <article>
-      <p>
-        <strong>
-          <xsl:value-of select="atom:title" />
-        </strong>
-      </p>
+      <xsl:attribute name="aria-labelledby">article-title-<xsl:value-of select="position()" /></xsl:attribute>
+      <h2>
+        <xsl:attribute name="id">article-title-<xsl:value-of select="position()" /></xsl:attribute>
+        <xsl:value-of select="atom:title" />
+      </h2>
       <p>
         <span>
           <xsl:value-of select="atom:author/atom:name" />
