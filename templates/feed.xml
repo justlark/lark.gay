@@ -9,12 +9,12 @@
   <subtitle>{{ config.description }}</subtitle>
   {%- endif %}
   {% set icon_metadata = get_image_metadata(path=config.extra.social_icon) %}
-  <icon>{{ resize_image(path=config.extra.social_icon, width=icon_metadata.width, height=icon_metadata.height, format="png") | get(key="url") }}</icon>
-  <link rel="self" type="application/atom+xml" href="{{ feed_url | safe }}" />
+  <icon>{{ resize_image(path=config.extra.social_icon, width=icon_metadata.width, height=icon_metadata.height, format="png") | get(key="url") | escape_xml | safe }}</icon>
+  <link rel="self" type="application/atom+xml" href="{{ feed_url | escape_xml | safe }}" />
   <link rel="alternate" type="text/html" href="{% if section %}{{ section.permalink | escape_xml | safe }}{% else %}{{ config.base_url | escape_xml | safe }}{% endif %}" />
   <generator uri="https://www.getzola.org/">Zola</generator>
   <updated>{{ last_updated | date(format="%+") }}</updated>
-  <id>{{ feed_url | safe }}</id>
+  <id>{{ feed_url | escape_xml | safe }}</id>
   {%- if config.author %}
   <author>
     <name>{{ config.author }}</name>
@@ -35,9 +35,9 @@
     </author>
     {% endfor %}
     {% for tag in page.taxonomies.tags | default(value=[]) %}
-    <category term="{{ tag }}" label="{{ tag }}" scheme="{{ get_taxonomy(kind='tags') | get(key='permalink') }}" />
+    <category term="{{ tag }}" label="{{ tag }}" scheme="{{ get_taxonomy(kind='tags') | get(key='permalink') | escape_xml | safe }}" />
     {% endfor %}
-    <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}" />
+    <link rel="alternate" type="text/html" href="{{ page.permalink | escape_xml | safe }}" />
     <id>urn:uuid:{{ page.extra.uuid }}</id>
     {% if page.summary %}
     <summary type="html">{{ page.summary }}</summary>
