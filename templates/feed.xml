@@ -8,8 +8,7 @@
   {%- if config.description %}
   <subtitle>{{ config.description }}</subtitle>
   {%- endif %}
-  {% set icon_metadata = get_image_metadata(path=config.extra.social_icon) %}
-  <icon>{{ resize_image(path=config.extra.social_icon, width=icon_metadata.width, height=icon_metadata.height, format="png") | get(key="url") | escape_xml | safe }}</icon>
+  <icon>{{ resize_image(path=config.extra.social_icon, width=128, height=128, format="png") | get(key="url") | escape_xml | safe }}</icon>
   <link rel="self" type="application/atom+xml" href="{{ feed_url | escape_xml | safe }}" />
   <link rel="alternate" type="text/html" href="{% if section %}{{ section.permalink | escape_xml | safe }}{% else %}{{ config.base_url | escape_xml | safe }}{% endif %}" />
   <generator uri="https://www.getzola.org/">Zola</generator>
