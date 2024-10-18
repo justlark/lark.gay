@@ -33,6 +33,7 @@
         <link rel="stylesheet" href="/assets/index.css" />
       </head>
       <body data-theme="catppuccin-mocha">
+        <script src="/assets/theme.js" defer="true"></script>
         <main class="feed" aria-labelledby="site-title">
           <section aria-labelledby="site-title">
             <h1 id="site-title">
