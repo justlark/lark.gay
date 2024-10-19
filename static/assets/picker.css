@@ -6,24 +6,23 @@
   display: none;
 }
 
-#theme-picker ul {
-  display: flex;
-  flex-wrap: wrap;
+#theme-picker ul.tag-list {
   justify-content: center;
-  column-gap: var(--flow-list-column-gap);
-  row-gap: var(--flow-list-column-gap);
-  padding-left: 0;
-  list-style: none;
 }
 
 #theme-picker ul button {
-  all: unset;
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
   font-weight: bold;
-  color: var(--color-clickable);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
+}
+
+#theme-picker ul button:not(.current-tag) {
+  color: var(--color-clickable);
 }
 
 #theme-picker ul button:hover {
