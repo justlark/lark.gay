@@ -4,7 +4,7 @@ description = """A colophon is a section at the back of a book which gives
 details about its creation and publication. Here are some details about this
 site. Credit to [beeps](https://beeps.website/) for the idea."""
 template = "article.html"
-date = 2024-10-12
+date = 2024-10-19
 +++
 
 This is a static site built with [Zola](https://www.getzola.org/).
@@ -48,8 +48,8 @@ Here are some of the cool and less-obvious features of this site:
 - [XSLT stylesheet](https://developer.mozilla.org/en-US/docs/Web/XSLT) to render
   the Atom feed as a [web page](/log/feed.xml). This is a very cool and
   underutilized feature of browsers that allows you to define a
-  [stylesheet](/assets/atom.xsl) which renders an XML document as an XHTML
-  document.
+  [stylesheet](https://github.com/justlark/lark.gay/blob/main/static/assets/atom.xsl)
+  which renders an XML document as an XHTML document client-side, without JS.
 - [Open Graph](https://ogp.me/) and [Twitter
   Card](https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards)
   metadata for rich previews when sharing links.
