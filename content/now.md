@@ -1,7 +1,6 @@
 +++
 title = "Lark Now"
-description = """This is my [Now Page](https://nownownow.com/about). Here's what
-I'm up to right now."""
+description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
 +++

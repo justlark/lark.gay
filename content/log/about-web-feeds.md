@@ -1,8 +1,6 @@
 +++
 title = "Web feeds: An antidote to doomscrolling"
-description = """Why is nobody using web feeds anymore? You don't need to let
-corporations' massive machine learning models control your mental health--we've
-had the technology to fix this for over two decades."""
+description = "Why is nobody using web feeds anymore? You don't need to let corporations' massive machine learning models control your mental health--we've had the technology to fix this for over two decades."
 date = 2024-10-17
 
 [taxonomies]

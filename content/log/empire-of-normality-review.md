@@ -1,9 +1,6 @@
 +++
 title = "*Empire of Normality*: A review"
-description = """I recently read *Empire of Normality* by Robert Chapman, a
-history of how we conceptualize neurodiversity, an indictment of capitalism's
-role in pathologizing difference, and an argument that neurodivergent liberation
-is impossible under capitalism. Here's my review."""
+description = "I recently read *Empire of Normality* by Robert Chapman, a history of how we conceptualize neurodiversity, an indictment of capitalism's role in pathologizing difference, and an argument that neurodivergent liberation is impossible under capitalism. Here's my review."
 date = 2024-10-22
 
 [taxonomies]

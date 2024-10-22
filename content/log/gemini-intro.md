@@ -1,8 +1,6 @@
 +++
 title = "The Gemini protocol: Bringing back the old web"
-description = """The Gemini protocol distills the web down to its essentials,
-offering a calmer alternative to the modern web that's simple, lightweight, and
-private by default."""
+description = "The Gemini protocol distills the web down to its essentials, offering a calmer alternative to the modern web that's simple, lightweight, and private by default."
 date = 2024-10-15
 
 [taxonomies]
