@@ -19,11 +19,39 @@
 }
 
 /*
+ * Headings in posts should always start at <h3>, because <h1> and <h2> are
+ * already used for the page title and post title respectively, and we need to
+ * make sure we follow a semantic heading structure.
+ */
+
+.post-body .post-content :is(h3, h4, h5, h6) {
+  font-size: 1em;
+  color: var(--color-fg);
+}
+
+.post-body .post-content h3::before {
+  content: "# ";
+}
+
+.post-body .post-content h4::before {
+  content: "## ";
+}
+
+.post-body .post-content h5::before {
+  content: "### ";
+}
+
+.post-body .post-content h6::before {
+  content: "#### ";
+}
+
+/*
  * We want to avoid an unnecessary gap between the content and the border at
  * the top and bottom of posts.
  *
- * We're making the assumption that posts will end with a <p></p>. This isn't
- * necessarily true, but it's difficult to do this any other way.
+ * We're making the assumption that posts start with a paragraph or heading and
+ * will end with a paragraph or footnotes. This isn't necessarily true, but
+ * it's difficult to do this any other way.
  */
 
 .post-content > p:first-of-type {
@@ -32,6 +60,10 @@
 
 .post-content > p:last-of-type {
   margin-bottom: 0;
+}
+
+.post-content > :is(h3, h4, h5, h6):first-of-type {
+  margin-top: 0;
 }
 
 /*
