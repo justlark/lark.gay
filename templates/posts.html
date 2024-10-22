@@ -116,7 +116,11 @@
           </time>
         </span>
       </td>
-      <td class="ls-filename"><a class="white" href="{{ post.permalink }}">{{ post.title }}</a></td>
+      <td class="ls-filename">
+        <a class="white" href="{{ post.permalink }}">
+          {{ post.title | markdown(inline=true) | safe }}
+        </a>
+      </td>
     </tr>
     {% endfor %}
 </table>

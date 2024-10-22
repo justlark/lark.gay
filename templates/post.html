@@ -6,8 +6,8 @@
     "@context": "http://schema.org",
     "@type": "BlogPosting",
     "@id": {{ page.permalink ~ "#post" | json_encode() | safe }},
-    "name": {{ page.title | json_encode() | safe }},
-    "description": {{ page.description | json_encode() | safe }},
+    "name": {{ page.title | markdown(inline=true) | striptags | json_encode() | safe }},
+    "description": {{ page.description | markdown(inline=true) | striptags | json_encode() | safe }},
     "wordCount": {{ page.word_count | json_encode() | safe }},
     "keywords": {{ page.taxonomies.tags | default(value=[]) | join(sep=', ') | json_encode() | safe }},
     "datePublished": {{ page.date | date(timezone='Etc/UCT', format='%+') | json_encode() | safe }},
@@ -29,7 +29,7 @@
 <script src="/assets/vim.js" defer></script>
 
 <div class="page-lead">
-  <p>{{ page.description }}</p>
+  <p>{{ page.description | markdown(inline=true) | safe }}</p>
   <p>
     <i>
       {% set last_updated = page.updated | default(value=page.date) %}
@@ -41,7 +41,7 @@
 </div>
 
 <article aria-labelledby="post-title">
-  <h2 id="post-title">{{ page.title }}</h2>
+  <h2 id="post-title">{{ page.title | markdown(inline=true) | safe }}</h2>
 
   <p>
     <code><span class="bright-white">$</span> vim {{ vim_file_path }}</code>
