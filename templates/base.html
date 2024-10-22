@@ -9,12 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>
-    {% set stripped_title = title | markdown(inline=true) | striptags %}
-
-    {% if stripped_title == config.title %}
-    {{ stripped_title }}
+    {% if title == config.title %}
+    {{ title }}
     {% else %}
-    {{ stripped_title ~ " | " ~ config.title }}
+    {{ title ~ " | " ~ config.title }}
     {% endif %}
   </title>
   <meta name="description" content="{{ description }}" />

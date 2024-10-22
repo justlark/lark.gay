@@ -3,8 +3,8 @@
 {% block meta_vars %}
 {% set this = page | default(value=section) %}
 {% set canonical_url = this.permalink %}
-{% set title = this.title | default(value=config.title) %}
-{% set description = this.description | default(value=config.description) %}
+{% set title = this.title | default(value=config.title) | markdown(inline=true) | striptags %}
+{% set description = this.description | default(value=config.description) | markdown(inline=true) | striptags %}
 {% endblock %}
 
 {% block body %}
