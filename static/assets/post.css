@@ -19,30 +19,44 @@
 }
 
 /*
- * Headings in posts should always start at <h3>, because <h1> and <h2> are
- * already used for the page title and post title respectively, and we need to
- * make sure we follow a semantic heading structure.
+ * Headings in posts should always start at <h2>, because <h1> is already used
+ * for the post title, and we need to make sure we follow a semantic heading
+ * structure. Note that while we're *also* using <h1> for the site title, the
+ * heading structure should "reset" within an <article> because it's meant to
+ * serve as a standalone piece of content.
  */
 
-.post-body .post-content :is(h3, h4, h5, h6) {
+h1#post-title {
+  /*
+   * Make this <h1> look like an <h2> so it looks consistent within the context
+   * of the full page with the <h1> site title.
+   */
+  font-size: var(--font-size-h2);
+}
+
+.post-body .post-content :is(h2, h3, h4, h5, h6) {
   font-size: 1em;
   color: var(--color-fg);
 }
 
-.post-body .post-content h3::before {
+.post-body .post-content h2::before {
   content: "# ";
 }
 
-.post-body .post-content h4::before {
+.post-body .post-content h3::before {
   content: "## ";
 }
 
-.post-body .post-content h5::before {
+.post-body .post-content h4::before {
   content: "### ";
 }
 
-.post-body .post-content h6::before {
+.post-body .post-content h5::before {
   content: "#### ";
+}
+
+.post-body .post-content h5::before {
+  content: "##### ";
 }
 
 /*
@@ -62,7 +76,7 @@
   margin-bottom: 0;
 }
 
-.post-content > :is(h3, h4, h5, h6):first-of-type {
+.post-content > :is(h2, h3, h4, h5, h6):first-of-type {
   margin-top: 0;
 }
 

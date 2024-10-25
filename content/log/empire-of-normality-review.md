@@ -10,7 +10,7 @@ tags = ["neurodiversity"]
 uuid = "eb6e733f-8915-4bc7-92a9-0c67e8a7ae92"
 +++
 
-### Summary
+## Summary
 
 The book opens by explaining that traditionally, across cultures, mental and
 bodily health were conceptualized as a matter of balance or equilibrium rather
@@ -50,7 +50,7 @@ mine neurodivergent people as an untapped source of productivity. Chapman's
 central thesis in *Empire of Normality* is that we won't see *true*
 neurodivergent liberation until we fully dismantle capitalism.
 
-### Review
+## Review
 
 The ideas presented in this book are solid and well-argued, but potentially
 difficult to follow without some familiarity with the basic concepts of
