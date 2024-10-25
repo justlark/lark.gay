@@ -37,7 +37,9 @@
         <main class="feed" aria-labelledby="site-title">
           <section aria-labelledby="site-title">
             <h1 id="site-title">
-              <xsl:value-of select="atom:feed/atom:title" />
+              <a href="/">
+                <xsl:value-of select="atom:feed/atom:title" />
+              </a>
             </h1>
             <div class="page-lead">
               <p>
