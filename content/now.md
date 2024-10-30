@@ -3,27 +3,22 @@ title = "Lark Now"
 description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
+updated = 2024-10-30
 +++
 
-I'm [building this site](https://github.com/justlark/lark.gay)! I'm trying out a
-static site generator called [Zola](https://www.getzola.org/), because Hugo is
-too complex for my needs, and I much prefer the Jinja/Tera templating syntax.
-I'm tired of building big business corpo websites with complex frameworks and
-lots of JS; I want to build something small and simple and bespoke.
+My friends have pulled me onto a project of theirs: Building a smart DIY sex
+toy. Between them, they have all the expertise they need—except for someone to
+write the firmware. I've been meaning to get into embedded development for a
+while, and this project has been a great opportunity to do so. I'm building the
+device on the ESP32 platform, and you can find the source repo
+[here](https://github.com/justlark/squirtinator).
 
-I've been experimenting with immutable Linux distros. I'm currently test driving
-[Fedora Silverblue](https://fedoraproject.org/sl/atomic-desktops/silverblue/). I
-think the concept holds a lot of promise, and we're at a point where some of
-these distros are really starting to mature.
+Lately I've been experimenting with immutable Linux distros; I'm currently test
+driving [Fedora
+Silverblue](https://fedoraproject.org/atomic-desktops/silverblue/). I'm pretty
+impressed so far; I think the immutable paradigm holds a lot of promise, and I
+think some of these distros are starting to get to a level of polish and
+usability where they're ready for mainstream use.
 
-I'm reading [Empire of Normality: Neurodiversity and
-Capitalism](https://www.goodreads.com/book/show/123844668-empire-of-normality).
-It's phenomenal; I might write a review once I'm done.
-
-I have some trips with my polycule coming up on the calendar, and I'm really
-excited for them.
-
-My Year of Saying Yes to Things has been a huge success. I've had a lot of good
-experiences this year and really expanded my comfort zone as a result. That's
-come at the expense of personal time, however. Lately I've been trying to give
-myself more Lark Time to relax and work on projects like this.
+In January 2025 I'm going on a trip to Iceland with my polycule! We're all very
+excited for it.
