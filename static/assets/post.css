@@ -150,6 +150,11 @@ footer.post-footer {
   justify-content: space-between;
 }
 
+footer.post-footer > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 footer.post-footer ul.tag-list {
   justify-content: right;
 }
