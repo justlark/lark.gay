@@ -3,14 +3,14 @@ title = "Lark Now"
 description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
-updated = 2024-11-13
+updated = 2024-11-15
 +++
 
 Trying to figure out how to move forward after the election.
 
-Some furries in my community are organizing to try and create a furry-run co-op
-art studio and makerspace. I'm not closely involved in the project, but I'm
-excited to see where it goes and contribute where I can.
+Some furries in my community are organizing to try and [create a furry-run co-op
+art studio and makerspace](@/log/furry-art-space.md). I'm not closely involved
+in the project, but I'm excited to see where it goes and contribute where I can.
 
 My friends have pulled me onto a project of theirs: Building a smart DIY sex
 toy. Between them, they have all the expertise they need—except for someone to
