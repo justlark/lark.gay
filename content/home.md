@@ -33,3 +33,9 @@ always happy to have guests, so feel free to make yourself at home.
 ## More Stuff
 
 - [Colophon](@/colophon.md)
+
+## Webrings
+
+- [GoodGirl.Club](https://goodgirl.club/)
+  ([<- Prev](https://goodgirl.club?q=prev))
+  ([Next ->](https://goodgirl.club?q=next))
