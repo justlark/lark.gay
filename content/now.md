@@ -13,7 +13,7 @@ art studio and makerspace](@/log/furry-art-space.md). I'm not closely involved
 in the project, but I'm excited to see where it goes and contribute where I can.
 
 My friends have pulled me onto a project of theirs: Building a smart DIY sex
-toy. Between them, they have all the expertise they need—except for someone to
+toy. Between them, they have all the expertise they need--except for someone to
 write the firmware. I've been meaning to get into embedded development for a
 while, and this project has been a great opportunity to do so. I'm building the
 device on the ESP32 platform, and you can find the source repo

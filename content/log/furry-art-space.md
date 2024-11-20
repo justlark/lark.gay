@@ -19,7 +19,7 @@ have access to equipment and storage for their projects.
 The crazy thing is that I think it might actually happen.
 
 I'm excited by the idea of having a "[third
-place](https://en.wikipedia.org/wiki/Third_place)"—someplace I can escape to to
+place](https://en.wikipedia.org/wiki/Third_place)"--someplace I can escape to to
 get out of the house, meet new people, work on projects, and feel a sense of
 community. I think that's something I've been lacking: a broader sense of
 community beyond just my extended friend network. I get some of that in kink,

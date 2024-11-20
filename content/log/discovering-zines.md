@@ -19,9 +19,9 @@ Over the weekend I helped a friend who was making a zine on how to make activism
 accessible. They live in a fairly rural area, so I offered to help them
 circulate it. We printed a few dozen copies and I took a stack home to
 distribute in my city. There are a lot of [Little Free
-Libraries](https://littlefreelibrary.org/) in my area—I was able to hit 10 or so
-within just a mile radius of my apartment—so the plan was to drop a copy in each
-one.
+Libraries](https://littlefreelibrary.org/) in my area--I was able to hit 10 or
+so within just a mile radius of my apartment--so the plan was to drop a copy in
+each one.
 
 It's such a tiny act of resistance, but it felt good to do *something*. Even
 just as a distraction.
@@ -34,8 +34,8 @@ not bound by geography.
 
 And I realized that I can do it too; I can make my own zines and circulate them
 in my community. It feels silly that this comes as such a shocking revelation
-for me—that I can *print and fold paper* instead of building complex web apps
-with a global reach—but I'm excited by the possibilities. Maybe I can put my
+for me--that I can *print and fold paper* instead of building complex web apps
+with a global reach--but I'm excited by the possibilities. Maybe I can put my
 [typewriter](@/log/my-typewriter.md) to use for it, even.
 
 One friend joked I should make a zine to proselytize about Linux. That would
