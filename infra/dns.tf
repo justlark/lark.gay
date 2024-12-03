@@ -75,3 +75,9 @@ resource "cloudflare_record" "apex_txt_dmarc" {
   proxied = false
 }
 
+resource "cloudflare_record" "apex_txt_atproto" {
+  zone_id = data.cloudflare_zone.lark.id
+  type    = "TXT"
+  name    = "_atproto"
+  content = "did=did:plc:dpkvjlvuoz7d3h2an2uhfci7"
+}
