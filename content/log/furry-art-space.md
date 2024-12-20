@@ -2,6 +2,7 @@
 title = "Building a furry art and maker space"
 description = "Some folks in my community are coming together to build a furry art and maker space, and I'm really excited to see it come to fruition."
 date = 2024-11-15
+updated = 2024-12-20
 
 [taxonomies]
 tags = ["community"]
@@ -9,6 +10,8 @@ tags = ["community"]
 [extra]
 uuid = "c69d672b-1c9d-4f07-8804-3c94f81f1986"
 +++
+
+Update: The project [has a website](https://anthroville.studio/).
 
 After some folks in my local furry community were struggling to find a venue to
 organize a meetup, someone floated an idea: what if furries in my city had their
