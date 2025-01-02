@@ -13,7 +13,7 @@ Things to know about me:
 - ♠️ aro/ace
 - 🧠 autistic
 - 💚 polyamorous
-- 🧑 mid-20s
+- 🎂 1999
 - ⏰ eastern time zone (UTC-04:00 / UTC-05:00)
 
 ## This Site
