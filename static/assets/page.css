@@ -12,6 +12,25 @@
   margin: 0;
 }
 
+.image-circle-mask {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-banner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .profile-banner {
+    gap: 1rem;
+    text-align: left;
+  }
+}
+
 .page-lead,
 .page-body,
 .page-tail {
