@@ -1,16 +1,19 @@
 /*
-    X-Content-Type-Options: nosniff
-    X-Frame-Options: DENY
-    Content-Security-Policy: default-src 'self'; script-src-elem 'self' https://talk.hyvor.com; connect-src 'self' wss: https://*.hyvor.com; img-src 'self' https://hyvor.com https://*.hyvor.com https://www.gravatar.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-ancestors 'none';
-    Referrer-Policy: strict-origin
-    Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-    Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; script-src-elem 'self' https://talk.hyvor.com; connect-src 'self' wss: https://*.hyvor.com; img-src 'self' https://hyvor.com https://*.hyvor.com https://www.gravatar.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-ancestors 'none';
+  Referrer-Policy: strict-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cache-Control: no-cache
 
 /assets/*.jpg
-    Cache-Control: public, max-age=14400
+  ! Cache-Control
+  Cache-Control: public, max-age=14400
 
 /assets/*.svg
-    Cache-Control: public, max-age=14400
+  ! Cache-Control
+  Cache-Control: public, max-age=14400
 
 /assets/*.webp
-    Cache-Control: public, max-age=14400
+  ! Cache-Control
+  Cache-Control: public, max-age=14400
