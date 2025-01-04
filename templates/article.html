@@ -1,11 +1,15 @@
 {% extends "page.html" %}
 
 {% block content %}
+{% if page.description or page.date or page.updated %}
 <div class="page-lead">
+  {% if page.description %}
   <p>
     {{ page.description | markdown(inline=true) | safe }}
   </p>
+  {% endif %}
 
+  {% if page.date or page.updated %}
   <p>
     <i>
       {% set last_updated = page.updated | default(value=page.date) %}
@@ -15,7 +19,9 @@
       </time>
     </i>
   </p>
+  {% endif %}
 </div>
+{% endif %}
 
 <article aria-labelledby="article-title" class="page-body">
   <h2 id="article-title">{{ page.title }}</h2>

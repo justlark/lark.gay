@@ -116,3 +116,9 @@ hr::before {
   color: var(--color-fg);
   font-weight: bold;
 }
+
+pre:has(> code) {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-bright-black) !important;
+}
