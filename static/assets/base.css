@@ -118,7 +118,13 @@ hr::before {
 }
 
 pre:has(> code) {
-  padding: 0.5rem;
+  text-align: left;
+  padding: 0.8rem;
   border-radius: 0.25rem;
   background-color: var(--color-bright-black) !important;
+}
+
+pre > code {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
 }
