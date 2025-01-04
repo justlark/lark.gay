@@ -6,12 +6,12 @@ template = "article.html"
 If you want to reach out for any reason, feel free to shoot me an email. I love
 hearing from folks!
 
-[lark@lark.gay](mailto:lark@lark.gay)
+✉️ [lark@lark.gay](mailto:lark@lark.gay)
 
 I also have a Bluesky! I don't really use it much right now; I've never been
 very good at social media.
 
-[@lark.gay](https://bsky.app/profile/lark.gay)
+🦋 [@lark.gay](https://bsky.app/profile/lark.gay)
 
 Here's my button, if you want to link to Lark Space:
 
