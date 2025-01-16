@@ -2,6 +2,7 @@
 title = "Cuttle: A combat card game"
 description = "I recently learned of a somewhat obscure card game called Cuttle, which is a lot like Magic: The Gathering, but played with a standard 52-card deck."
 date = 2025-01-14
+updated = 2025-01-16
 
 [taxonomies]
 tags = ["games"]
@@ -30,8 +31,7 @@ to participate in the deck-building aspect of the game.
 One major problem I have with learning new games is how the rulebooks are
 written. I often struggle to get the bigger picture--understanding the goal of
 the game, what a turn looks like, etc. So I decided to write [my own
-rulebook](https://github.com/justlark/cuttle/blob/main/rules.md), along with a
-[cheatsheet](https://github.com/justlark/cuttle/blob/main/cheatsheet.md) to
+rulebook](https://github.com/justlark/cuttle), along with a cheatsheet to
 reference during the game. It follows the standard rules, but is written in a
 way that's more compatible with my brain, and I'm hoping with be helpful to
 others as well.
