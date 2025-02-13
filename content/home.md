@@ -13,6 +13,7 @@ Things to know about me:
 - ♠️ aro/ace
 - 🧠 autistic
 - 💚 polyamorous
+- 😺 furry
 - 🎂 1999
 - ⏰ eastern time zone (UTC-04:00 / UTC-05:00)
 
