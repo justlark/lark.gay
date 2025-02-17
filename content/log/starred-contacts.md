@@ -42,6 +42,6 @@ those cases; my phone is just asking me who I want to be able to reach me when
 it's on Do Not Disturb, which is a very fair question that shouldn't be causing
 me so much angst.
 
-[1]: For an overview of what relationship anarchy is about, I recommend [the
-essay that introduced the
-term](https://theanarchistlibrary.org/library/andie-nordgren-the-short-instructional-manifesto-for-relationship-anarchy).
+[^1]: For an overview of what relationship anarchy is about, I recommend [the
+    essay that introduced the
+    term](https://theanarchistlibrary.org/library/andie-nordgren-the-short-instructional-manifesto-for-relationship-anarchy).
