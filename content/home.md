@@ -33,12 +33,12 @@ always happy to have guests, so feel free to make yourself at home.
 
 ## Projects
 
-[Ace Archive](https://acearchive.lgbt/)
+🗃️ [Ace Archive](https://acearchive.lgbt/)
 
 Ace Archive is a curated online archive of asexual and aromantic history that I
 run under the name Frawley.
 
-[Not Without Help](https://notwithout.help/)
+🛟 [Not Without Help](https://notwithout.help/)
 
 Not Without Help is a tool for connecting activist groups with people who want
 to help. It's an inbox for organizers to collect contact information from folks
