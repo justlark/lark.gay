@@ -48,6 +48,7 @@ of help they can offer.
 ## More Stuff
 
 - [Colophon](@/colophon.md)
+- [Referring to Lark](@/log/referring-to-lark.md)
 
 ## Webrings
 
