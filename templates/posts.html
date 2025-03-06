@@ -106,7 +106,7 @@
     <tr>
       <td><span class="permissions">0664</span>
       </td>
-      <td><span class="author">{{ author | lower }}</span></td>
+      <td><span class="author">{{ author | split(pat=' ') | first | lower }}</span></td>
       <td><span class="word-count">{{ post.word_count }} words</span></td>
       <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
       <td>

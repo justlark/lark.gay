@@ -6,7 +6,7 @@ build_search_index = false
 generate_robots_txt = true
 generate_sitemap = true
 feed_filenames = ["feed.xml"]
-author = "Lark"
+author = "Lark Aster"
 
 [markdown]
 highlight_code = true
