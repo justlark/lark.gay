@@ -3,8 +3,11 @@ title = "Lark Now"
 description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
-updated = 2025-02-20
+updated = 2025-03-11
 +++
+
+I just got back from my first kink con! I went with my polycule, and it was a
+ton of fun.
 
 I've been doing a lot of work on [Ace Archive](https://acearchive.lgbt/), an
 online archive of asexual and aromantic history that I've been running for the
@@ -14,9 +17,6 @@ infrastructure improvements I want to make to the site.
 I'm also trying to connect with other folks doing digital archiving work; I've
 been doing this work largely in isolation for the past few years, and I want to
 change that.
-
-I'm going to my first kink con in March! My polycule and a few friends will also
-be there; I'm very excited.
 
 I've had a concept bouncing around in my head for a while for a pen-and-paper
 puzzle game. I'm finally starting to work on it, although I suspect it might
