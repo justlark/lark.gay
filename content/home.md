@@ -55,7 +55,6 @@ of help they can offer.
 - [Floof.Boston](https://floof.boston/)
   ([<- Prev](https://floof.boston?q=prev))
   ([Next ->](https://floof.boston?q=next))
-
 - [GoodGirl.Club](https://goodgirl.club/)
   ([<- Prev](https://goodgirl.club?q=prev))
   ([Next ->](https://goodgirl.club?q=next))
