@@ -25,6 +25,10 @@ for (const themeButton of themeButtons) {
 const theme = localStorage.getItem("theme");
 
 if (theme) {
+  for (const button of themeButtons) {
+    button.classList.remove("current-tag");
+  }
+
   document.body.setAttribute("data-theme", theme);
 
   const currentThemeButton = document.querySelector(
