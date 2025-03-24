@@ -6,6 +6,14 @@ resource "cloudflare_record" "apex_cname" {
   proxied = true
 }
 
+resource "cloudflare_record" "matrix_cname" {
+  zone_id = data.cloudflare_zone.lark.id
+  type    = "CNAME"
+  name    = "matrix"
+  content = "home.stardust.gay"
+  proxied = false
+}
+
 resource "cloudflare_record" "apex_txt_sl_verification" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "TXT"
