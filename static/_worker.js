@@ -1,16 +1,20 @@
-const PROXY_PREFIXES = ["/_matrix/", "/_conduwuit/"];
-const PROXY_DOMAIN = "matrix.lark.gay";
+const MATRIX_PROXY_PREFIXES = ["/_matrix/", "/_conduwuit/"];
+const MATRIX_PROXY_DOMAIN = "matrix.lark.gay";
 
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    if (PROXY_PREFIXES.some((prefix) => url.pathname.startsWith(prefix))) {
-      return await fetch(`https://${PROXY_DOMAIN}${url.pathname}`, {
+    if (
+      MATRIX_PROXY_PREFIXES.some((prefix) => url.pathname.startsWith(prefix))
+    ) {
+      const requestUrl = new URL(request.url);
+      requestUrl.hostname = PROXY_DOMAIN;
+
+      return await fetch(requestUrl, {
         method: request.method,
         headers: request.headers,
         body: request.body,
-        query: url.searchParams,
       });
     }
 
