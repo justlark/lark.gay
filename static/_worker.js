@@ -9,7 +9,7 @@ export default {
       MATRIX_PROXY_PREFIXES.some((prefix) => url.pathname.startsWith(prefix))
     ) {
       const requestUrl = new URL(request.url);
-      requestUrl.hostname = PROXY_DOMAIN;
+      requestUrl.hostname = MATRIX_PROXY_DOMAIN;
 
       return await fetch(requestUrl, {
         method: request.method,
