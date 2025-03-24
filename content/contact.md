@@ -4,10 +4,14 @@ template = "article.html"
 +++
 
 If you want to reach out for any reason, feel free to shoot me an email. I love
-hearing from folks! If you want to chat more securely, you can email me and ask
-for my Signal username.
+hearing from folks!
 
 ✉️ [lark@lark.gay](mailto:lark@lark.gay)
+
+You can also reach out over [Matrix](https://matrix.org), particularly if you
+want to chat more securely.
+
+💬 [@lark:lark.gay](https://matrix.to/#/@lark:lark.gay)
 
 I also have a Bluesky! I don't really use it much right now; I've never been
 very good at social media.
