@@ -137,3 +137,9 @@ pre > code {
   overflow-wrap: anywhere;
   white-space: pre-wrap;
 }
+
+:not(pre) > code {
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-bright-black);
+}
