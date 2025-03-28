@@ -2,6 +2,7 @@
 title = "Self-hosting a Matrix homeserver"
 description = "I'm excited about a chat platform called Matrix, which is an open-source, decentralized, end-to-end encrypted alternative to platforms like Discord. Against my better judgement, I decided to self-host my own Matrix server. This is my devlog."
 date = 2025-03-24
+updated = 2025-03-28
 
 [taxonomies]
 tags = ["tech"]
@@ -36,7 +37,7 @@ platform from implementing user-hostile changes, suspending my account without
 recourse, spying on me, getting hacked, or disappearing entirely. I believe very
 strongly in the power of federated, decentralized networks, and I think they're
 the only path forward for a free and open internet. Matrix being end-to-end
-encrypted is huge; it protects privacy and security in a way that Discord
+encrypted is huge[^1]; it protects privacy and security in a way that Discord
 fundamentally cannot.
 
 It's encouraging to see that there's already a healthy diversity of
@@ -185,3 +186,9 @@ actually have friends to talk to 😅. All my friends are still on Discord, and 
 might take some convincing to get them to register an account and install a new
 chat app just for me. Thankfully I have some nerd friends who I'm sure will be
 happy to indulge me.
+
+[^1]: Soatok, a security expert, has raised some [very serious
+    criticisms](https://soatok.blog/2024/08/14/security-issues-in-matrixs-olm-library/)
+    of the actual security of the end-to-end encryption implementation in
+    several Matrix clients. If your privacy or freedom are at risk, Signal is
+    probably the better choice.
