@@ -83,8 +83,8 @@ Registering is very easy.
 conduwuit itself is just a statically linked binary with the database embedded,
 which is refreshingly simple. I just dropped the binary in `/usr/local/bin`,
 created a system user to run it, and used one of the provided [systemd unit
-files](https://conduwuit.puppyirl.gay/configuration/examples.html)—which are
-configured to provide a reasonable degree of sandboxing—to run it.
+files](https://conduwuit.puppyirl.gay/configuration/examples.html)--which are
+configured to provide a reasonable degree of sandboxing--to run it.
 
 Here are the relevant sections from my conduwuit config:
 
@@ -176,7 +176,7 @@ server has full-disk encryption configured with a password, meaning that I need
 to be *physically present* to enter the password so it can boot. After that
 ordeal, I decided to configure LUKS to use the TPM instead, which allows it to
 boot unattended. I also flipped the switch in the UEFI firmware settings setting
-it to automatically power back on if it loses and then regains power—say if the
+it to automatically power back on if it loses and then regains power--say if the
 electricity goes out.
 
 ## Conclusion

@@ -32,9 +32,9 @@ private:
 4. The names only specific people call me
 
 If you think of the people, communities, and institutions in my life as existing
-in a series of concentric circles around me—where the innermost circle
+in a series of concentric circles around me--where the innermost circle
 represents my most intimate relationships and the outermost circle represents
-the public at large—my names represent the boundaries between those rings.
+the public at large--my names represent the boundaries between those rings.
 
 Not all the people in my life know all my names! Generally, people closer to the
 center will know my more public names, but I'm more selective about sharing more
@@ -57,7 +57,7 @@ Signal. I figured that if I had to choose a single name, it might as well be my
 government name, since that's what most people think of as their "canonical"
 name.
 
-But then I started connecting with new folks over Signal—joining various group
+But then I started connecting with new folks over Signal--joining various group
 chats for groups and events in my local area. I would go to these events and
 introduce myself as Lark, because that's what felt most appropriate. But I would
 then have to explain that my name is different on Signal.
@@ -89,7 +89,7 @@ is pretty flexible:
 
 Here's how I use it:
 
-- My user profile name is a handle—not one of my "real" names. This means that
+- My user profile name is a handle--not one of my "real" names. This means that
   anyone I interact with on the platform only has the names I choose to give
   them.
 - I choose a name for each server that I'm a member of, depending on which I
