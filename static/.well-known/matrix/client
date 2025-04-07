@@ -1,3 +1,5 @@
 {
-  "m.homeserver": "https://matrix.lark.gay"
+  "m.homeserver": {
+    "base_url": "https://matrix.lark.gay"
+  }
 }

@@ -15,8 +15,8 @@ uuid = "d78bedd1-e974-43aa-9ba3-65d3ee6b1b88"
 
 If you're not familiar with [Matrix](https://matrix.org/), it's an open-source,
 decentralized, end-to-end encrypted chat platform. It's somewhat like Discord,
-with direct messages, *rooms* (comparable to channels or group chats in
-Discord), and *spaces* (comparable to Discord servers).
+with direct messages, _rooms_ (comparable to channels or group chats in
+Discord), and _spaces_ (comparable to Discord servers).
 
 Matrix doesn't quite have feature parity with Discord, but it has pretty much
 all the features you expect of a chat app. I think the platform needs to mature
@@ -49,7 +49,7 @@ implementation.
 
 ## Self-hosting a Matrix homeserver
 
-Matrix has a concept of a *homeserver*, which is the server that hosts your user
+Matrix has a concept of a _homeserver_, which is the server that hosts your user
 account and stores your (encrypted) messages. The domain of your homeserver
 forms part of your handle, which takes the form `@username:example.com`. From
 the start, I was obsessed with the idea of having a `lark.gay` handle. This does
@@ -76,7 +76,7 @@ Self-hosting a Matrix homeserver turned out to be somewhat more complicated than
 I would have hoped, even for an implementation that's meant to be easy to set
 up. This section is a technical devlog detailed how I did it. Before we dive in,
 I want to stress that **you do not need to do any of this to use Matrix**.
-Unless you *really* know that you want this, I would strongly recommend you
+Unless you _really_ know that you want this, I would strongly recommend you
 [join an existing homeserver](https://servers.joinmatrix.org/) instead.
 Registering is very easy.
 
@@ -132,13 +132,13 @@ sudo semanage port -a -t http_port_t -p tcp 8448
 sudo semanage port -a -t http_port_t -p udp 8448
 ```
 
-Some of the complexity setting this up comes from the fact that I *really*
+Some of the complexity setting this up comes from the fact that I _really_
 wanted my homeserver's domain to be `lark.gay`, which will obviously need to be
 shared with this site. To accomplish this, Matrix has a feature called
-*delegation*.
+_delegation_.
 
 To implement Matrix server delegation, I have to serve these two files from this
-site, which tell Matrix clients and other servers that they can *actually* find
+site, which tell Matrix clients and other servers that they can _actually_ find
 my homeserver at `matrix.lark.gay`.
 
 `/.well-known/matrix/server`
@@ -153,7 +153,9 @@ my homeserver at `matrix.lark.gay`.
 
 ```json
 {
-  "m.homeserver": "https://matrix.lark.gay"
+  "m.homeserver": {
+    "base_url": "https://matrix.lark.gay"
+  }
 }
 ```
 
@@ -173,7 +175,7 @@ A fun anecdote: I started the process of setting this all up while I was bored
 on a flight, connecting to the server over SSH. At one point I needed to reboot,
 and committed the classic blunder of locking myself out of SSH access. The
 server has full-disk encryption configured with a password, meaning that I need
-to be *physically present* to enter the password so it can boot. After that
+to be _physically present_ to enter the password so it can boot. After that
 ordeal, I decided to configure LUKS to use the TPM instead, which allows it to
 boot unattended. I also flipped the switch in the UEFI firmware settings setting
 it to automatically power back on if it loses and then regains power--say if the
