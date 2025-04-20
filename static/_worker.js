@@ -31,10 +31,18 @@ export default {
       const expectedToken = encoder.encode(env.NOTIFICATIONS_TOKEN);
       const actualToken = encoder.encode(url.searchParams.get("token"));
 
-      const tokenIsValid = crypto.subtle.timingSafeEqual(
-        actualToken,
-        expectedToken,
-      );
+      let tokenIsValid = false;
+
+      try {
+        // This will throw an exception if the lengths are different.
+        tokenIsValid = crypto.subtle.timingSafeEqual(
+          actualToken,
+          expectedToken,
+        );
+      } catch {
+        // Redundant, but included for clarity.
+        tokenIsValid = false;
+      }
 
       if (!tokenIsValid) {
         return new Response("Invalid token", { status: 403 });
