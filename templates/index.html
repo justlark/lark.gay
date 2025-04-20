@@ -1,21 +1,19 @@
 {% extends "page.html" %}
-
 {% block meta_vars %}
-{% set canonical_url = config.base_url %}
-{% set title = config.title %}
-{% set description = config.description %}
+  {% set canonical_url = config.base_url %}
+  {% set title = config.title %}
+  {% set description = config.description %}
 {% endblock %}
-
 {% block content %}
-<div class="ascii-banner" role="img" aria-label="ASCII Lark Space">
-  <pre class="bright-green">
+  <div class="ascii-banner" role="img" aria-label="ASCII Lark Space">
+    <pre class="bright-green">
  _               _
 | |    __ _ _ __| | __
 | |   / _` | '__| |/ /
 | |__| (_| | |  |   <
 |_____\__,_|_|  |_|\_\
   </pre>
-  <pre class="bright-cyan">
+    <pre class="bright-cyan">
   ____
 / ___| _ __   __ _  ___ ___
 \___ \| '_ \ / _` |/ __/ _ \
@@ -23,36 +21,42 @@
 |____/| .__/ \__,_|\___\___|
       |_|
   </pre>
-</div>
-
-<div class="page-lead">
-  <div class="profile-banner">
-    <img class="image-circle-mask" width="100" src="/assets/profile.jpg"
-      alt="An anthropomorphic cat with white fur, pink eyes, and an undercut who is wearing a black crop top and has its tongue sticking out" />
-    <div>
-      <p>
-        Welcome to my little space on the web!
-      </p>
-
-      <p>
-        My name is <strong>Lark (they/it)</strong>.
-      </p>
+  </div>
+  <div class="page-lead">
+    <div class="profile-banner">
+      <img class="image-circle-mask"
+           width="100"
+           src="/assets/profile.jpg"
+           alt="An anthropomorphic cat with white fur, pink eyes, and an undercut who is wearing a black crop top and has its tongue sticking out" />
+      <div>
+        <p>Welcome to my little space on the web!</p>
+        <p>
+          My name is <strong>Lark (they/it)</strong>.
+        </p>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="page-body">
-  {{ get_page(path="home.md") | get(key="content") | safe }}
-</div>
-
-<section id="theme-picker" class="page-tail" aria-labelledby="theme-picker-title">
-  <p id="theme-picker-title">Choose your color scheme!</p>
-  <ul class="tag-list">
-    <li><button class="theme-button current-tag" data-theme="catppuccin-mocha">Catppuccin</button></li>
-    <li><button class="theme-button" data-theme="dracula">Dracula</button></li>
-    <li><button class="theme-button" data-theme="nord-polar">Nord</button></li>
-    <li><button class="theme-button" data-theme="solarized-dark">Solarized</button></li>
-    <li><button class="theme-button" data-theme="gruvbox">Gruvbox</button></li>
-  </ul>
-</section>
+  <div class="page-body">{{ get_page(path="home.md") | get(key="content") | safe }}</div>
+  <section id="theme-picker"
+           class="page-tail"
+           aria-labelledby="theme-picker-title">
+    <p id="theme-picker-title">Choose your color scheme!</p>
+    <ul class="tag-list">
+      <li>
+        <button class="theme-button current-tag" data-theme="catppuccin-mocha">Catppuccin</button>
+      </li>
+      <li>
+        <button class="theme-button" data-theme="dracula">Dracula</button>
+      </li>
+      <li>
+        <button class="theme-button" data-theme="nord-polar">Nord</button>
+      </li>
+      <li>
+        <button class="theme-button" data-theme="solarized-dark">Solarized</button>
+      </li>
+      <li>
+        <button class="theme-button" data-theme="gruvbox">Gruvbox</button>
+      </li>
+    </ul>
+  </section>
 {% endblock %}

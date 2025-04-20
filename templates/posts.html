@@ -1,7 +1,6 @@
 {% extends "page.html" %}
-
 {% block jsonld %}
-<script type="application/ld+json">
+  <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "Blog",
@@ -19,109 +18,105 @@
     },
     "license": {{ config.extra.license_link | json_encode() | safe }}
   }
-</script>
+  </script>
 {% endblock %}
-
 {% block content %}
-{% set pages = term.pages | default(value=section.pages) %}
-{% set datetime_format = "%e %b %Y" %}
-{% set latest_publish_time = pages | first | get(key='date') %}
-
-<div class="page-lead">
-  {% block lead %}
+  {% set pages = term.pages | default(value=section.pages) %}
+  {% set datetime_format = "%e %b %Y" %}
+  {% set latest_publish_time = pages | first | get(key='date') %}
+  <div class="page-lead">
+    {% block lead %}
+      <p>Here's what I've been writing about lately.</p>
+      <p>
+        <i>
+          {% if term is defined %}
+            Showing only posts tagged <strong class="selected-tag">#{{ term.name }}</strong>.
+          {% else %}
+            Showing all posts.
+          {% endif %}
+        </i>
+      </p>
+    {% endblock %}
+  </div>
   <p>
-    Here's what I've been writing about lately.
+    <code><span class="shell-prompt">$</span> ls ./tags/</code>
   </p>
   <p>
-    <i>
+    <ul class="tag-list">
+      {% set tags = get_taxonomy(kind="tags") %}
+      {% for tag in tags.items %}
+        <li>
+          <a class="{% if term is defined and term.name == tag.name %}current-tag{% endif %}"
+             href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">#{{ tag.name }}</a>
+        </li>
+      {% endfor %}
       {% if term is defined %}
-      Showing only posts tagged <strong class="selected-tag">#{{ term.name }}</strong>.
-      {% else %}
-      Showing all posts.
+        <li>
+          <a class="all-link" href="{{ get_url(path='@/log/_index.md') }}">all</a>
+        </li>
       {% endif %}
-    </i>
+    </ul>
   </p>
-  {% endblock %}
-</div>
-
-<p>
-  <code><span class="shell-prompt">$</span> ls ./tags/</code>
-</p>
-
-<p>
-<ul class="tag-list">
-  {% set tags = get_taxonomy(kind="tags") %}
-  {% for tag in tags.items %}
-  <li>
-    <a class="{% if term is defined and term.name == tag.name %}current-tag{% endif %}"
-      href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">#{{ tag.name }}</a>
-  </li>
-  {% endfor %}
-  {% if term is defined %}
-  <li>
-    <a class="all-link" href="{{ get_url(path='@/log/_index.md') }}">all</a>
-  </li>
-  {% endif %}
-</ul>
-</p>
-
-<p>
-  <code><span class="shell-prompt">$</span> ls -la ./log/</code>
-</p>
-
-<table class="post-list">
-  <tbody>
-    <tr class="feed-entry">
-      <td><span class="permissions">0775</span></td>
-      <td><span class="author">nobody</span></td>
-      <td><span class="word-count">0 words</span></td>
-      <td>
-        <span class="publish-date">
-          <time datetime="{{ latest_publish_time | date(timezone='Etc/UCT', format='%F') }}">
-            {{ latest_publish_time | date(timezone="Etc/UCT", format=datetime_format) }}
-          </time>
-        </span>
-      </td>
-      <td class="ls-filename">
-        {% if term is defined %}
-        <a class="white" href="{{ get_taxonomy_url(kind='tags', name=term.name) }}feed.xml">
-          .RSS Feed (#{{ term.name }})
-        </a>
+  <p>
+    <code><span class="shell-prompt">$</span> ls -la ./log/</code>
+  </p>
+  <table class="post-list">
+    <tbody>
+      <tr class="feed-entry">
+        <td>
+          <span class="permissions">0775</span>
+        </td>
+        <td>
+          <span class="author">nobody</span>
+        </td>
+        <td>
+          <span class="word-count">0 words</span>
+        </td>
+        <td>
+          <span class="publish-date">
+            <time datetime="{{ latest_publish_time | date(timezone='Etc/UCT', format='%F') }}">
+              {{ latest_publish_time | date(timezone="Etc/UCT", format=datetime_format) }}
+            </time>
+          </span>
+        </td>
+        <td class="ls-filename">
+          {% if term is defined %}
+            <a class="white"
+               href="{{ get_taxonomy_url(kind='tags', name=term.name) }}feed.xml">.RSS Feed (#{{ term.name }})</a>
+          {% else %}
+            <a class="white"
+               href="{{ get_url(path='log/feed.xml' , trailing_slash=false) }}">.RSS Feed</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% for post in pages %}
+        {% if post.authors | length > 0 %}
+          {% set author = post.authors[0] %}
         {% else %}
-        <a class="white" href="{{ get_url(path='log/feed.xml' , trailing_slash=false) }}">
-          .RSS Feed
-        </a>
+          {% set author = config.author %}
         {% endif %}
-      </td>
-    </tr>
-
-    {% for post in pages %}
-
-    {% if post.authors | length > 0 %}
-    {% set author = post.authors[0] %}
-    {% else %}
-    {% set author = config.author %}
-    {% endif %}
-
-    <tr>
-      <td><span class="permissions">0664</span>
-      </td>
-      <td><span class="author">{{ author | split(pat=' ') | first | lower }}</span></td>
-      <td><span class="word-count">{{ post.word_count }} words</span></td>
-      <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
-      <td>
-        <span class="publish-date">
-          <time datetime="{{ post.date | date(timezone='Etc/UCT', format='%F') }}">
-            {{ post.date | date(timezone="Etc/UCT", format=datetime_format) }}
-          </time>
-        </span>
-      </td>
-      <td class="ls-filename">
-        <a class="white" href="{{ post.permalink }}">
-          {{ post.title | markdown(inline=true) | safe }}
-        </a>
-      </td>
-    </tr>
-    {% endfor %}
-</table>
-{% endblock %}
+        <tr>
+          <td>
+            <span class="permissions">0664</span>
+          </td>
+          <td>
+            <span class="author">{{ author | split(pat=' ') | first | lower }}</span>
+          </td>
+          <td>
+            <span class="word-count">{{ post.word_count }} words</span>
+          </td>
+          <!-- We can't effectively localize the datetime without JS, so use UTC instead. -->
+          <td>
+            <span class="publish-date">
+              <time datetime="{{ post.date | date(timezone='Etc/UCT', format='%F') }}">
+                {{ post.date | date(timezone="Etc/UCT", format=datetime_format) }}
+              </time>
+            </span>
+          </td>
+          <td class="ls-filename">
+            <a class="white" href="{{ post.permalink }}">{{ post.title | markdown(inline=true) | safe }}</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  {% endblock %}

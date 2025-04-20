@@ -1,30 +1,25 @@
 {% extends "page.html" %}
-
 {% block content %}
-{% if page.description or page.date or page.updated %}
-<div class="page-lead">
-  {% if page.description %}
-  <p>
-    {{ page.description | markdown(inline=true) | safe }}
-  </p>
+  {% if page.description or page.date or page.updated %}
+    <div class="page-lead">
+      {% if page.description %}<p>{{ page.description | markdown(inline=true) | safe }}</p>{% endif %}
+      {% if page.date or page.updated %}
+        <p>
+          <i>
+            {% set last_updated = page.updated | default(value=page.date) %}
+            Last updated:
+            <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
+              {{ last_updated | date(timezone="Etc/UCT", format="%e %b %Y") }}
+            </time>
+          </i>
+        </p>
+      {% endif %}
+    </div>
   {% endif %}
-
-  {% if page.date or page.updated %}
-  <p>
-    <i>
-      {% set last_updated = page.updated | default(value=page.date) %}
-      Last updated:
-      <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
-        {{ last_updated | date(timezone="Etc/UCT", format="%e %b %Y") }}
-      </time>
-    </i>
-  </p>
-  {% endif %}
-</div>
-{% endif %}
-
-<article aria-labelledby="article-title" class="page-body">
-  <h1 id="article-title">{{ page.title }}</h1>
-  {{ page.content | safe }}
-</article>
+  <article aria-labelledby="article-title" class="page-body">
+    <h1 id="article-title">
+      {{ page.title }}
+    </h2>
+    {{ page.content | safe }}
+  </article>
 {% endblock %}

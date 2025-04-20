@@ -1,61 +1,53 @@
 {% block meta_vars %}{% endblock %}
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>
-    {% if title == config.title %}
-    {{ title }}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if title == config.title %}
+        {{ title }}
+      {% else %}
+        {{ title ~ " | " ~ config.title }}
+      {% endif %}
+    </title>
+    <meta name="description" content="{{ description }}" />
+    <link rel="icon"
+          href="{{ resize_image(path='/assets/icon.webp', width=256, height=256, format='webp') | get(key='url') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/assets/index.css" />
+    {% if canonical_url is defined %}<link rel="canonical" href="{{ canonical_url }}" />{% endif %}
+    {% if term is defined %}
+      <link rel="alternate"
+            type="application/atom+xml"
+            title="Feed"
+            href="{{ get_taxonomy_url(kind='tags', name=term.name) }}feed.xml" />
     {% else %}
-    {{ title ~ " | " ~ config.title }}
+      <link rel="alternate"
+            type="application/atom+xml"
+            title="Feed"
+            href="{{ get_url(path='log/feed.xml', trailing_slash=false) }}" />
     {% endif %}
-  </title>
-  <meta name="description" content="{{ description }}" />
-  <link rel="icon"
-    href="{{ resize_image(path='/assets/icon.webp', width=256, height=256, format='webp') | get(key='url') }}" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" type="text/css" href="/assets/index.css" />
-
-  {% if canonical_url is defined %}
-  <link rel="canonical" href="{{ canonical_url }}" />
-  {% endif %}
-
-  {% if term is defined %}
-  <link rel="alternate" type="application/atom+xml" title="Feed"
-    href="{{ get_taxonomy_url(kind='tags', name=term.name) }}feed.xml" />
-  {% else %}
-  <link rel="alternate" type="application/atom+xml" title="Feed"
-    href="{{ get_url(path='log/feed.xml', trailing_slash=false) }}" />
-  {% endif %}
-
-  <link href="https://bsky.app/profile/lark.gay" rel="me" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="{{ config.title }}" />
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:description" content="{{ description }}" />
-  <meta property="og:image" content="{{ config.extra.social_icon }}" />
-  <meta property="og:image:type" content="{{ config.extra.social_icon_type }}" />
-  <meta property="og:image:alt" content="{{ config.extra.social_icon_alt }}" />
-
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:title" content="{{ title }}" />
-  <meta property="twitter:description" content="{{ description }}" />
-  <meta property="twitter:image" content="{{ config.extra.social_icon }}" />
-  <meta property="twitter:image:alt" content="{{ config.extra.social_icon_alt }}" />
-
-  {% block jsonld %}
-  <script type="application/ld+json">
+    <link href="https://bsky.app/profile/lark.gay" rel="me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ config.title }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="{{ config.extra.social_icon }}" />
+    <meta property="og:image:type"
+          content="{{ config.extra.social_icon_type }}" />
+    <meta property="og:image:alt" content="{{ config.extra.social_icon_alt }}" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="{{ title }}" />
+    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:image" content="{{ config.extra.social_icon }}" />
+    <meta property="twitter:image:alt"
+          content="{{ config.extra.social_icon_alt }}" />
+    {% block jsonld %}
+      <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "WebPage",
@@ -68,13 +60,11 @@
       },
       "license": {{ config.extra.license_link | json_encode() | safe }}
     }
-  </script>
-  {% endblock %}
-</head>
-
-<body data-theme="catppuccin-mocha">
-  <script src="/assets/theme.js" defer></script>
-  {% block body %} {% endblock %}
-</body>
-
+      </script>
+    {% endblock %}
+  </head>
+  <body data-theme="catppuccin-mocha">
+    <script src="/assets/theme.js" defer></script>
+    {% block body %}{% endblock %}
+  </body>
 </html>

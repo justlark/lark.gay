@@ -1,7 +1,6 @@
 {% extends "page.html" %}
-
 {% block jsonld %}
-<script type="application/ld+json">
+  <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
@@ -19,39 +18,29 @@
     },
     "license": {{ config.extra.license_link | json_encode() | safe }}
   }
-</script>
+  </script>
 {% endblock %}
-
 {% block content %}
-
-{% set vim_file_path = "./log/" ~ page.slug ~ ".md" %}
-
-<script src="/assets/vim.js" defer></script>
-
-<div class="page-lead">
-  <p>{{ page.description | markdown(inline=true) | safe }}</p>
-  <p>
-    <i>
-      {% set last_updated = page.updated | default(value=page.date) %}
-      Last updated: <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
+  {% set vim_file_path = "./log/" ~ page.slug ~ ".md" %}
+  <script src="/assets/vim.js" defer></script>
+  <div class="page-lead">
+    <p>{{ page.description | markdown(inline=true) | safe }}</p>
+    <p>
+      <i>
+        {% set last_updated = page.updated | default(value=page.date) %}
+        Last updated: <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
         {{ last_updated | date(timezone="Etc/UCT", format="%e %b %Y") }}
       </time>
     </i>
   </p>
 </div>
-
 <article aria-labelledby="post-title">
   <h1 id="post-title">{{ page.title | markdown(inline=true) | safe }}</h1>
-
   <p>
     <code><span class="bright-white">$</span> vim {{ vim_file_path }}</code>
   </p>
-
   <div class="post-body">
-    <div class="post-content">
-      {{ page.content | safe }}
-    </div>
-
+    <div class="post-content">{{ page.content | safe }}</div>
     <div class="post-decoration">
       <!--
         This is noise that's not necessary to understand the content of the
@@ -62,7 +51,6 @@
       <div class="vim-eob" aria-hidden="true">~</div>
       <div class="vim-eob" aria-hidden="true">~</div>
       <div class="vim-eob" aria-hidden="true">~</div>
-
       <div class="vim-statusline">
         <div>
           <span id="vim-mode" class="bright-green-reverse">&nbsp;NORMAL&nbsp;</span>
@@ -74,33 +62,27 @@
       </div>
     </div>
   </div>
-
   <!--
     <footer> elements don't automatically get the `contentinfo` role when
     they're not a top-level footer.
   -->
   <footer class="post-footer" role="contentinfo">
     <span class="back-link">
-      <span aria-hidden="true">
-        &lt;-
-      </span>
+      <span aria-hidden="true">&lt;-</span>
       <a href="{{ get_url(path='@/log/_index.md') }}">Back</a>
     </span>
-
     <ul class="tag-list">
       {% for tag in page.taxonomies.tags | default(value=[]) %}
-      <li>
-        <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">#{{ tag }}</a>
-      </li>
+        <li>
+          <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">#{{ tag }}</a>
+        </li>
       {% endfor %}
     </ul>
   </footer>
 </article>
-
 <!-- https://talk.hyvor.com/ -->
 <section class="comments" aria-labelledby="comments-heading">
   <h2 id="comments-heading">Comments</h2>
-
   <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
   <hyvor-talk-comments website-id="12023" page-id="{{ page.slug }}" colors="dark">
   </hyvor-talk-comments>
