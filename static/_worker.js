@@ -26,9 +26,14 @@ export default {
     //
     //   POST https://lark.gay/notifications/?token=REDACTED&msg=Hello%20World
     if (url.pathname.startsWith(NOTIFICATIONS_PREFIX)) {
+      const encoder = new TextEncoder();
+
+      const expectedToken = encoder.encode(env.NOTIFICATIONS_TOKEN);
+      const actualToken = encoder.encode(url.searchParams.get("token"));
+
       const tokenIsValid = crypto.subtle.timingSafeEqual(
-        url.searchParams.get("token"),
-        env.NOTIFICATIONS_TOKEN,
+        actualToken,
+        expectedToken,
       );
 
       if (!tokenIsValid) {
