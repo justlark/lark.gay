@@ -57,3 +57,19 @@
     text-align: left;
   }
 }
+
+footer.page-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  row-gap: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  footer.page-footer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
