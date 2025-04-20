@@ -13,6 +13,13 @@ want to chat more securely.
 
 💬 [@lark:lark.gay](https://matrix.to/#/@lark:lark.gay)
 
+If you want to drop me a message anonymously, I have an onion service set up to
+receive anonymous messages. This is a special link that only works if you're
+using [Tor](https://www.torproject.org/) as your web browser.
+
+🧅
+[xf5tich3uowrhiqnaige47brqncfssalbcp2v64j2ty6ccbtwelvamad.onion](http://xf5tich3uowrhiqnaige47brqncfssalbcp2v64j2ty6ccbtwelvamad.onion/)
+
 I also have a Bluesky! I don't really use it much right now; I've never been
 very good at social media.
 
