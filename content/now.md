@@ -7,9 +7,9 @@ updated = 2025-06-19
 +++
 
 I've been back working on [Ace Archive](https://acearchive.lgbt) lately. I have
-a long backlog of technical work I want done, but I'm also having grander
-thoughts about the future of the project and what it might look like. Nothing
-concrete yet--stay tuned.
+a long backlog of technical work I want done, but I'm also having
+[grander thoughts](@/log/amateur-archives.md) about the future of the project
+and what it might look like.
 
 I've spent the past few months working on a puzzle game I'm calling _Dirty Money
 in Somerset Valley_, and I'm nearing the point of having something ready to show
