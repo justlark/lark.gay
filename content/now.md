@@ -3,18 +3,21 @@ title = "Lark Now"
 description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
-updated = 2025-05-01
+updated = 2025-06-19
 +++
 
-I'm going to be teaching a class on how to make websites at a local makerspace
-on 6 May 2025! If that's where you're visiting from, welcome!
+I've been back working on [Ace Archive](https://acearchive.lgbt) lately. I have
+a long backlog of technical work I want done, but I'm also having grander
+thoughts about the future of the project and what it might look like. Nothing
+concrete yet--stay tuned.
 
-I've recently acquired new a special interest in public transit! I've never
-thought of myself as much of a train autist, but I'm very down to live the
-stereotype. I'm already planning to organize a polycule trip to DC once the new
-[Avelia Liberty](https://en.wikipedia.org/wiki/Avelia_Liberty) Acela transets
-enter service, which will purportedly be in Spring 2025. I'll be happy if it
-happens before 2026.
+I've spent the past few months working on a puzzle game I'm calling _Dirty Money
+in Somerset Valley_, and I'm nearing the point of having something ready to show
+off. Here's the blurb:
+
+> _Dirty Money in Somerset Valley_ is a singleplayer pen-and-paper puzzle game
+> where you pore over documents and collect evidence to uncover the truth about
+> corporate corruption in a small town.
 
 I'm starting work on a new project with a friend: building an app for con
 organizers to create and publish con schedules. We have ambitious ideas for the
@@ -24,8 +27,3 @@ search, sort, filter, and maybe even build themselves a personal itinerary. We
 see a lot of cons try to homebrew a solution to this problem, and we want to
 make it easier on organizers and a better experience for attendees. We have no
 plans to monetize it; we just think it would be cool if people used it.
-
-I'm going to be taking a trip to New York City for a couple days for work. My
-job doesn't ordinarily have me traveling very much, but my manager offered to
-send me to a conference. I don't particularly care about the con, but I decided
-to jump on the opportunity to explore NYC on the company's dime.
