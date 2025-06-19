@@ -8,20 +8,13 @@ hearing from folks!
 
 ✉️ [lark@lark.gay](mailto:lark@lark.gay)
 
-You can also reach out over [Matrix](https://matrix.org), particularly if you
-want to chat more securely.
+If you want to chat more securely, you can reach out over
+[Matrix](https://matrix.org), or email me to ask for my Signal username.
 
 💬 [@lark:lark.gay](https://matrix.to/#/@lark:lark.gay)
 
-If you want to drop me a message anonymously, I have an onion service set up to
-receive anonymous messages. This is a special link that only works if you're
-using [Tor](https://www.torproject.org/) as your web browser.
-
-🧅
-[xf5tich3uowrhiqnaige47brqncfssalbcp2v64j2ty6ccbtwelvamad.onion](http://xf5tich3uowrhiqnaige47brqncfssalbcp2v64j2ty6ccbtwelvamad.onion/)
-
-I also have a Bluesky! I don't really use it much right now; I've never been
-very good at social media.
+I also have a Bluesky! I don't really post; I've never been good at social
+media.
 
 🦋 [@lark.gay](https://bsky.app/profile/lark.gay)
 
