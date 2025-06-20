@@ -38,6 +38,11 @@ always happy to have guests, so feel free to make yourself at home.
 Ace Archive is a curated online archive of asexual and aromantic history that I
 run under the name Frawley.
 
+🖤 [Discuss.love](https://discuss.love/)
+
+Discuss.love is a tool for negotiating relationships, in the style of the
+"relationship smorgasbord" exercise.
+
 🛟 [Not Without Help](https://notwithout.help/)
 
 Not Without Help is a tool for connecting activist groups with people who want
@@ -52,8 +57,7 @@ of help they can offer.
 
 ## Webrings
 
-- [Floof.Boston](https://floof.boston/)
-  ([<- Prev](https://floof.boston?q=prev))
+- [Floof.Boston](https://floof.boston/) ([<- Prev](https://floof.boston?q=prev))
   ([Next ->](https://floof.boston?q=next))
 - [GoodGirl.Club](https://goodgirl.club/)
   ([<- Prev](https://goodgirl.club?q=prev))
