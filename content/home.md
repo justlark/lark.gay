@@ -35,7 +35,7 @@ always happy to have guests, so feel free to make yourself at home.
 
 🗃️ [Ace Archive](https://acearchive.lgbt/)
 
-Ace Archive is a curated online archive of asexual and aromantic history that I
+Ace Archive is a curated digital archive of asexual and aromantic history that I
 run under the name Frawley.
 
 🖤 [Discuss.love](https://discuss.love/)
