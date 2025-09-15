@@ -19,11 +19,8 @@ off. Here's the blurb:
 > where you pore over documents and collect evidence to uncover the truth about
 > corporate corruption in a small town.
 
-I'm starting work on a new project with a friend: building an app for con
-organizers to create and publish con schedules. We have ambitious ideas for the
-project, but the core of it will be a service that turns a spreadsheet into a
-website that lets attendees view the con schedule. Attendees will be able to
-search, sort, filter, and maybe even build themselves a personal itinerary. We
-see a lot of cons try to homebrew a solution to this problem, and we want to
-make it easier on organizers and a better experience for attendees. We have no
-plans to monetize it; we just think it would be cool if people used it.
+I've been fairly quiet the past few months because I've been busy working on a
+new project: building an app for con organizers to create and publish con
+schedules. I see a lot of cons try to homebrew a solution to this problem, and I
+want to make it easier on organizers and a better experience for attendees. I
+have no plans to monetize it; I just think it would be cool if people used it.
