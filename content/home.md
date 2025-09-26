@@ -38,6 +38,12 @@ always happy to have guests, so feel free to make yourself at home.
 Ace Archive is a curated digital archive of asexual and aromantic history that I
 run under the name Frawley.
 
+🗓️ [FanJam](https://fanjam.live/)
+
+FanJam is an event planning app that bridges the gap between a single person
+with a spreadsheet and the kinds of people who can afford enterprise event
+planning software.
+
 🖤 [Discuss.love](https://discuss.love/)
 
 Discuss.love is a tool for negotiating relationships, in the style of the
