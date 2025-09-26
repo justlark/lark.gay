@@ -1,11 +1,3 @@
-resource "cloudflare_record" "apex_cname" {
-  zone_id = data.cloudflare_zone.lark.id
-  type    = "CNAME"
-  name    = "@"
-  content = "lark-space.pages.dev"
-  proxied = true
-}
-
 resource "cloudflare_record" "matrix_cname" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "CNAME"
