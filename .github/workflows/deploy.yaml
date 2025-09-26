@@ -14,6 +14,10 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v4
 
+      - name: "Install Dependencies"
+        working-directory: ./worker/
+        run: npm ci
+
       - name: "Install Zola"
         uses: taiki-e/install-action@v2
         with:
