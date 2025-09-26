@@ -32,4 +32,6 @@ jobs:
           environment: prod
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          wranglerVersion: "4"
+          # If we don't specify this, the action seems to use an outdated
+          # version of Wrangler.
+          wranglerVersion: "4.40.2"
