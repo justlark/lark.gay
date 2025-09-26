@@ -10,9 +10,6 @@ tags = ["tech", "community"]
 uuid = "5a370c99-1a28-4980-a9bb-6db9f674dc75"
 +++
 
-- [FanJam](https://fanjam.live)
-- [GitHub](https://github.com/justlark/fanjam)
-
 A friend approached me with the idea back in the Spring. They were frustrated
 because the small con they had recently attended didn't have a good way of
 viewing the event schedule. All they had was a public link to a spreadsheet on
@@ -25,6 +22,9 @@ frontend for NocoDB"? That would save a _ton_ of work over trying to build out a
 dashboard-like app for organizers. We'd just have to build the mobile app.
 
 It turned out to be a lot of work anyways.
+
+- [FanJam](https://fanjam.live)
+- [GitHub](https://github.com/justlark/fanjam)
 
 The mobile app turned out to be the easy part! The hardest part was figuring out
 how to make this app free for small cons. If I was planning on eating the
