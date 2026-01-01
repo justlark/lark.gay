@@ -24,6 +24,7 @@ jobs:
           tool: zola@0.21.0
 
       - name: "Build"
+        working-directory: ./site/
         run: zola build
 
       - name: "Deploy"
