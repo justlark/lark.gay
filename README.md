@@ -7,6 +7,11 @@ This is my personal website and blog. It's a static site built with
 See the [Colophon](https://lark.gay/colophon/) for more information about the
 technical decision that went into building this site.
 
+## Blog
+
+The comments section for my blog is provided by
+[Hyvor Talk](https://talk.hyvor.com/).
+
 ## Matrix
 
 I self-host a [Matrix](https://matrix.org/) homeserver
