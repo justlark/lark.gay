@@ -1,4 +1,4 @@
-const MATRIX_PROXY_PREFIXES = ["/_matrix/", "/_conduwuit/"];
+const MATRIX_PROXY_PREFIXES = ["/_matrix/", "/_tuwunel/"];
 const NOTIFICATIONS_PREFIX = "/notifications/";
 const MATRIX_PROXY_DOMAIN = "matrix.lark.gay";
 

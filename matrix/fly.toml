@@ -1,0 +1,52 @@
+app = "lark-tuwunel-matrix"
+primary_region = "iad"
+
+[build]
+image = "ghcr.io/matrix-construct/tuwunel:latest"
+
+[env]
+TUWUNEL_SERVER_NAME = "lark.gay"
+TUWUNEL_ADDRESS = "0.0.0.0"
+TUWUNEL_PORT = "8080"
+TUWUNEL_DATABASE_PATH = "/var/lib/tuwunel/data"
+TUWUNEL_DATABASE_BACKUP_PATH = "/var/lib/tuwunel/backups"
+TUWUNEL_DATABASE_BACKUPS_TO_KEEP = "1"
+TUWUNEL_ALLOW_REGISTRATION = "false"
+TUWUNEL_WELL_KNOWN__CLIENT = "https://matrix.lark.gay"
+TUWUNEL_WELL_KNOWN__SERVER = "matrix.lark.gay:8448"
+
+[[services]]
+internal_port = 8080
+protocol = "tcp"
+auto_start_machines = true
+auto_stop_machines = "off"
+min_machines_running = 1
+
+[[services.ports]]
+handlers = ["tls", "http"]
+port = 443
+
+[[services.ports]]
+handlers = ["tls", "http"]
+port = 8448
+
+[[services.http_checks]]
+protocol = "http"
+interval = "15s"
+timeout = "2s"
+grace_period = "10s"
+method = "GET"
+path = "/_matrix/client/versions"
+
+[mounts]
+source = "lark_tuwunel_data"
+destination = "/var/lib/tuwunel"
+initial_size = "1GB"
+auto_extend_size_threshold = 80
+auto_extend_size_increment = "1GB"
+auto_extend_size_limit = "30GB"
+
+[[vm]]
+memory = "1gb"
+cpu_kind = "shared"
+cpus = 1

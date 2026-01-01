@@ -2,7 +2,7 @@ resource "cloudflare_record" "matrix_cname" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "CNAME"
   name    = "matrix"
-  content = "home.stardust.gay"
+  content = "lark-tuwunel-matrix.fly.dev"
   proxied = false
 }
 
