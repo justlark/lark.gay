@@ -10,9 +10,9 @@ technical decision that went into building this site.
 ## Matrix
 
 I self-host a [Matrix](https://matrix.org/) homeserver
-([tuwunel](https://tuwunel.chat/)) at `lark.gay`. Supporting both this site and
-the homeserver on the same domain requires some special configuration, which is
-worth documenting here.
+([tuwunel](https://tuwunel.chat/)) on [Fly.io](https://fly.io/) at `lark.gay`.
+Supporting both this site and the homeserver on the same domain requires some
+special configuration, which is worth documenting here.
 
 This site serves static JSON files at the following endpoints:
 
