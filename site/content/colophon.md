@@ -18,7 +18,7 @@ making your own websites, and I'm a big fan of lowering the barrier to entry.
 Sites that are obfuscated by complex build pipelines, transpiled languages, and
 minification make it harder to understand and adapt.
 
-I also want this to be a site *for everyone*. In addition to typical web
+I also want this to be a site _for everyone_. In addition to typical web
 accessibility considerations, I want this site to be light enough to load
 quickly on a range of devices; the median web user does not use a $1000
 smartphone on a 5G connection. I also want to respect users who prefer to keep
@@ -36,6 +36,11 @@ tracking scripts on this site. I use [Hyvor Talk](https://talk.hyvor.com/) for
 comments, which is a privacy-focused alternative to services like Disqus, and I
 have IP logging disabled.
 
+The supporting infrastructure for this site is managed using
+[OpenTofu](https://opentofu.org/). Rather than add an unnecessary dependency on
+a cloud provider for managing secrets, they're just encrypted with my SSH key
+and committed to the repo.
+
 ### Features
 
 Here are some of the cool and less-obvious features of this site:
@@ -48,8 +53,8 @@ Here are some of the cool and less-obvious features of this site:
   underutilized feature of browsers that allows you to define a
   [stylesheet](https://github.com/justlark/lark.gay/blob/main/static/assets/atom.xsl)
   which renders an XML document as an XHTML document client-side, without JS.
-- [Open Graph](https://ogp.me/) and [Twitter
-  Card](https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards)
+- [Open Graph](https://ogp.me/) and
+  [Twitter Card](https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards)
   metadata for rich previews when sharing links.
 - [JSON-LD](https://json-ld.org/) to provide machine-readable metadata.
 - [Theme picker](/#theme-picker) for changing the site's color scheme. The site
