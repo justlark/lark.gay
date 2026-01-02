@@ -1,3 +1,4 @@
 /site/public/
 /site/static/processed_images/
 /worker/node_modules/
+.env
