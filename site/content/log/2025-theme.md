@@ -1,5 +1,5 @@
 +++
-title = "My theme for 2025: Getting involved"
+title = "My theme for 2025: Get Involved"
 description = "Every calendar year, rather than make resolutions, I choose a *theme*. Here's how my theme for 2024 turned out, and here's what I'm planning for 2025."
 date = 2024-12-20
 
