@@ -1,7 +1,7 @@
 +++
 title = "My theme for 2026: Year of Collaboration"
 description = "Every calendar year, rather than make resolutions, I choose a *theme*. Here's how my theme for 2025 turned out, and here's what I'm planning for 2026."
-date = 2025-01-02
+date = 2026-01-02
 
 [taxonomies]
 tags = ["community"]
