@@ -38,7 +38,7 @@ resource "cloudflare_record" "apex_txt_spf" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "TXT"
   name    = "@"
-  content = "v=spf1 include:_spf.mailersend.net include:simplelogin.co ~all"
+  content = "v=spf1 include:simplelogin.co ~all"
   proxied = false
 }
 
@@ -57,11 +57,6 @@ resource "cloudflare_record" "apex_cname_dkim" {
     record3 = {
       name    = "dkim03._domainkey"
       content = "dkim03._domainkey.simplelogin.co."
-    }
-
-    mailersend = {
-      name    = "mlsend2._domainkey"
-      content = "mlsend2._domainkey.mailersend.net"
     }
   }
 
@@ -85,12 +80,4 @@ resource "cloudflare_record" "apex_txt_atproto" {
   type    = "TXT"
   name    = "_atproto"
   content = "did=did:plc:dpkvjlvuoz7d3h2an2uhfci7"
-}
-
-resource "cloudflare_record" "mta_cname" {
-  zone_id = data.cloudflare_zone.lark.id
-  type    = "CNAME"
-  name    = "mta"
-  content = "mailersend.net"
-  proxied = false
 }
