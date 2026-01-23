@@ -14,14 +14,22 @@ resource "cloudflare_record" "apex_txt_sl_verification" {
   proxied = false
 }
 
+resource "cloudflare_record" "apex_txt_protonmail_verification" {
+  zone_id = data.cloudflare_zone.lark.id
+  type    = "TXT"
+  name    = "@"
+  content = "protonmail-verification=8d508f554d747060d3d805eb7fbaaabb3551fe4f"
+  proxied = false
+}
+
 resource "cloudflare_record" "apex_mx" {
   for_each = {
     route1 = {
-      content  = "mx1.simplelogin.co."
+      content  = "mail.protonmail.ch"
       priority = 10
     }
     route2 = {
-      content  = "mx2.simplelogin.co."
+      content  = "mailsec.protonmail.ch"
       priority = 20
     }
   }
@@ -38,7 +46,7 @@ resource "cloudflare_record" "apex_txt_spf" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "TXT"
   name    = "@"
-  content = "v=spf1 include:simplelogin.co ~all"
+  content = "v=spf1 include:simplelogin.co include:_spf.protonmail.ch ~all"
   proxied = false
 }
 
@@ -57,6 +65,21 @@ resource "cloudflare_record" "apex_cname_dkim" {
     record3 = {
       name    = "dkim03._domainkey"
       content = "dkim03._domainkey.simplelogin.co."
+    }
+
+    protonmail1 = {
+      name    = "protonmail._domainkey"
+      content = "protonmail.domainkey.dx653tub4jmdyqidjldhxy5d3ssr3ylm2ltxavg64vrdnpxwjdn3q.domains.proton.ch."
+    }
+
+    protonmail2 = {
+      name    = "protonmail2._domainkey"
+      content = "protonmail2.domainkey.dx653tub4jmdyqidjldhxy5d3ssr3ylm2ltxavg64vrdnpxwjdn3q.domains.proton.ch."
+    }
+
+    protonmail3 = {
+      name    = "protonmail3._domainkey"
+      content = "protonmail3.domainkey.dx653tub4jmdyqidjldhxy5d3ssr3ylm2ltxavg64vrdnpxwjdn3q.domains.proton.ch."
     }
   }
 
