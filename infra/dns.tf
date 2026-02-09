@@ -104,3 +104,11 @@ resource "cloudflare_record" "apex_txt_atproto" {
   name    = "_atproto"
   content = "did=did:plc:dpkvjlvuoz7d3h2an2uhfci7"
 }
+
+resource "cloudflare_record" "floof_apex_cname" {
+  zone_id = data.cloudflare_zone.floof.id
+  type    = "CNAME"
+  name    = "@"
+  content = "floof-tuwunel-matrix.fly.dev"
+  proxied = false
+}
