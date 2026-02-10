@@ -12,6 +12,7 @@ TUWUNEL_DATABASE_PATH = "/var/lib/tuwunel/data"
 TUWUNEL_DATABASE_BACKUP_PATH = "/var/lib/tuwunel/backups"
 TUWUNEL_DATABASE_BACKUPS_TO_KEEP = "3"
 TUWUNEL_ALLOW_REGISTRATION = "true"
+TUWUNEL_NEW_USER_DISPLAYNAME_SUFFIX = ""
 
 [[services]]
 internal_port = 8080
