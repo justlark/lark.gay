@@ -44,6 +44,7 @@ initial_size = "1GB"
 auto_extend_size_threshold = 80
 auto_extend_size_increment = "1GB"
 auto_extend_size_limit = "30GB"
+snapshot_retention = 14
 
 [[vm]]
 memory = "1gb"
