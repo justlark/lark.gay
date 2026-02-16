@@ -8,10 +8,9 @@ RUN apk add --no-cache curl openssl \
 
 USER ejabberd
 
-RUN curl https://get.acme.sh | sh -s -- \
-    --install-online \
-    --home /opt/acme.sh \
-    --nocron
+RUN wget -O /tmp/acme.tar.gz https://github.com/acmesh-official/acme.sh/archive/master.tar.gz \
+    && tar xzf /tmp/acme.tar.gz -C /opt/acme.sh --strip-components=1 \
+    && rm /tmp/acme.tar.gz
 
 COPY --chown=ejabberd:ejabberd ejabberd.yml /etc/ejabberd/ejabberd.yml
 COPY --chown=ejabberd:ejabberd entrypoint.sh /usr/local/bin/entrypoint.sh
