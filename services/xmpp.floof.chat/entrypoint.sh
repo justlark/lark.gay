@@ -27,7 +27,8 @@ if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
         --domain "$ALT_DOMAIN" \
         --keylength ec-256 \
         --cert-home /home/ejabberd/certs \
-        --config-home "$ACME_CONFIG"
+        --config-home "$ACME_CONFIG" \
+        --accountemail lark@lark.gay
 fi
 
 # Start background renewal loop
