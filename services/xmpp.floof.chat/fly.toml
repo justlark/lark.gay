@@ -1,0 +1,49 @@
+app = "floof-ejabberd-xmpp"
+primary_region = "iad"
+
+[build]
+image = "ghcr.io/justlark/ejabberd-floof:latest"
+
+[[services]]
+internal_port = 5222
+protocol = "tcp"
+auto_start_machines = true
+auto_stop_machines = "off"
+min_machines_running = 1
+
+[[services.ports]]
+port = 5222
+
+[[services]]
+internal_port = 5269
+protocol = "tcp"
+auto_start_machines = true
+auto_stop_machines = "off"
+min_machines_running = 1
+
+[[services.ports]]
+port = 5269
+
+[[services]]
+internal_port = 5443
+protocol = "tcp"
+auto_start_machines = true
+auto_stop_machines = "off"
+min_machines_running = 1
+
+[[services.ports]]
+port = 5443
+
+[mounts]
+source = "floof_ejabberd_data"
+destination = "/home/ejabberd"
+initial_size = "1GB"
+auto_extend_size_threshold = 80
+auto_extend_size_increment = "1GB"
+auto_extend_size_limit = "30GB"
+snapshot_retention = 14
+
+[[vm]]
+memory = "512mb"
+cpu_kind = "shared"
+cpus = 1

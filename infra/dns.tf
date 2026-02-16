@@ -112,3 +112,43 @@ resource "cloudflare_record" "floof_apex_cname" {
   content = "floof-tuwunel-matrix.fly.dev"
   proxied = false
 }
+
+resource "cloudflare_record" "floof_xmpp_cname" {
+  zone_id = data.cloudflare_zone.floof.id
+  type    = "CNAME"
+  name    = "xmpp"
+  content = "floof-ejabberd-xmpp.fly.dev"
+  proxied = false
+}
+
+resource "cloudflare_record" "floof_xmpp_client_srv" {
+  zone_id = data.cloudflare_zone.floof.id
+  type    = "SRV"
+  name    = "_xmpp-client._tcp"
+
+  data {
+    service  = "_xmpp-client"
+    proto    = "_tcp"
+    name     = "floof.chat"
+    priority = 0
+    weight   = 5
+    port     = 5222
+    target   = "xmpp.floof.chat"
+  }
+}
+
+resource "cloudflare_record" "floof_xmpp_server_srv" {
+  zone_id = data.cloudflare_zone.floof.id
+  type    = "SRV"
+  name    = "_xmpp-server._tcp"
+
+  data {
+    service  = "_xmpp-server"
+    proto    = "_tcp"
+    name     = "floof.chat"
+    priority = 0
+    weight   = 5
+    port     = 5269
+    target   = "xmpp.floof.chat"
+  }
+}
