@@ -16,7 +16,7 @@ mkdir -p /home/ejabberd/certs
 mkdir -p "$ACME_CONFIG"
 
 # Copy config from image into volume where ejabberd expects it
-cp /etc/ejabberd/ejabberd.yml /home/ejabberd/conf/ejabberd.yml
+cp -a /etc/ejabberd/* /home/ejabberd/conf/
 
 # Issue certificate if not already present
 if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
