@@ -1,17 +1,22 @@
 #!/bin/sh
 set -eu
 
-ACME_HOME="/home/ejabberd/.acme.sh"
+ACME_HOME="/opt/acme.sh"
+ACME_CONFIG="/home/ejabberd/.acme.sh"
 CERT_DIR="/home/ejabberd/certs/floof.chat"
 DOMAIN="floof.chat"
 ALT_DOMAIN="xmpp.floof.chat"
 
 # Ensure volume directories exist
+mkdir -p /home/ejabberd/conf
 mkdir -p /home/ejabberd/database
 mkdir -p /home/ejabberd/logs
 mkdir -p /home/ejabberd/upload
 mkdir -p /home/ejabberd/certs
-mkdir -p "$ACME_HOME"
+mkdir -p "$ACME_CONFIG"
+
+# Copy config from image into volume where ejabberd expects it
+cp /etc/ejabberd/ejabberd.yml /home/ejabberd/conf/ejabberd.yml
 
 # Issue certificate if not already present
 if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
@@ -22,7 +27,7 @@ if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
         --domain "$ALT_DOMAIN" \
         --keylength ec-256 \
         --cert-home /home/ejabberd/certs \
-        --config-home "$ACME_HOME"
+        --config-home "$ACME_CONFIG"
 fi
 
 # Start background renewal loop
@@ -34,7 +39,7 @@ fi
             --domain "$DOMAIN" \
             --keylength ec-256 \
             --cert-home /home/ejabberd/certs \
-            --config-home "$ACME_HOME" 2>&1; then
+            --config-home "$ACME_CONFIG" 2>&1; then
             echo "Certificate renewed, reloading ejabberd..."
             /home/ejabberd/bin/ejabberdctl reload_config || true
         fi

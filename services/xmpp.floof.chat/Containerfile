@@ -2,18 +2,20 @@ FROM ghcr.io/processone/ejabberd:latest
 
 USER root
 
-RUN apk add --no-cache curl openssl
+RUN apk add --no-cache curl openssl \
+    && mkdir -p /opt/acme.sh && chown ejabberd:ejabberd /opt/acme.sh \
+    && mkdir -p /etc/ejabberd && chown ejabberd:ejabberd /etc/ejabberd
 
 USER ejabberd
 
 RUN curl https://get.acme.sh | sh -s -- \
     --install-online \
-    --home /home/ejabberd/.acme.sh \
+    --home /opt/acme.sh \
     --nocron
 
-COPY --chown=ejabberd:ejabberd ejabberd.yml /opt/ejabberd/conf/ejabberd.yml
-COPY --chown=ejabberd:ejabberd entrypoint.sh /opt/ejabberd/entrypoint.sh
-RUN chmod +x /opt/ejabberd/entrypoint.sh
+COPY --chown=ejabberd:ejabberd ejabberd.yml /etc/ejabberd/ejabberd.yml
+COPY --chown=ejabberd:ejabberd entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT []
-CMD ["/bin/sh", "/opt/ejabberd/entrypoint.sh"]
+CMD ["/usr/local/bin/entrypoint.sh"]
