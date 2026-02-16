@@ -3,7 +3,7 @@ set -eu
 
 ACME_HOME="/opt/acme.sh"
 ACME_CONFIG="/home/ejabberd/.acme.sh"
-CERT_DIR="/home/ejabberd/certs/floof.chat"
+CERT_DIR="/home/ejabberd/certs/floof.chat_ecc"
 DOMAIN="floof.chat"
 ALT_DOMAIN="xmpp.floof.chat"
 
@@ -28,7 +28,8 @@ if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
         --keylength ec-256 \
         --cert-home /home/ejabberd/certs \
         --config-home "$ACME_CONFIG" \
-        --accountemail lark@lark.gay
+        --accountemail lark@lark.gay \
+        || true
 fi
 
 # Start background renewal loop

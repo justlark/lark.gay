@@ -4,8 +4,8 @@ hosts:
 loglevel: info
 
 certfiles:
-  - /home/ejabberd/certs/floof.chat/fullchain.cer
-  - /home/ejabberd/certs/floof.chat/floof.chat.key
+  - /home/ejabberd/certs/floof.chat_ecc/fullchain.cer
+  - /home/ejabberd/certs/floof.chat_ecc/floof.chat.key
 
 listen:
   - port: 5222
