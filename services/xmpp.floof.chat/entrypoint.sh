@@ -42,9 +42,9 @@ fi
             --cert-home /home/ejabberd/certs \
             --config-home "$ACME_CONFIG" 2>&1; then
             echo "Certificate renewed, reloading ejabberd..."
-            /home/ejabberd/bin/ejabberdctl reload_config || true
+            ejabberdctl reload_config || true
         fi
     done
 ) &
 
-exec /home/ejabberd/bin/ejabberdctl foreground
+exec ejabberdctl foreground
