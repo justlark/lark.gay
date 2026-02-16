@@ -11,8 +11,8 @@ RUN curl https://get.acme.sh | sh -s -- \
     --home /home/ejabberd/.acme.sh \
     --nocron
 
-COPY --chown=ejabberd:ejabberd ejabberd.yml /home/ejabberd/conf/ejabberd.yml
-COPY --chown=ejabberd:ejabberd entrypoint.sh /home/ejabberd/entrypoint.sh
-RUN chmod +x /home/ejabberd/entrypoint.sh
+COPY --chown=ejabberd:ejabberd ejabberd.yml /opt/ejabberd/conf/ejabberd.yml
+COPY --chown=ejabberd:ejabberd entrypoint.sh /opt/ejabberd/entrypoint.sh
+RUN chmod +x /opt/ejabberd/entrypoint.sh
 
-CMD ["/home/ejabberd/entrypoint.sh"]
+CMD ["/opt/ejabberd/entrypoint.sh"]
