@@ -2,7 +2,7 @@ FROM ghcr.io/processone/ejabberd:latest
 
 USER root
 
-RUN apk add --no-cache curl openssl \
+RUN apk add --no-cache curl openssl ca-certificates \
     && mkdir -p /opt/acme.sh && chown ejabberd:ejabberd /opt/acme.sh \
     && cp -a /home/ejabberd/conf /etc/ejabberd && chown -R ejabberd:ejabberd /etc/ejabberd
 
