@@ -101,7 +101,7 @@ modules:
   mod_disco: {}
   mod_fail2ban: {}
   mod_http_upload:
-    put_url: https://xmpp.floof.chat:5443/upload
+    put_url: https://@HOST@:5443/upload
     docroot: /home/ejabberd/upload
     max_size: 104857600
     custom_headers:
