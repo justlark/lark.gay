@@ -33,6 +33,7 @@ listen:
 
 s2s_use_starttls: required
 
+default_db: sql
 sql_type: sqlite
 sql_database: /home/ejabberd/database/ejabberd.db
 
@@ -105,7 +106,6 @@ modules:
       "Access-Control-Allow-Headers": "Content-Type"
   mod_last: {}
   mod_mam:
-    db_type: sql
     assume_mam_usage: true
     default: always
   mod_muc:
