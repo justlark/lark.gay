@@ -25,6 +25,7 @@ listen:
     ip: "::"
     module: ejabberd_http
     tls: true
+    default_host: floof.chat
     request_handlers:
       /admin: ejabberd_web_admin
       /bosh: mod_bosh
