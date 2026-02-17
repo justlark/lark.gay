@@ -147,7 +147,7 @@ modules:
       /share: /home/ejabberd/share
   mod_invites:
     access_create_account: configure
-    landing_page: auto
+    landing_page: https://xmpp.floof.chat:5443/invites/{{ invite.token }}
     site_name: floof.chat
     token_expire_seconds: 604800
   mod_register:
