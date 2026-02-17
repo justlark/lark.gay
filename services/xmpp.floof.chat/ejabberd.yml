@@ -30,12 +30,15 @@ listen:
       /bosh: mod_bosh
       /ws: ejabberd_http_ws
       /upload: mod_http_upload
+      /invites: mod_invites
+      /share: mod_http_fileserver
 
 s2s_use_starttls: required
 
 default_db: sql
 sql_type: sqlite
 sql_database: /home/ejabberd/database/ejabberd.db
+update_sql_schema: true
 
 acl:
   admin:
@@ -64,7 +67,7 @@ access_rules:
   trusted_network:
     allow: loopback
   register:
-    allow: loopback
+    allow: all
 
 shaper:
   normal:
@@ -139,8 +142,25 @@ modules:
         access_model: whitelist
   mod_push: {}
   mod_push_keepalive: {}
+  mod_http_fileserver:
+    docroot:
+      /share: /home/ejabberd/share
+  mod_invites:
+    access_create_account: configure
+    landing_page: auto
+    site_name: floof.chat
+    token_expire_seconds: 604800
   mod_register:
     access: register
+    allow_modules:
+      - mod_invites
+    registration_watchers:
+      - lark@floof.chat
+    welcome_message:
+      subject: "Welcome to floof.chat!"
+      body: >
+        Welcome to floof.chat! If you have any questions, message Lark
+        (lark@floof.chat).
   mod_roster:
     versioning: true
   mod_s2s_dialback: {}
