@@ -1,6 +1,5 @@
 hosts:
   - floof.chat
-  - xmpp.floof.chat
 
 loglevel: info
 
@@ -31,8 +30,6 @@ listen:
       /bosh: mod_bosh
       /ws: ejabberd_http_ws
       /upload: mod_http_upload
-      /invites: mod_invites
-      /share: mod_http_fileserver
 
 s2s_use_starttls: required
 
@@ -101,7 +98,7 @@ modules:
   mod_disco: {}
   mod_fail2ban: {}
   mod_http_upload:
-    put_url: https://@HOST@:5443/upload
+    put_url: https://xmpp.floof.chat:5443/upload
     docroot: /home/ejabberd/upload
     max_size: 104857600
     custom_headers:
@@ -143,13 +140,9 @@ modules:
         access_model: whitelist
   mod_push: {}
   mod_push_keepalive: {}
-  mod_http_fileserver:
-    docroot:
-      /share: /home/ejabberd/share
   mod_invites:
     access_create_account: configure
-    landing_page: https://xmpp.floof.chat:5443/invites/{{ invite.token }}
-    site_name: floof.chat
+    landing_page: none
     token_expire_seconds: 604800
   mod_register:
     access: register

@@ -8,15 +8,6 @@ RUN apk add --no-cache curl openssl \
 
 USER ejabberd
 
-# Download JS/CSS assets for mod_invites landing page.
-RUN mkdir -p /home/ejabberd/share/jquery /home/ejabberd/share/bootstrap/js /home/ejabberd/share/bootstrap/css \
-    && curl -sL -o /home/ejabberd/share/jquery/jquery.min.js \
-       https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js \
-    && curl -sL -o /home/ejabberd/share/bootstrap/js/bootstrap.bundle.min.js \
-       https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js \
-    && curl -sL -o /home/ejabberd/share/bootstrap/css/bootstrap.min.css \
-       https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css
-
 RUN curl https://get.acme.sh | sh -s -- email=lark@lark.gay \
     --home /opt/acme.sh \
     --nocron
