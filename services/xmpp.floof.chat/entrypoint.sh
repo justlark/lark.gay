@@ -18,8 +18,6 @@ mkdir -p "$ACME_CONFIG"
 # Copy config from image into volume where ejabberd expects it
 cp -a /etc/ejabberd/* /home/ejabberd/conf/
 
-# Use system CA bundle so ejabberd trusts Let's Encrypt
-cp /etc/ssl/certs/ca-certificates.crt /home/ejabberd/conf/cacert.pem
 
 # Issue certificate if not already present
 if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
