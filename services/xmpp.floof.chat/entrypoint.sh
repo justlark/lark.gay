@@ -5,7 +5,7 @@ ACME_HOME="/opt/acme.sh"
 ACME_CONFIG="/home/ejabberd/.acme.sh"
 CERT_DIR="/home/ejabberd/certs/floof.chat_ecc"
 DOMAIN="floof.chat"
-ALT_DOMAIN="xmpp.floof.chat"
+WILDCARD_DOMAIN="*.floof.chat"
 
 # Ensure volume directories exist
 mkdir -p /home/ejabberd/conf
@@ -21,12 +21,12 @@ cp -a /etc/ejabberd/* /home/ejabberd/conf/
 
 # Issue certificate if not already present
 if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
-    echo "Issuing certificate for $DOMAIN and $ALT_DOMAIN..."
+    echo "Issuing certificates for $DOMAIN..."
     "$ACME_HOME"/acme.sh --issue \
         --server letsencrypt \
         --dns dns_cf \
         --domain "$DOMAIN" \
-        --domain "$ALT_DOMAIN" \
+        --domain "$WILDCARD_DOMAIN" \
         --keylength ec-256 \
         --cert-home /home/ejabberd/certs \
         --config-home "$ACME_CONFIG" \
