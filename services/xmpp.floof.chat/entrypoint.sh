@@ -25,6 +25,7 @@ cp /etc/ssl/certs/ca-certificates.crt /home/ejabberd/conf/cacert.pem
 if [ ! -f "$CERT_DIR/fullchain.cer" ]; then
     echo "Issuing certificate for $DOMAIN and $ALT_DOMAIN..."
     "$ACME_HOME"/acme.sh --issue \
+        --server letsencrypt \
         --dns dns_cf \
         --domain "$DOMAIN" \
         --domain "$ALT_DOMAIN" \
