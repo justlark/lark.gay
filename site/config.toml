@@ -9,9 +9,11 @@ feed_filenames = ["feed.xml"]
 author = "Lark Aster"
 
 [markdown]
-highlight_code = true
 external_links_target_blank = true
 bottom_footnotes = true
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
 
 [[taxonomies]]
 name = "tags"

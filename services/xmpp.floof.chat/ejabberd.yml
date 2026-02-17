@@ -142,7 +142,7 @@ modules:
   mod_push_keepalive: {}
   mod_invites:
     access_create_account: configure
-    landing_page: none
+    landing_page: https://lark.gay/invites/#/{{ invite.token }}
     token_expire_seconds: 604800
   mod_register:
     access: register
