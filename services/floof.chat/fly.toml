@@ -47,6 +47,6 @@ auto_extend_size_limit = "30GB"
 snapshot_retention = 14
 
 [[vm]]
-memory = "1gb"
+memory = "512mb"
 cpu_kind = "shared"
 cpus = 1
