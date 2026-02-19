@@ -8,15 +8,13 @@ hearing from folks!
 
 ✉️ [lark@lark.gay](mailto:lark@lark.gay)
 
-If you want to chat more securely, you can reach out over
-[Matrix](https://matrix.org), or email me to ask for my Signal username.
+Or, if you want to chat more securely, message me on Signal:
 
-💬 [@lark:lark.gay](https://matrix.to/#/@lark:lark.gay)
+💬 `lark.64`
 
-I also have a Bluesky! I don't really post; I've never been good at social
-media.
+You can also reach me over XMPP:
 
-🦋 [@lark.gay](https://bsky.app/profile/lark.gay)
+💬 [lark@floof.chat](xmpp:lark@floof.chat?message)
 
 Here's my button, if you want to link to Lark Space:
 
