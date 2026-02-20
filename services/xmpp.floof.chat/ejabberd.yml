@@ -150,10 +150,11 @@ modules:
       - mod_invites
     registration_watchers:
       - lark@floof.chat
+    password_strength: 64
     welcome_message:
       subject: "Welcome to floof.chat!"
       body: >
-        Welcome to floof.chat! If you have any questions, message Lark
+        Welcome, fellow floof! If you have any questions, message Lark
         (lark@floof.chat).
   mod_roster:
     versioning: true
