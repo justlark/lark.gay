@@ -56,6 +56,45 @@ to help. It's an inbox for organizers to collect contact information from folks
 who are interested, and where volunteers can share information about what kinds
 of help they can offer.
 
+## Talks
+
+If you live in the Boston area and have an organization, club, or friend group
+who wants to listen to me yap for approximately 40 minutes, please get in touch!
+If I can get to you via the T, the only fee is good vibes.
+
+🏛️ **Archivist Rebellion: Defending Queer History**
+
+_Join Lark Aster from the Ace Archive project to learn how and guerrilla
+archiving and community support puts queer history back into the hands of queer
+people._
+
+_Who do we entrust to preserve the history of our communities when the people in
+power are trying to erase us? In a landscape where schools, libraries, and
+academic institution are under attack, guerrilla archivists are turning out and
+running underground operations out of apartments, closets, and bedrooms across
+the country to save our history while we still can._
+
+_Ace Archive is a participatory queer history project to archive the history of
+the asexual and aromantic communities. Learn what Lark's work as an amateur
+archivist has taught it about community engagement, resistance, and the nature
+of activism. Lark will talk about blogging carnivals, copyright law, asexual
+manifestos, emailing strangers, 19th-century German sexology, The Chastity
+Underground, and that zine they found in Providence that changed everything._
+
+💾 **A House of Cards: Building a Sustainable Digital Future**
+
+_The tech industry has spent decades chasing bigger numbers, so why does it feel
+like our phones and laptops are only getting slower and more expensive every
+year? The digital world we've built for ourselves is a house of cards--an
+intractable system that is technologically, ecologically, and socially
+unsustainable. So what do we do? Furries are hacking game consoles and creating
+wireless protogen communication protocols. An art collective on the fringes of
+civilization is building computers from e-waste. Indie developers are
+resurrecting a failed experiment that was almost the internet. Join digital
+archivist and recovering technologist Lark Aster to learn how we can wrestle
+power out of the hands of the tech elite to build a more sustainable and
+equitable digital future._
+
 ## More Stuff
 
 - [Colophon](@/colophon.md)
