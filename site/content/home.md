@@ -85,15 +85,15 @@ If I can get to you via the T, the only fee is good vibes.
 
 > The tech industry has spent decades chasing bigger numbers, so why does it
 > feel like our phones and laptops are only getting slower and more expensive
-> every year? The digital world we've built for ourselves is a house of cards—an
-> intractable system that is technologically, ecologically, and socially
-> unsustainable. So what do we do? Furries are hacking game consoles and
-> creating wireless protogen communication protocols. An art collective on the
-> fringes of civilization is building computers from e-waste. Indie developers
-> are resurrecting a failed experiment that was almost the internet. Join
-> digital archivist and recovering technologist Lark Aster to learn how we can
-> wrestle power out of the hands of the tech elite to build a more sustainable
-> and equitable digital future.
+> every year? The digital world we've built for ourselves is a house of
+> cards--an intractable system that is technologically, ecologically, and
+> socially unsustainable. So what do we do? Furries are hacking game consoles
+> and creating wireless protogen communication protocols. An art collective on
+> the fringes of civilization is building computers from e-waste. Indie
+> developers are resurrecting a failed experiment that was almost the internet.
+> Join digital archivist and recovering technologist Lark Aster to learn how we
+> can wrestle power out of the hands of the tech elite to build a more
+> sustainable and equitable digital future.
 
 ## More Stuff
 
