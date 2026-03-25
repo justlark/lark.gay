@@ -3,48 +3,37 @@ title = "Lark Now"
 description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
-updated = 2026-01-02
+updated = 2026-03-25
 +++
 
 ## Ace Archive
 
-I recently gave a talk about [Ace Archive](https://acearchive.lgbt) for a local
-artist collective. I got some good advice about community organizing, and a few
-folks expressed interest in contributing to the project. I realized that if I
-want to build a community around Ace Archive, I need a community space. So I
-decided to set up a Discord server for folks interested in the project. You can
-join [here](https://discord.gg/Pk54SzxA8m).
-
-As part of that Discord server, I put together a list of ways people can
-contribute to the project besides contributing code. I want to lower the barrier
-to contributing as much as possible, because giving people an accessible way to
-get involved is how you build community.
-
-## Anthro New England
-
-I'm going to Anthro New England in January! I'll be hosting a panel about Ace
-Archive and co-hosting a panel about my local makerspace. I want 2026 to be the
-year I really start going to more furry events, so in the coming months I'm also
-planning on going to Furcationland in Portland, Maine and Eufuria in Albany, New
-York.
+I've been really getting the word out about
+[Ace Archive](https://acearchive.lgbt) lately. In the past few months I've given
+talks about it for a local artist collective, a convention, and a nonprofit.
 
 ## FanJam
 
-After several months of work, I'm reaching the point where
-[FanJam](https://fanjam.live/), a free event planning app I'm building for small
-cons, is ready to start showing off to people. There's tons left to do, but I
-have a viable MVP that I can start soliciting feedback on, and maybe even start
-approaching cons with.
+After almost a year of work, I'm starting to show off
+[FanJam](https://fanjam.live/), and folks have been responding well! I'm talking
+to a few cons about it, and have some leads for a few more cons who might be
+interested. I more features on the roadmap, but what I have right now is
+starting to feel pretty solid.
 
-## _Dirty Money in Somerset Valley_
+## Anville
 
-I've spent the past few months working on a puzzle game I'm calling _Dirty Money
-in Somerset Valley_, and I'm nearing the point of having something ready to show
-off. Here's the blurb:
+Anville, the local furry artist and maker collective I help organize, has really
+been picking up steam these past few months. Our last few events have been
+well-attended; we had four events in March alone! This project has been a dream
+for a long time; seeing it actually materialize has been awesome.
 
-> _Dirty Money in Somerset Valley_ is a singleplayer pen-and-paper puzzle game
-> where you pore over documents and collect evidence to uncover the truth about
-> corporate corruption in a small town.
+## Talks
 
-Right now _Dirty Money_ is on hiatus as I shift focus to Ace Archive and FanJam,
-but I'm hoping to pick it back up when those projects settle down.
+I'm writing a talk, tentatively titled **After Big Tech: Building a Sustainable
+Digital Future**. I'm currently talking with a local artist space about putting
+on an event so I can yap at people, which is exciting.
+
+## Fur Cons
+
+I'm going to Furcationland in Portland, Maine in April and Eufuria in Albany,
+New York in July!
