@@ -44,17 +44,14 @@ always happy to have guests, so feel free to make yourself at home.
 > with a spreadsheet and the kinds of people who can afford enterprise event
 > planning software.
 
+🛠️ [Anville](https://anthroville.studio/)
+
+> Anville is a Boston-area furry artist and maker collective.
+
 🖤 [Discuss.love](https://discuss.love/)
 
 > Discuss.love is a tool for negotiating relationships, in the style of the
 > "relationship smorgasbord" exercise.
-
-🛟 [Not Without Help](https://notwithout.help/)
-
-> Not Without Help is a tool for connecting activist groups with people who want
-> to help. It's an inbox for organizers to collect contact information from
-> folks who are interested, and where volunteers can share information about
-> what kinds of help they can offer.
 
 ## Talks
 
