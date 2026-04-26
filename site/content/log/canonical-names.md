@@ -4,7 +4,7 @@ description = "I have several different names that I use in different contexts, 
 date = 2025-03-20
 
 [taxonomies]
-tags = ["identity"]
+tags = ["personal"]
 
 [extra]
 uuid = "7eb2017a-7a02-4b30-b483-8ef177194119"
@@ -102,11 +102,14 @@ open-source or end-to-end encrypted, but I do appreciate that it doesn't
 shoehorn me into choosing a single "canonical" name, and I wish other platforms
 would follow suit.
 
-[^1]: It was actually a very sweet interaction; I explained that most of my
+[^1]:
+    It was actually a very sweet interaction; I explained that most of my
     friends call me Lark, but I still prefer [government name] with her, and she
     told me that she's happy to call me whatever I want. Genuinely a top-tier
     ally.
-[^2]: If you're not familiar with Discord, a "server" is analogous to a Slack
+
+[^2]:
+    If you're not familiar with Discord, a "server" is analogous to a Slack
     workspace or a Matrix space; it's a collection of text and voice channels
     with a membership and permissions system. Different communities you engage
     with on Discord will generally each have their own server.

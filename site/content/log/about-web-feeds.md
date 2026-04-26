@@ -4,7 +4,7 @@ description = "Why is nobody using web feeds anymore? You don't need to let corp
 date = 2024-10-17
 
 [taxonomies]
-tags = ["tech", "smallweb"]
+tags = ["tech"]
 
 [extra]
 uuid = "c7ca24b6-47c3-41aa-8b92-88539fffa13a"
@@ -16,9 +16,9 @@ web.
 
 Most blogging engines automatically generate a web feed. Most news sites have
 web feeds. Social media posts on [Mastodon](https://joinmastodon.org/) have web
-feeds. The US government has a [collection of
-feeds](https://www.govinfo.gov/feeds) for everything from congressional bills to
-court decisions.
+feeds. The US government has a
+[collection of feeds](https://www.govinfo.gov/feeds) for everything from
+congressional bills to court decisions.
 
 You install an app on your phone or computer, pick which feeds you want to
 subscribe to, and they appear in your own personal timeline.
@@ -56,8 +56,9 @@ Seeing exactly the content you've subscribed to shouldn't be a radical concept.
 Web feeds are an open standard; anyone can publish them, and anyone can
 subscribe to them, and corporations can't take that away from you.
 
-[^1]: Technically, RSS is one of several web feed formats, but it's been
+[^1]:
+    Technically, RSS is one of several web feed formats, but it's been
     genericized as a term for web feeds generally. This site has an
-    [Atom](https://en.wikipedia.org/wiki/Atom_(web_standard)) feed instead,
+    [Atom](<https://en.wikipedia.org/wiki/Atom_(web_standard)>) feed instead,
     which is a more modern alternative. If you're making a website, you should
     probably use Atom instead of RSS.

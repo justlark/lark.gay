@@ -3,9 +3,6 @@ title = "*Empire of Normality*: A review"
 description = "I recently read *Empire of Normality* by Robert Chapman, a history of how we conceptualize neurodiversity, an indictment of capitalism's role in pathologizing difference, and an argument that neurodivergent liberation is impossible under capitalism. Here's my review."
 date = 2024-10-22
 
-[taxonomies]
-tags = ["neurodiversity"]
-
 [extra]
 uuid = "eb6e733f-8915-4bc7-92a9-0c67e8a7ae92"
 +++
@@ -36,7 +33,7 @@ manufacturing work in a primarily industrial economy, the concept still applies
 to post-industrial economies where physical labor is replaced with cognitive and
 emotional labor.
 
-Rather than some sort of disease or chemical imbalance, it is *capitalism* which
+Rather than some sort of disease or chemical imbalance, it is _capitalism_ which
 disables us by holding us to impossibly stringent standards of
 functioning--narrowing the requirements for what is required to thrive in
 society. As the social model of disability posits that it is society's inability
@@ -47,7 +44,7 @@ bodyminds.
 While there have been recent pushes to accommodate the differences and recognize
 the abilities of neurodivergent people in the workplace, these only serve to
 mine neurodivergent people as an untapped source of productivity. Chapman's
-central thesis in *Empire of Normality* is that we won't see *true*
+central thesis in _Empire of Normality_ is that we won't see _true_
 neurodivergent liberation until we fully dismantle capitalism.
 
 ## Review
@@ -68,8 +65,8 @@ up and glossing over them.
 
 All that being said, this book is well worth the read for anyone interested in
 disability justice and neurodiversity theory. Much of the field has not kept up
-with the pace of neurodivergent-led theory and activism, whereas *Empire of
-Normality* is refreshingly contemporary, relevant, and nuanced. It's also a
+with the pace of neurodivergent-led theory and activism, whereas _Empire of
+Normality_ is refreshingly contemporary, relevant, and nuanced. It's also a
 relatively short text, which offsets its density.
 
 While the book's arguments are nuanced, it does not vacillate in its

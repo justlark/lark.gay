@@ -4,13 +4,13 @@ description = "The Gemini protocol distills the web down to its essentials, offe
 date = 2024-10-15
 
 [taxonomies]
-tags = ["tech", "smallweb"]
+tags = ["tech"]
 
 [extra]
 uuid = "6127366a-d257-48cc-bc3a-039402eb2cb9"
 +++
 
-*This has no relation to Google's Gemini large language model.*
+_This has no relation to Google's Gemini large language model._
 
 [The Gemini protocol](https://geminiprotocol.net/) is a lightweight alternative
 to the web. I'll often jokingly refer to it as "Web 0.5", playing on terms like
@@ -22,12 +22,12 @@ users. The smallweb movement presents an alternative: small websites and small
 networks. Tight-knit communities of peers. A focus on content over presentation.
 
 In its earliest iterations, the web was nothing more than a network of documents
-that link to one another. Check out [the first ever
-website](https://info.cern.ch/hypertext/WWW/TheProject.html) as an example. Over
-time, the web has accumulated layers of complexity to enable the applications
-it's used for today. That complexity comes at a cost, however: ballooning
-resource usage requiring ever-more powerful computers, threats to our privacy,
-and the commodification of our attention.
+that link to one another. Check out
+[the first ever website](https://info.cern.ch/hypertext/WWW/TheProject.html) as
+an example. Over time, the web has accumulated layers of complexity to enable
+the applications it's used for today. That complexity comes at a cost, however:
+ballooning resource usage requiring ever-more powerful computers, threats to our
+privacy, and the commodification of our attention.
 
 Gemini is a return to the principles of the early web: a network of documents
 that link to one another. It's private, secure, and lightweight by
@@ -40,8 +40,9 @@ the fun of it. If this appeals to you, I encourage you to give it a try. I
 recommend downloading [Lagrange](https://gmi.skyjake.fi/lagrange/), a browser
 like Chrome or Firefox, but for Gemini.
 
-If you're interested in hosting your own Gemini site, I built [a simple static
-site generator](https://github.com/justlark/gempost) that you might find useful.
+If you're interested in hosting your own Gemini site, I built
+[a simple static site generator](https://github.com/justlark/gempost) that you
+might find useful.
 
 I used to host a Gemini site under this domain. I've taken a break from it, but
 might return someday. Amid the growing enshittification of the web, alternatives

@@ -4,7 +4,7 @@ description = "Trying to choose which contacts can reach me when my phone is on 
 date = 2025-02-17
 
 [taxonomies]
-tags = ["relationships"]
+tags = ["personal"]
 
 [extra]
 uuid = "69221f24-a746-4241-874c-05f87fde1001"
@@ -30,7 +30,7 @@ of relationship hierarchies, much like social anarchism is a rejection of power
 hierarchies.
 
 Obviously starring contacts in my phone does not impose a hierarchy on my
-friends. But it kinda *feels* that way. There's this unspoken implication that
+friends. But it kinda _feels_ that way. There's this unspoken implication that
 features like this are intended to be used for your family and partners. Even
 though it's a purely logistical decision, choosing which friends I want to star
 feels like picking favorites.
@@ -42,6 +42,6 @@ those cases; my phone is just asking me who I want to be able to reach me when
 it's on Do Not Disturb, which is a very fair question that shouldn't be causing
 me so much angst.
 
-[^1]: For an overview of what relationship anarchy is about, I recommend [the
-    essay that introduced the
-    term](https://theanarchistlibrary.org/library/andie-nordgren-the-short-instructional-manifesto-for-relationship-anarchy).
+[^1]:
+    For an overview of what relationship anarchy is about, I recommend
+    [the essay that introduced the term](https://theanarchistlibrary.org/library/andie-nordgren-the-short-instructional-manifesto-for-relationship-anarchy).

@@ -4,7 +4,7 @@ description = "How I like my friends to refer to me."
 date = 2024-10-11
 
 [taxonomies]
-tags = ["identity", "language"]
+tags = ["personal"]
 
 [extra]
 uuid = "834194ef-8248-4f20-8cdb-fcc479481096"
@@ -15,7 +15,7 @@ another.
 
 I use they/it pronouns. I often have a difficult time articulating what exactly
 it is about it/it that I enjoy; I guess I like the idea that my gender isn't
-just nonbinary, but *other*.
+just nonbinary, but _other_.
 
 In the same vein, there are other ways I like to play with pronouns. I also
 enjoy:
