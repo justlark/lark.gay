@@ -48,6 +48,10 @@ always happy to have guests, so feel free to make yourself at home.
 
 > Anville is a Boston-area furry artist and maker collective.
 
+💾 [LiteboxFS](https://codeberg.org/justlark/liteboxfs)
+
+> LiteboxFS is a modern POSIX filesystem in a SQLite database.
+
 🖤 [Discuss.love](https://discuss.love/)
 
 > Discuss.love is a tool for negotiating relationships, in the style of the
