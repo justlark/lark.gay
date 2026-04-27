@@ -12,10 +12,6 @@ Or, if you want to chat more securely, message me on Signal:
 
 💬 `lark.64`
 
-You can also reach me over XMPP:
-
-💬 [lark@floof.chat](xmpp:lark@floof.chat?message)
-
 Here's my button, if you want to link to Lark Space:
 
 [![Lark Space](/assets/button.png)](/)
