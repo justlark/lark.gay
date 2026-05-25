@@ -61,7 +61,7 @@ always happy to have guests, so feel free to make yourself at home.
 
 If you live in the Boston area and have an organization, club, or friend group
 who wants to listen to me yap for approximately 40 minutes, please get in touch!
-If I can get to you via the T, the only fee is good vibes.
+No fee if I can get to you via the T.
 
 🏛️ **Archivist Rebellion: Defending Queer History**
 
