@@ -58,19 +58,21 @@ Interested in hosting the carnival? Leave a comment on this post or
 - Write something that follows the theme, however you choose to interpret it. It
   can be as short or long as you want!
 - Follow the instructions in the call for submissions to submit your piece.
-- Your piece should postdate the call for submissions.
+- Your piece should postdate (be written after) the call for submissions.
 
 **If you're hosting:**
 
 - Post a "call for submissions" at the start of the month.
-- Your call for submissions should include that month's theme, some specific
-  discussion prompts, and a way for folks to send you their submissions.
-- Respondents shouldn't need an account on your platform to contact you.
+  - Your call for submissions should link back to this page.
+  - Your call for submissions should include that month's theme, some specific
+    discussion prompts, and a way for folks to send you their submissions.
+  - Respondents shouldn't need an account on your platform to contact you.
 - Post a "roundup" shortly after the end of the month.
-- Your roundup post should link to each submission. You can also summarize them,
-  and even provide your own (positive!) commentary if you want.
-- Your roundup post should link back to your call for submissions.
-- You should edit your call for submissions to link to the roundup.
+  - Your roundup post should link to each submission. You can also summarize
+    them, and even provide your own (positive!) commentary if you want.
+  - Your roundup post should link back to this page and your call for
+    submissions.
+  - You should update your call for submissions to link to the roundup.
 
 ## The Carnival
 
