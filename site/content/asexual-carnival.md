@@ -3,6 +3,7 @@ title = "Aces on Parade"
 description = "A new aromantic and asexual blogging carnival"
 template = "article.html"
 date = 2025-04-07
+draft = true
 +++
 
 ## What is a blogging carnival
