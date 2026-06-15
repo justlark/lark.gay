@@ -2,7 +2,7 @@
 title = "Cuttle: A combat card game"
 description = "I recently learned of a somewhat obscure card game called Cuttle, which is a lot like Magic: The Gathering, but played with a standard 52-card deck."
 date = 2025-01-14
-updated = 2025-01-16
+updated = 2026-06-15
 
 [extra]
 uuid = "92f6a02e-7006-498f-8147-b1b3264b5d3e"
@@ -27,11 +27,14 @@ to participate in the deck-building aspect of the game.
 
 One major problem I have with learning new games is how the rulebooks are
 written. I often struggle to get the bigger picture--understanding the goal of
-the game, what a turn looks like, etc. So I decided to write
-[my own rulebook](https://github.com/justlark/cuttle), along with a cheatsheet
-to reference during the game. It follows the standard rules, but is written in a
-way that's more compatible with my brain, and I'm hoping with be helpful to
-others as well.
+the game, what a turn looks like, etc. So I decided to write my own rulebook,
+along with a cheatsheet to reference during the game. It follows the standard
+rules, but is written in a way that's more compatible with my brain, and I'm
+hoping with be helpful to others as well.
+
+- [Rules](https://share.lark.gay/cuttle-rules.pdf)
+- [Cheatsheet](https://share.lark.gay/cuttle-cheatsheet.pdf)
+- [Source](https://github.com/justlark/cuttle)
 
 I'm really excited to try this game out with my friends. I've always felt left
 out not being able to participate in tabletop games, so I think this might be
