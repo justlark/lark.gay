@@ -35,4 +35,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           # If we don't specify this, the action seems to use an outdated
           # version of Wrangler.
-          wranglerVersion: "4.40.2"
+          wranglerVersion: "4.100.0"
