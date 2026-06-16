@@ -3,8 +3,19 @@ title = "Lark Now"
 description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
-updated = 2026-05-17
+updated = 2026-06-16
 +++
+
+## FanJam
+
+[FanJam](https://fanjam.live/) is officially going to be used for
+[Anthro New England 2026](https://ane.boston)! This is a way bigger con than I
+ever expected to be working with, and I'm as excited as I am nervous.
+
+## Midway Menagerie
+
+I'm starting a furry blogging carnival! If you don't know what that is, check
+out [the homepage](@/furry-carnival.md).
 
 ## Cyberdeck
 
@@ -25,26 +36,27 @@ collective I help organize, has really been picking up steam this year. We're
 hosting 2-3 events per month now, which is crazy. This project has been a dream
 for a long time; seeing it actually materialize has been awesome.
 
-## Ace Archive
-
-I've been really getting the word out about
-[Ace Archive](https://acearchive.lgbt) lately. In the past few months I've given
-talks about it for a local artist collective, a convention, and a nonprofit.
-
-## FanJam
-
-After about a year of work, I'm starting to show off
-[FanJam](https://fanjam.live/), and folks have been responding well! I'm talking
-to a few cons about it, and have some leads for a few more cons who might be
-interested. I more features on the roadmap, but what I have right now is
-starting to feel pretty solid.
-
 ## Talks
 
 I'm writing a talk, tentatively titled **After Big Tech: Building a Sustainable
 Digital Future**. I'm going to be giving the talk at Eufuria in July. It still
 needs a lot of work to get to a place where I'll be happy with it, but we're
 getting there.
+
+## LiteboxFS
+
+My über-nerd project to build
+[a virtual filesystem backed by a SQLite database](https://codeberg.org/justlark/liteboxfs)
+is finally in what I consider to be a pretty good state, and I've released an
+initial version! It passes real filesystem test suites, which is something I'm
+quite proud of.
+
+## Ace Archive
+
+I've been really getting the word out about
+[Ace Archive](https://acearchive.lgbt) lately. In the past few months I've given
+talks about it for a local artist collective, a convention, and a nonprofit. I
+even hosted an in-person meetup!
 
 ## Fur Cons
 
