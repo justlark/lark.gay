@@ -15,9 +15,9 @@ A _blogging carnival_ is an event that gets people blogging around a particular
 topic. Every month, there's a theme or discussion prompt for folks to respond
 to, and at the end of the month there's a roundup post linking to everyone's
 submissions. A rotating "host" decides that month's theme, collects responses,
-and posts the roundup. The idea is to encourage discussion and bring attention
-to blogs that might otherwise go unnoticed. Blogging carnivals are an artifact
-of a bygone era of the web, but they are not forgotten.
+and posts the roundup. The idea is to encourage discussion and help folks
+discover new blogs. Think of it like a book club, except instead of reading
+books you write essays and share them.
 
 ## How it works
 

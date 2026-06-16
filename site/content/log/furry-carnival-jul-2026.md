@@ -18,8 +18,8 @@ This is a call for submissions for the July 2026
 > to respond to, and at the end of the month there's a roundup post linking to
 > everyone's submissions. A rotating "host" decides that month's theme, collects
 > responses, and posts the roundup. The idea is to encourage discussion and
-> bring attention to blogs that might otherwise go unnoticed. Blogging carnivals
-> are an artifact of a bygone era of the web, but they are not forgotten.
+> helps folks discover new blogs. Think of it like a book club, except instead
+> of reading books you write essays and share them.
 
 This month's theme is "Fandom and Community". Here are some specific prompts to
 get you started, but feel free to take the theme in a different direction!
