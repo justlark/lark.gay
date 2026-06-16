@@ -6,6 +6,9 @@ template = "article.html"
 
 _Midway Menagerie_ is a monthly furry blogging carnival.
 
+The theme for July 2026 is
+["Fandom and Community"](@/log/furry-carnival-jul-2026.md).
+
 ## What is a blogging carnival
 
 A _blogging carnival_ is an event that gets people blogging around a particular
@@ -74,7 +77,10 @@ Interested in hosting the carnival? Leave a comment on this post or
     submissions.
   - You should update your call for submissions to link to the roundup.
 
+Want an example? Feel free to take a look at the
+[July 2026 call for submissions](@/log/furry-carnival-jul-2026.md).
+
 ## The Carnival
 
-- **Jul 2026** | "[Fandom and Community](https://example.com)"
+- **Jul 2026** | "[Fandom and Community](@/log/furry-carnival-jul-2026.md)"
   ([Lark Space](https://lark.gay))

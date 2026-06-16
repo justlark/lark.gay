@@ -48,6 +48,10 @@ always happy to have guests, so feel free to make yourself at home.
 
 > Anville is a Boston-area furry artist and maker collective.
 
+🎪 [Midway Menagerie](@/furry-carnival.md)
+
+> Midway Menagerie is a monthly furry blogging carnival.
+
 🏷️ [LiteboxFS](https://codeberg.org/justlark/liteboxfs)
 
 > LiteboxFS is a modern POSIX filesystem in a SQLite database.
