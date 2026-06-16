@@ -9,13 +9,13 @@ updated = 2026-06-16
 ## FanJam
 
 [FanJam](https://fanjam.live/) is officially going to be used for
-[Anthro New England 2026](https://ane.boston)! This is a way bigger con than I
+[Anthro New England 2027](https://ane.boston)! This is a way bigger con than I
 ever expected to be working with, and I'm as excited as I am nervous.
 
 ## Midway Menagerie
 
-I'm starting a furry blogging carnival! If you don't know what that is, check
-out [the homepage](@/furry-carnival.md).
+I'm starting a furry blogging carnival called _Midway Menagerie_! If you don't
+know what that is, check out [the homepage](@/furry-carnival.md).
 
 ## Cyberdeck
 
