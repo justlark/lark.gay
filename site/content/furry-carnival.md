@@ -83,5 +83,5 @@ Want an example? Feel free to take a look at the
 
 ## The Carnival
 
-- **Jul 2026** | "[Fandom and Community](@/log/furry-carnival-jul-2026.md)"
+- **Jul 2026** | ["Fandom and Community"](@/log/furry-carnival-jul-2026.md)
   ([Lark Space](https://lark.gay))
