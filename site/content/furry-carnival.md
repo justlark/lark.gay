@@ -31,6 +31,7 @@ Submissions can take any form! Some examples:
 - A blog post on a personal site or platform like Tumblr
 - A Bluesky or Mastodon thread
 - A video essay
+- A poem
 - A drawing, photo, or other visual artwork
 
 Hosts pick a "theme" rather than a specific prompt to give contributors a lot of
