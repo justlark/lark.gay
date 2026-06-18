@@ -7,7 +7,7 @@ template = "article.html"
 _Midway Menagerie_ is a monthly furry blogging carnival.
 
 We have a [Telegram channel](https://t.me/+s3amTSjDLd5hNjMx) for receiving
-updates and reminders, but you do not need to join in participate.
+updates and reminders, but you do not need to join to participate.
 
 The theme for July 2026 is
 ["Fandom and Community"](@/log/furry-carnival-jul-2026.md), hosted by Lark.
