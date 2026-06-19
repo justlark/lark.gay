@@ -66,6 +66,7 @@ Interested in hosting the carnival? Leave a comment on this post or
   can be as short or long as you want!
 - Follow the instructions in the call for submissions to submit your piece.
 - Your piece should postdate (be written after) the call for submissions.
+- Your piece should link back to the call for submissions.
 
 **If you're hosting:**
 
