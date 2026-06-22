@@ -32,7 +32,7 @@ if (theme) {
   document.body.setAttribute("data-theme", theme);
 
   const currentThemeButton = document.querySelector(
-    `.theme-button[data-theme="${theme}"]`
+    `.theme-button[data-theme="${theme}"]`,
   );
   currentThemeButton.classList.add("current-tag");
 }

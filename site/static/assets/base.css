@@ -131,3 +131,15 @@ pre > code {
   border-radius: 0.25rem;
   background-color: var(--color-bright-black);
 }
+
+.decorative-star {
+  position: absolute;
+
+  &.decorative-star-bright {
+    color: var(--color-white);
+  }
+
+  &.decorative-star-dim {
+    color: var(--color-bright-black);
+  }
+}
