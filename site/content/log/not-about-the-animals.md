@@ -1,7 +1,7 @@
 +++
 title = "It's not really about the animals"
 description = "I reflect on my relationship with the furry community as a newcomer"
-date = 2026-06-30
+date = 2026-07-01
 draft = true
 
 [taxonomies]
