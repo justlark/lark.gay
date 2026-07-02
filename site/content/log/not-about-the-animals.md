@@ -19,7 +19,7 @@ I always love asking furries how they ended up in the community. Was there a
 particular piece of media that pulled them in? Did a friend drag them to a con?
 Did they find the fandom at a young age, or did it take time? How much do they
 engage in online vs IRL community? How long did it take to transition from
-private interest to engaging in community[^1]? To what extend do they even
+private interest to community engagement[^1]? To what extend do they even
 identify as a furry[^2]?
 
 I like asking these questions because I'm fairly new to the community myself. It
@@ -68,7 +68,7 @@ and a half has become the nexus of furry community for me; we generally see
 20-40 folks each month, and at this point I know most of the regulars. I always
 look forward to seeing my friends, and they're excited to see me too! Making
 this meetup every month is a high priority for me; in the past 18 months I've
-only missed one[^3].
+only missed one.
 
 For as much as I love this meetup, it wasn't always a good time. I _really_
 struggled to integrate myself into the group, which is unfortunately typical for
@@ -91,9 +91,9 @@ time each month.
 
 I'm incredibly happy to be where I'm at with this group, but there's still grief
 about needing to work so hard to get there, especially when I see folks who
-joined much more recently than me build those relationships so much quicker.
-They make it look effortless. I don't like to think of relationship-building as
-a race, but it does feel like getting lapped.
+joined much more recently than me build those relationships so much quicker. I
+don't like to think of relationship-building as a race, but it does feel like
+getting lapped. I sometimes even feel jealous watching it happen.
 
 Still, I'm proud of myself. Part of what makes me so proud of the work I've done
 with Anville is the personal development it represents. It took months of
@@ -109,8 +109,4 @@ step into new social contexts and find success, even if it's hard.
 
 [^2]:
     I do have at least one friend who is not a furry, but still attends furry
-    cons and meetups.
-
-[^3]:
-    I was sad to miss it, but it was for an important reason; I was taking ICE
-    defense training.
+    cons and meetups fairly regularly.
