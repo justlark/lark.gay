@@ -6,7 +6,7 @@ default:
 
 # build and serve the site locally
 dev:
-  zola --root ./site/ serve
+  zola --root ./site/ serve --drafts
 
 [working-directory: "./worker/"]
 _install:
