@@ -28,7 +28,7 @@ missing. From there, you'll need to find other players you can meet up with
 in-person--likely first- and second-degree friends of Lark. If you meet Lark
 in-person, they'll give you a random file if they have one on them--just ask.
 
-[the-lark-files-1.zip](/assets/the-lark-files-1.zip)
+[the-lark-files-1.zip](https://share.lark.gay/the-lark-files-1.zip)
 
 More files may be added over time, which Lark will then circulate.
 
