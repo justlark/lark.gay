@@ -13,7 +13,8 @@ uuid = "1c4b7a05-43d4-4f4f-ab28-9a0fde86d1a9"
 
 These are the posts from the July 2026
 [_Midway Menagerie_](@/furry-carnival.md), a monthly furry blogging carnival.
-This month's theme was ["Fandom and Community"](@/log/furry-carnival-jul-2026).
+This month's theme was
+["Fandom and Community"](@/log/furry-carnival-jul-2026.md).
 
 Loaf wrote ["furry community"](https://kero.gay/blog_posts/furry), where he
 talks about his introduction to furry, what joining the fandom has meant to him,
