@@ -16,6 +16,8 @@ These are the posts from the July 2026
 This month's theme was
 ["Fandom and Community"](@/log/furry-carnival-jul-2026.md).
 
+---
+
 Loaf wrote ["furry community"](https://kero.gay/blog_posts/furry), where he
 talks about his introduction to furry, what joining the fandom has meant to him,
 his relationship with online vs in-person community, and what it means to adopt
@@ -33,6 +35,8 @@ experiences. Like Loaf, online community has never really clicked for me; my
 social groups are all people I know IRL. Unlike Loaf, I spent most of my first
 con hiding in the quiet room.
 
+---
+
 Riven wrote ["Fandom and Community"](https://bnuuy.biz/library/2026-06-22/),
 where they reflect on how the intersection of the furry fandom and IRL meetups
 allowed them to engage in fandom in a way they had never been able to before.
@@ -47,5 +51,7 @@ I think Riven neatly summarizes one of the main hangups I have engaging with
 online community: "feeling like part of the conversation". Online interactions
 aren't bookended the way in-person interactions are; there's no way to jump in
 without feeling like I'm crashing a party.
+
+---
 
 Thank you to everyone who participated for the first month of this new carnival!
