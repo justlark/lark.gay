@@ -36,33 +36,63 @@ For specific instructions on how to play, continue reading.
 
 ## Instructions
 
-_The Lark Files_ are distributed via the [sneakerweb](https://sneakerweb.org/),
-which is a peer-to-peer protocol for publishing websites. It's like the web, but
-offline.
+If you download the `.zip` file above or get handed a flash drive from Lark or
+one of its friends, you'll see three files:
 
-To share your collection of _The Lark Files_, you'll need to install the
-sneakerweb tool [here](https://sneakerweb.org/downloads). This is a command you
-need to run in the terminal, but don't be intimidated! It's pretty simple.
+- `README.txt`
+- `collection.snk`
+- \[_something else_]
 
-When someone shares their collection with you, they'll send you a `.snk` file.
-To add that file to your collection, run this command, replacing
-`the-lark-files.snk` with the path of the file you were given.
+`README.txt` contains basic instructions and a link to this page. You can ignore
+`collection.snk` for now. The third file will be one of _The Lark Files_.
+
+**The one rule of _The Lark Files_ is that you're not allowed to share files
+over the internet.** You can meet up in-person, use a mutual friend as a
+courier, send a flash drive via postal mail, hide a flash drive in a public (a
+dead drop), etc.
+
+So what about that `collection.snk` file? _The Lark Files_ are also distributed
+via the [sneakerweb](https://sneakerweb.org/), which is a peer-to-peer system
+for publishing websites without using the internet. It's like the web, but
+offline. If you're curious about this (and somewhat technically minded), read
+on. However, you don't need to read or understand the next section to
+participate in _The Lark Files_.
+
+## The Sneakerweb
+
+The sneakerweb works like this:
+
+- Everyone has their own private collection of sneakersites, which may include
+  some of _The Lark Files_.
+- You can browse the sneakersites you have saved on you computer in your web
+  browser.
+- To share your collection of sneakersites with someone, you export them to a
+  `.snk` file.
+- If someone sends you a `.snk` file, you can import those sneakersites into
+  your collection.
+
+To be part of the sneakerweb, you'll need to install the CLI tool
+[here](https://sneakerweb.org/downloads).
+
+To import a `.snk` file into your collection:
 
 ```
-sneakerweb import the-lark-files.snk
+sneakerweb import collection.snk
 ```
 
-To share your collection with someone else, you can export it to a `.snk` file
-with this command:
+To export your collection to a `.snk` file:
 
 ```
-sneakerweb export the-lark-files.snk
+sneakerweb export collection.snk
 ```
 
-To see the files you've collected, run this command, then open
-[this link](http://351aab661378a02bcf30c8396921404b25c53bd1305b6edae217be5e012a9151.localhost:1312/)
-in your browser.
+To browse your collection of sneakersites in your web browser, run this command:
 
 ```
 sneakerweb serve
 ```
+
+If you have any of _The Lark Files_ in your sneakerweb collection, you can brose
+them by opening the link below:
+
+[The Lark Files | Index](http://351aab661378a02bcf30c8396921404b25c53bd1305b6edae217be5e012a9151.localhost:1312/)
