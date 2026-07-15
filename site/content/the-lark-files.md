@@ -48,7 +48,7 @@ one of its friends, you'll see three files:
 
 **The one rule of _The Lark Files_ is that you're not allowed to share files
 over the internet.** You can meet up in-person, use a mutual friend as a
-courier, send a flash drive via postal mail, hide a flash drive in a public (a
+courier, send a flash drive via postal mail, hide a flash drive in public (a
 dead drop), etc.
 
 So what about that `collection.snk` file? _The Lark Files_ are also distributed
@@ -92,7 +92,7 @@ To browse your collection of sneakersites in your web browser, run this command:
 sneakerweb serve
 ```
 
-If you have any of _The Lark Files_ in your sneakerweb collection, you can brose
-them by opening the link below:
+If you have any of _The Lark Files_ in your sneakerweb collection, you can
+browse them by running the command above and opening the link below:
 
 [The Lark Files | Index](http://351aab661378a02bcf30c8396921404b25c53bd1305b6edae217be5e012a9151.localhost:1312/)
