@@ -16,19 +16,18 @@ exchanging what you've found.
 _The Lark Files_ is a collaborative game rather than a competitive one. The goal
 is to encourage folks to meet up, make friends, and get offline.
 
-Each file is relevant to Lark in some way--representing one of its interests,
+Each file is significant to Lark in some way--representing one of its interests,
 hobbies, or a piece of lore. These files are intended to be esoteric; you might
 not know what you're looking at or how it relates to Lark. A short title is
 provided to give you a nugget of context, but the rest is left to your research
 and interpretation.
 
-If you want to participate, you can download **File \#1** below. Each file is
-numbered, so you can keep track of which you've collected and which you're
-missing. From there, you'll need to find other players you can meet up with
+If you want to participate, you can download your first bundle of files below.
+From there, you'll need to find other players you can meet up with
 in-person--likely first- and second-degree friends of Lark. If you meet Lark
-in-person, they'll give you a random file if they have one on them--just ask.
+in-person, they'll give you a few files if they have any on them--just ask.
 
-[the-lark-files-1.zip](https://share.lark.gay/the-lark-files-1.zip)
+[the-lark-files-bundle.zip](https://share.lark.gay/the-lark-files-bundle.zip)
 
 More files may be added over time, which Lark will then circulate.
 
@@ -37,14 +36,15 @@ For specific instructions on how to play, continue reading.
 ## How do I participate?
 
 If you download the `.zip` file above or get handed a flash drive from Lark or
-one of its friends, you'll see three files:
+one of its friends, you'll see some files:
 
-- `README.txt`
-- `collection.snk`
-- \[_something else_]
+- 📄 `README.txt`
+- 📄 `collection.snk`
+- 📁 `files/`
 
 `README.txt` contains basic instructions and a link to this page. You can ignore
-`collection.snk` for now. The third file will be one of _The Lark Files_.
+`collection.snk` for now. The `files/` folder will contain a few of _The Lark
+Files_.
 
 **The one rule of _The Lark Files_ is that you're not allowed to share files
 over the internet.** You can meet up in-person, use a mutual friend as a
@@ -54,9 +54,11 @@ dead drop), etc.
 So what about that `collection.snk` file? _The Lark Files_ are also distributed
 via the [sneakerweb](https://sneakerweb.org/), which is a peer-to-peer system
 for publishing websites without using the internet. It's like the web, but
-offline. If you're curious about this (and somewhat technically minded), read
-on. However, you don't need to read or understand the next section to
-participate in _The Lark Files_.
+offline.
+
+You don't need to be part of the sneakerweb to participate in _The Lark Files_,
+but it's the only way to see the full title of each file and keep track of which
+you still need to collect.
 
 ## What is the sneakerweb?
 
@@ -104,7 +106,6 @@ on them?
 
 The sneakerweb solves a few problems:
 
-- Lark can give each file a title that appears above it on the sneakersite.
 - It's possible to have browsable index of _The Lark Files_; you can see a list
   of all the files in circulation to keep track of which you've collected and
   which you have yet to find. Importantly, when new files are put into
