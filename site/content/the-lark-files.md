@@ -4,7 +4,7 @@ description = "A collaborative scavenger hunt for building lore, finding communi
 template = "article.html"
 +++
 
-## Welcome
+## What is this?
 
 _The Lark Files_ is a series of images, videos, and documents distributed among
 people Lark has met. These files form a
@@ -34,7 +34,7 @@ More files may be added over time, which Lark will then circulate.
 
 For specific instructions on how to play, continue reading.
 
-## Instructions
+## How do I participate?
 
 If you download the `.zip` file above or get handed a flash drive from Lark or
 one of its friends, you'll see three files:
@@ -58,7 +58,7 @@ offline. If you're curious about this (and somewhat technically minded), read
 on. However, you don't need to read or understand the next section to
 participate in _The Lark Files_.
 
-## The Sneakerweb
+## What is the sneakerweb?
 
 The sneakerweb works like this:
 
@@ -96,3 +96,19 @@ If you have any of _The Lark Files_ in your sneakerweb collection, you can
 browse them by running the command above and opening the link below:
 
 [The Lark Files | Index](http://351aab661378a02bcf30c8396921404b25c53bd1305b6edae217be5e012a9151.localhost:1312/)
+
+## Why the sneakerweb?
+
+Why use the sneakerweb? Why not just pass around flash drives with regular files
+on them?
+
+The sneakerweb solves a few problems:
+
+- Lark can give each file a title that appears above it on the sneakersite.
+- It's possible to have browsable index of _The Lark Files_; you can see a list
+  of all the files in circulation to keep track of which you've collected and
+  which you have yet to find. Importantly, when new files are put into
+  circulation, the index updates as well.
+- You can prove that a file is from Lark; only Lark holds the secret key to
+  update which files appear in the index. If a link to a file does _not_ appear
+  in the index, it's not one of _The Lark Files_.
