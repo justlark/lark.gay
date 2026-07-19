@@ -54,4 +54,19 @@ without feeling like I'm crashing a party.
 
 ---
 
+I wrote
+["It's not really about the animals"](@/log/its-not-about-the-animals.md), where
+I describe how my relationship with the furry community is more centered on the
+community aspect than the furry part. I talk about the challenges I face
+integrating into new social contexts, and how rewarding it's been to come out on
+the other side of it.
+
+> My evolution from that timidity to organizing events of my own has been really
+> good for me--a measure of self-confidence and proof that I _can_ step into new
+> social contexts and find success, even when it's hard.
+
+---
+
 Thank you to everyone who participated for the first month of this new carnival!
+I encourage you to leave comments below with your thoughts on any of this
+month's submissions, or just the carnival as a whole.
