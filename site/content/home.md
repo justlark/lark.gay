@@ -61,6 +61,11 @@ always happy to have guests, so feel free to make yourself at home.
 > Discuss.love is a tool for negotiating relationships, in the style of the
 > "relationship smorgasbord" exercise.
 
+🔎 [The Lark Files](@/the-lark-files.md)
+
+> _The Lark Files_ is a collaborative scavenger hunt for building lore, finding
+> community, and getting offline.
+
 ## Talks
 
 If you live in the Boston area and have an organization, club, or friend group
