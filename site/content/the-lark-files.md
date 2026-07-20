@@ -40,10 +40,10 @@ one of its friends, you'll see some files:
 
 - 📄 `README.txt`
 - 📄 `collection.snk`
-- 📁 `files/`
+- 📁 `Files/`
 
 `README.txt` contains basic instructions and a link to this page. You can ignore
-`collection.snk` for now. The `files/` folder will contain a few of _The Lark
+`collection.snk` for now. The `Files/` folder will contain a few of _The Lark
 Files_.
 
 **The one rule of _The Lark Files_ is that you're not allowed to share files
