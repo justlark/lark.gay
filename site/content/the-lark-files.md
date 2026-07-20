@@ -57,8 +57,7 @@ for publishing websites without using the internet. It's like the web, but
 offline.
 
 You don't need to be part of the sneakerweb to participate in _The Lark Files_,
-but it's the only way to see the full title of each file and keep track of which
-you still need to collect.
+but it's the only way to keep track of which files you still need to collect.
 
 ## What is the sneakerweb?
 
