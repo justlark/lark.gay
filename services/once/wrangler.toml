@@ -1,0 +1,14 @@
+name = "lark-space-once"
+main = "build/index.js"
+compatibility_date = "2026-07-28"
+
+[build]
+command = "cargo install -q \"worker-build@^0.8\" && worker-build --release"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "a2f7859b265e4895a55c7041dd99251b"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "lark-space-once"
