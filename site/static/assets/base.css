@@ -143,3 +143,24 @@ pre > code {
     color: var(--color-bright-black);
   }
 }
+
+button {
+  border: 2px solid var(--color-bright-black);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  color: var(--color-fg);
+}
+
+button:hover {
+  background-color: var(--color-bright-black);
+  cursor: pointer;
+}
+
+textarea {
+  border: 2px solid var(--color-bright-black);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: var(--color-fg);
+}

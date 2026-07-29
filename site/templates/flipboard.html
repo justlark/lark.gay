@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block meta_vars %}
+  {% set this = page | default(value=section) %}
+  {% set canonical_url = this.permalink %}
+  {% set title = this.title | default(value=config.title) | markdown(inline=true) | striptags %}
+  {% set description = this.description | default(value=config.description) | markdown(inline=true) | striptags %}
+{% endblock %}
+{% block body %}
+  <script src="/assets/flipboard.js" defer></script>
+  <header aria-labelledby="flipboard-title">
+    <h1 id="flipboard-title">{{ title }}</h1>
+  </header>
+  <p class="page-lead">{{ description }}</p>
+  <main>
+    <form id="flipboard-form">
+      <textarea id="flipboard-input" placeholder="Type a message here…"></textarea>
+      <button id="flipboard-send-button" type="button">Send</button>
+    </form>
+  </main>
+{% endblock %}
