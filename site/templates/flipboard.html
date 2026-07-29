@@ -11,10 +11,17 @@
     <h1 id="flipboard-title">{{ title }}</h1>
   </header>
   <p class="page-lead">{{ description }}</p>
-  <main>
+  <main class="page-body">
+    <p>
+      Your message can include letters and numbers, most symbols on the keyboard,
+      and the ❤️ emoji.
+    </p>
     <form id="flipboard-form">
       <textarea id="flipboard-input" placeholder="Type a message here…"></textarea>
       <button id="flipboard-send-button" type="button">Send</button>
     </form>
+    <p id="flipboard-warning" hidden class="bright-red">
+      You don't have permission to do this! Lark did not receive your message.
+    </p>
   </main>
 {% endblock %}
