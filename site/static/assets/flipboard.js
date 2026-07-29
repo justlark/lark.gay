@@ -29,7 +29,7 @@ sendButton.addEventListener("click", async () => {
       body: message,
     });
 
-    if (response.status === 403) {
+    if (response.status === 401 || response.status === 403) {
       authWarningText.hidden = false;
 
       setTimeout(() => {

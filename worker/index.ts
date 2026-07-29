@@ -28,9 +28,8 @@ const HEADERS: HeaderPatterns = {
 
 interface Env {
   ASSETS: Fetcher;
+  KV: KVNamespace;
   NOTIFICATIONS_TOKEN: string;
-  FLIPBOARD_TOKEN: string;
-  VESTABOARD_API_TOKEN: string;
   DISCORD_WEBHOOK: string;
 }
 
@@ -108,27 +107,15 @@ export default {
       request.method === "POST" &&
       url.pathname.startsWith(FLIPBOARD_PREFIX)
     ) {
-      const encoder = new TextEncoder();
+      const token = url.searchParams.get("token");
 
-      const expectedToken = encoder.encode(env.FLIPBOARD_TOKEN);
-      const actualToken = encoder.encode(
-        url.searchParams.get("token") ?? undefined,
-      );
-
-      let tokenIsValid = false;
-
-      try {
-        // This will throw an exception if the lengths are different.
-        tokenIsValid = crypto.subtle.timingSafeEqual(
-          actualToken,
-          expectedToken,
-        );
-      } catch {
-        // Redundant, but included for clarity.
-        tokenIsValid = false;
+      if (token === null) {
+        return new Response("Missing token", { status: 401 });
       }
 
-      if (!tokenIsValid) {
+      const apiToken = await env.KV.get(`token:${token}:api`);
+
+      if (apiToken === null) {
         return new Response("Invalid token", { status: 403 });
       }
 
@@ -138,7 +125,7 @@ export default {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-Vestaboard-Token": env.VESTABOARD_API_TOKEN,
+          "X-Vestaboard-Token": apiToken,
         },
         body: JSON.stringify({
           text: message,

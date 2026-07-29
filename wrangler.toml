@@ -18,3 +18,7 @@ enabled = true
 [env.prod.route]
 pattern = "lark.gay"
 custom_domain = true
+
+[[env.prod.kv_namespaces]]
+binding = "KV"
+id = "b44ebaec3ad247bcbd1ab8a2b3c0d5ab"
