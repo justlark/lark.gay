@@ -1,26 +1,42 @@
 const inputTextarea = document.getElementById("flipboard-input");
 const sendButton = document.getElementById("flipboard-send-button");
-const warningText = document.getElementById("flipboard-warning");
+const authWarningText = document.getElementById("flipboard-permission-warning");
+const lengthWarningText = document.getElementById("flipboard-length-warning");
 const successText = document.getElementById("flipboard-success");
+
+const TOAST_TTL_MILLIS = 5000;
+const MAX_LEN_GRAPHEMES = 45;
 
 sendButton.addEventListener("click", async () => {
   const message = inputTextarea.value.trim();
   const params = new URLSearchParams(location.search);
 
   if (message) {
+    const messageLen = [...new Intl.Segmenter().segment(message)].length;
+
+    if (messageLen > MAX_LEN_GRAPHEMES) {
+      lengthWarningText.hidden = false;
+
+      setTimeout(() => {
+        lengthWarningText.hidden = true;
+      }, TOAST_TTL_MILLIS);
+
+      return;
+    }
+
     let response = await fetch(`/flipboard/?token=${params.get("token")}`, {
       method: "POST",
       body: message,
     });
 
     if (response.status === 403) {
-      warningText.hidden = false;
+      authWarningText.hidden = false;
 
       setTimeout(() => {
-        warningText.hidden = true;
-      }, 5000);
+        authWarningText.hidden = true;
+      }, TOAST_TTL_MILLIS);
     } else {
-      warningText.hidden = true;
+      authWarningText.hidden = true;
     }
 
     if (response.status === 200) {
@@ -28,7 +44,7 @@ sendButton.addEventListener("click", async () => {
 
       setTimeout(() => {
         successText.hidden = true;
-      }, 5000);
+      }, TOAST_TTL_MILLIS);
     } else {
       successText.hidden = true;
     }
