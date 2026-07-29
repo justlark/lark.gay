@@ -1,5 +1,6 @@
 const MATRIX_PROXY_PREFIXES = ["/_matrix/", "/_tuwunel/"];
 const NOTIFICATIONS_PREFIX = "/notifications/";
+const FLIPBOARD_PREFIX = "/flipboard/";
 const MATRIX_PROXY_DOMAIN = "matrix.lark.gay";
 
 type HeaderPatterns = Record<string, Record<string, string>>;
@@ -28,6 +29,8 @@ const HEADERS: HeaderPatterns = {
 interface Env {
   ASSETS: Fetcher;
   NOTIFICATIONS_TOKEN: string;
+  FLIPBOARD_TOKEN: string;
+  VESTABOARD_API_TOKEN: string;
   DISCORD_WEBHOOK: string;
 }
 
@@ -54,7 +57,10 @@ export default {
     // Make an API call like this to send "Hello World" to Lark's Discord:
     //
     //   POST https://lark.gay/notifications/?token=REDACTED&msg=Hello%20World
-    if (url.pathname.startsWith(NOTIFICATIONS_PREFIX)) {
+    if (
+      request.method === "POST" &&
+      url.pathname.startsWith(NOTIFICATIONS_PREFIX)
+    ) {
       const encoder = new TextEncoder();
 
       const expectedToken = encoder.encode(env.NOTIFICATIONS_TOKEN);
@@ -88,6 +94,54 @@ export default {
         },
         body: JSON.stringify({
           content: message,
+        }),
+      });
+    }
+
+    // Send notifications to Lark's flipboard.
+    //
+    // Make an API call like to send the text in the request body to Lark's
+    // flipboard.
+    //
+    //   POST https://lark.gay/flipboard/?token=REDACTED
+    if (
+      request.method === "POST" &&
+      url.pathname.startsWith(FLIPBOARD_PREFIX)
+    ) {
+      const encoder = new TextEncoder();
+
+      const expectedToken = encoder.encode(env.FLIPBOARD_TOKEN);
+      const actualToken = encoder.encode(
+        url.searchParams.get("token") ?? undefined,
+      );
+
+      let tokenIsValid = false;
+
+      try {
+        // This will throw an exception if the lengths are different.
+        tokenIsValid = crypto.subtle.timingSafeEqual(
+          actualToken,
+          expectedToken,
+        );
+      } catch {
+        // Redundant, but included for clarity.
+        tokenIsValid = false;
+      }
+
+      if (!tokenIsValid) {
+        return new Response("Invalid token", { status: 403 });
+      }
+
+      const message = await request.text();
+
+      return await fetch("https://cloud.vestaboard.com/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Vestaboard-Token": env.VESTABOARD_API_TOKEN,
+        },
+        body: JSON.stringify({
+          text: message,
         }),
       });
     }
