@@ -1,7 +1,7 @@
 +++
 title = "Midway Menagerie July 2026 Roundup: \"Fandom and Community\""
 description = "Midway Menagerie is a monthly furry blogging carnival. Here are the posts from this month's theme, \"Fandom and Community\"."
-date = 2026-07-01
+date = 2026-08-03
 draft = true
 
 [taxonomies]
@@ -51,6 +51,29 @@ I think Riven neatly summarizes one of the main hangups I have engaging with
 online community: "feeling like part of the conversation". Online interactions
 aren't bookended the way in-person interactions are; there's no way to jump in
 without feeling like I'm crashing a party.
+
+---
+
+Rouka wrote
+["Individualism in Fandoms"](https://rouka.bearblog.dev/2026-07-midway-menagerie/),
+where she discusses her journey stepping into various communities--everything
+from furry to kink to gacha--and the roadblocks she faced along the way. She
+describes the way special education isolates neurodivergent kids, the challenge
+of expressing your authentic self while living with conservative parents, and
+the difficulty of breaking into longstanding friend groups. She closes with a
+message of hope for herself.
+
+> Don’t forget to remind yourself why you are in the community you are in to
+> begin with, and don’t forget who you are and ultimately have a clear idea of
+> who you want to be, both yourself and the people you want to be around.
+
+I definitely relate to how impossible breaking into longstanding friend groups
+can feel, as well as the perils of navigating unspoken social rules. Rouka makes
+a good point in that it takes a stable foundation--a good home life and people
+who accept you for who you are--to have a chance of being social and stepping
+out into community. For different reasons--mostly health-related in my case--I
+didn't have that stable foundation when I was younger, and that similarly
+hampered my ability to make friends and find community.
 
 ---
 
