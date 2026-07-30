@@ -14,7 +14,6 @@ Things to know about me:
 - 🌶️ autistic
 - 💚 polyamorous
 - 😺 furry
-- 🎂 27
 - ⏰ eastern time zone (UTC-04:00 / UTC-05:00)
 
 ## This Site
