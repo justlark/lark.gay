@@ -10,7 +10,7 @@ Oh gosh I'm not very good at talking about myself.
 Things to know about me:
 
 - 🏳️‍⚧️ trans
-- ♠️ aro/ace
+- 🏳️‍🌈 queer
 - 🌶️ autistic
 - 💚 polyamorous
 - 😺 furry
