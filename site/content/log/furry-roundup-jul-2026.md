@@ -77,6 +77,27 @@ hampered my ability to make friends and find community.
 
 ---
 
+Enii wrote
+["Midway Menagerie: July 2026"](https://energyscarf.net/blog/midway-menagerie-july-2026/),
+where she recounts her introduction to furry, from childhood to the present day.
+She talks about early experiences encountering furries online, early-web furry
+communities, platforms that have come and gone, her first conventions, and the
+friends she made along the way.
+
+> It was the summer of 2012 when I first learned about furries. I was on summer
+> vacation before entering 8th grade and bouncing around YouTube one afternoon.
+> I don't remember what led me to it, but eventually I stumbled across a few
+> videos of the dance competition at Anthrocon 2012. I was amazed at the
+> dancers' skill and especially at the fact that they pulled it off in full
+> costume!
+
+While the timeline differed--I didn't develop an interest in furry until a few
+years ago--running across videos of fursuiters having fun at a convention was
+the spark for me as well. I was also personally touched to hear that Anville has
+become so important to her, as it has to me.
+
+---
+
 I wrote
 ["It's not really about the animals"](@/log/its-not-about-the-animals.md), where
 I describe how my relationship with the furry community is more centered on the
