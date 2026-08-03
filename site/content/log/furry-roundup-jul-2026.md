@@ -1,7 +1,7 @@
 +++
 title = "Midway Menagerie July 2026 Roundup: \"Fandom and Community\""
 description = "Midway Menagerie is a monthly furry blogging carnival. Here are the posts from this month's theme, \"Fandom and Community\"."
-date = 2026-08-03
+date = 2026-08-04
 draft = true
 
 [taxonomies]
