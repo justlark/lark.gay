@@ -174,8 +174,12 @@ the other side of it.
 ---
 
 Thank you to everyone who participated for the first month of this new carnival!
+It brings me joy to see folks engaging with this silly little project of mine,
+and I'm excited to see what folks write next month.
+
 I encourage you to leave comments below with your thoughts on any of this
-month's submissions, or just the carnival as a whole.
+month's submissions, or just the carnival as a whole. Also let me know if you
+would like to volunteer to host the carnival in September!
 
 The theme for next month (August 2026) is
 ["Where is furry?"](https://foxriot.com/writing/midway-menagerie-aug-call-for-submissions.html),
