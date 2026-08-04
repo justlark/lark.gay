@@ -10,6 +10,9 @@ tags = ["carnival"]
 uuid = "43df140f-361b-4481-b91b-5cacbe994f1d"
 +++
 
+**Update:** You can read the submissions from this month
+[here](@/log/furry-roundup-jul-2026.md).
+
 This is a call for submissions for the July 2026
 [_Midway Menagerie_](@/furry-carnival.md), a monthly furry blogging carnival.
 

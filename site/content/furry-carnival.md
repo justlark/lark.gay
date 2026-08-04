@@ -9,8 +9,9 @@ _Midway Menagerie_ is a monthly furry blogging carnival.
 We have a [Telegram channel](https://t.me/+s3amTSjDLd5hNjMx) for receiving
 updates and reminders, but you do not need to join to participate.
 
-The theme for July 2026 is
-["Fandom and Community"](@/log/furry-carnival-jul-2026.md), hosted by Lark.
+The theme for August 2026 is
+["Where is furry?"](https://foxriot.com/writing/midway-menagerie-aug-call-for-submissions.html),
+hosted by Ån.
 
 ## What is a blogging carnival
 
@@ -87,5 +88,8 @@ Want an example? Feel free to take a look at the
 
 ## The Carnival
 
-- **Jul 2026** | ["Fandom and Community"](@/log/furry-carnival-jul-2026.md)
-  ([Lark Space](https://lark.gay))
+- **Jul 2026** | ["Fandom and Community"](@/log/furry-roundup-jul-2026.md)
+  (Lark)
+- **Aug 2026** |
+  ["Where is furry?"](https://foxriot.com/writing/midway-menagerie-aug-call-for-submissions.html)
+  (Ån)

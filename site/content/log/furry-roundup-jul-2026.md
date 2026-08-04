@@ -2,7 +2,6 @@
 title = "Midway Menagerie July 2026 Roundup: \"Fandom and Community\""
 description = "Midway Menagerie is a monthly furry blogging carnival. Here are the posts from this month's theme, \"Fandom and Community\"."
 date = 2026-08-04
-draft = true
 
 [taxonomies]
 tags = ["carnival"]
@@ -177,3 +176,7 @@ the other side of it.
 Thank you to everyone who participated for the first month of this new carnival!
 I encourage you to leave comments below with your thoughts on any of this
 month's submissions, or just the carnival as a whole.
+
+The theme for next month (August 2026) is
+["Where is furry?"](https://foxriot.com/writing/midway-menagerie-aug-call-for-submissions.html),
+hosted by Ån.
