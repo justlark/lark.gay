@@ -98,6 +98,24 @@ become so important to her, as it has to me.
 
 ---
 
+Ån submitted ["Fandom and Community"](https://cyberdeck.foxriot.com/community),
+an essay in the form of an interactive text-based RPG. This poignant
+autobiographical piece is a non-chronological account of their entrance into the
+furry community, from the fandom's earliest days to our local furry scene.
+
+> Now, in the early 21st century, "community," like "friend," becomes a
+> treacherous word. It gets stretched to cover fandoms, support networks, weak
+> ties, strong ties, products and sales pitches. It's nearly meaningless, and
+> also, in ways I've never said out loud, something I don't think I could exist
+> without.
+
+Aside from being absolutely stunned by the effort that clearly went into this
+piece, I appreciated the vulnerable perspective into the life and history of a
+friend I consider a pillar of our local community. It's a reminder that we've
+all been small, scared, and unsure of our place in the world.
+
+---
+
 Goose wrote
 ["Furries turned Family: Fandom of Being a Good Community Member"](@/log/goose-furries-turned-family.md),
 in which they distinguish between fandom as an interest group and fandom as a
@@ -120,6 +138,26 @@ to wonder if my basic needs would be met. As a consequence of this privilege, I
 never really saw what this kind of community support looks like until I went out
 into the world on my own. I have friends who are _going through it_, and seeing
 how their communities turn out for them has been a beautiful thing.
+
+---
+
+anchovie wrote
+["on fandom and community"](https://anchovie.fish/blog/2026-08-02), in which shi
+tries to pin down a definition of furry and hir relationship with the label. Shi
+talks about furry as a "gateway" to other communities, and why shi has
+historically been reluctant to identify as a furry.
+
+> so what is furry to me? is it some sort of weirdly-arranged fruit basket of
+> hobbies i only participate in with other animal-people on the Internet? am i
+> really a furry if my engagements with other furries are entirely dictated by
+> mutual interest in non-furry things?
+
+To this day, have a difficult time identifying as a furry without qualification.
+As I talk about in my piece, the interest in anthropomorphic characters that
+"traditionally" defines the community doesn't feel like it leaves a lot of space
+for me and my place in furry. Like anchovie's "gateway" analogy, I feel like
+it's mostly the connection that have come out of it which define what being a
+furry means to me.
 
 ---
 
