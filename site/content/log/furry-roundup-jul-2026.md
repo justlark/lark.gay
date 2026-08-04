@@ -98,6 +98,31 @@ become so important to her, as it has to me.
 
 ---
 
+Goose wrote
+["Furries turned Family: Fandom of Being a Good Community Member"](@/log/goose-furries-turned-family.md),
+in which they distinguish between fandom as an interest group and fandom as a
+community. They never saw the interest in fandom until they accidentally dropped
+into the furry community and came to understand the ways in which furries uplift
+and support one another as family. They compare their experiences in the furry
+community with the kinds of community support families relied on to survive when
+they were growing up, and express gratitude for the furry family they've
+surrounded themself with.
+
+> And yea, maybe I found a good group, full of really cool people, who bring out
+> the “italian grandmother” in me. Maybe I’ve found the most helpful and kind
+> group of human beings in my city. But I’m damn grateful for them. They’re the
+> difference between friends and community, fandom and family, and they welcome
+> people with open arms. You just have to brave enough to ask to be apart of it
+> all.
+
+I grew up under a fairly traditional nuclear family structure, and I never had
+to wonder if my basic needs would be met. As a consequence of this privilege, I
+never really saw what this kind of community support looks like until I went out
+into the world on my own. I have friends who are _going through it_, and seeing
+how their communities turn out for them has been a beautiful thing.
+
+---
+
 I wrote
 ["It's not really about the animals"](@/log/its-not-about-the-animals.md), where
 I describe how my relationship with the furry community is more centered on the
