@@ -18,7 +18,7 @@
   <id>{{
   feed_url | escape_xml | safe }}</id> {%- if config.author %} <author>
     <name>{{ config.author }}</name>
-  </author> {%- endif %} {%- for page in pages %} <entry
+  </author> {%- endif %} {%- for page in pages %} {%- if page.extra.hidden is defined and page.extra.hidden %} {%- continue %} {%- endif %} <entry
     xml:lang="{{ page.lang }}">
     <title>{{ page.title | markdown | striptags }}</title>
     <published>{{ page.date |

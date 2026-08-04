@@ -90,6 +90,9 @@
         </td>
       </tr>
       {% for post in pages %}
+        {% if post.extra.hidden is defined and post.extra.hidden %}
+          {% continue %}
+        {% endif %}
         {% if post.authors | length > 0 %}
           {% set author = post.authors[0] %}
         {% else %}
