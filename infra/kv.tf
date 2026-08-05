@@ -3,7 +3,7 @@ resource "cloudflare_workers_kv_namespace" "flipboard" {
   title      = "lark-space-flipboard"
 }
 
-resource "cloudflare_workers_kv_namespace" "once" {
+resource "cloudflare_workers_kv_namespace" "links" {
   account_id = var.cloudflare_account_id
-  title      = "lark-space-once"
+  title      = "lark-space-links"
 }

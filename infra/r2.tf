@@ -1,4 +1,4 @@
-resource "cloudflare_r2_bucket" "once" {
+resource "cloudflare_r2_bucket" "links" {
   account_id = var.cloudflare_account_id
-  name       = "lark-space-once"
+  name       = "lark-space-links"
 }

@@ -4,3 +4,11 @@ compatibility_date = "2026-08-05"
 
 [build]
 command = "cargo install -q \"worker-build@^0.8\" && worker-build --release"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "ed2a7afa62bb40d1a877e02d90e7a41a"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "lark-space-links"
