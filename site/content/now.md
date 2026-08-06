@@ -3,7 +3,7 @@ title = "Lark Now"
 description = "This is my [Now Page](https://nownownow.com/about). Here's what I'm up to right now."
 template = "article.html"
 date = 2024-10-10
-updated = 2026-06-16
+updated = 2026-08-06
 +++
 
 ## FanJam
@@ -14,8 +14,10 @@ ever expected to be working with, and I'm as excited as I am nervous.
 
 ## Midway Menagerie
 
-I'm starting a furry blogging carnival called _Midway Menagerie_! If you don't
-know what that is, check out [the homepage](@/furry-carnival.md).
+I've started a furry blogging carnival called _Midway Menagerie_! If you don't
+know what that is, check out [the homepage](@/furry-carnival.md). We just
+wrapped up our first monthly round of submissions, which you can read
+[here](@/log/furry-roundup-jul-2026.md).
 
 ## Cyberdeck
 
@@ -38,10 +40,10 @@ for a long time; seeing it actually materialize has been awesome.
 
 ## Talks
 
-I'm writing a talk, tentatively titled **After Big Tech: Building a Sustainable
-Digital Future**. I'm going to be giving the talk at Eufuria in July. It still
-needs a lot of work to get to a place where I'll be happy with it, but we're
-getting there.
+I recently gave a talk titled _After Big Tech: Building a Sustainable Digital
+Future_ at [Eufuria](https://eufuria.org/). After chipping away at it for
+months, I'm very happy with the result, and I may seek out opportunities to give
+the talk elsewhere.
 
 ## LiteboxFS
 
@@ -58,6 +60,7 @@ I've been really getting the word out about
 talks about it for a local artist collective, a convention, and a nonprofit. I
 even hosted an in-person meetup!
 
-## Fur Cons
+## Travel
 
-I'm going to Eufuria in Albany, New York in July!
+For the first two weeks of August my polycule and I are visiting Iceland for a
+punk festival, Reykjavík pride, and the solar eclipse!
