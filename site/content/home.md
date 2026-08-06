@@ -109,6 +109,13 @@ No fee if I can get to you via the T.
 - [Colophon](@/colophon.md)
 - [Referring to Lark](@/log/referring-to-lark.md)
 
+## Buttons
+
+![Atom Space](https://atom.whimsy.gay/assets/buttons/atombutton.gif)
+![Foxriot](https://assets.foxriot.com/website/banner/an-banner.png)
+![Kero.gay](https://kero.gay/assets/images/banners/kerogaybanner.png)
+![Melody & Co.](https://melody.fyi/images/melody-and-co-button.gif)
+
 ## Webrings
 
 - [Floof.Boston](https://floof.boston/) ([<- Prev](https://floof.boston?q=prev))
