@@ -1,0 +1,3 @@
+FROM ghcr.io/lowercasename/gathio:latest
+COPY config.toml ./config/config.toml
+CMD ["npm", "run", "start"]

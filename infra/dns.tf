@@ -152,3 +152,11 @@ resource "cloudflare_record" "floof_xmpp_server_srv" {
     target   = "xmpp.floof.chat"
   }
 }
+
+resource "cloudflare_record" "sneakerparty_apex_cname" {
+  zone_id = data.cloudflare_zone.sneakerparty.id
+  type    = "CNAME"
+  name    = "@"
+  content = "sneakerparty-gathio.fly.dev"
+  proxied = false
+}

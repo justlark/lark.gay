@@ -44,3 +44,26 @@ resource "cloudflare_zone_settings_override" "floof" {
   }
 }
 
+data "cloudflare_zone" "sneakerparty" {
+  name       = "sneaker.party"
+  account_id = var.cloudflare_account_id
+}
+
+resource "cloudflare_zone_dnssec" "sneakerparty" {
+  zone_id = data.cloudflare_zone.sneakerparty.id
+}
+
+resource "cloudflare_zone_settings_override" "sneakerparty" {
+  zone_id = data.cloudflare_zone.sneakerparty.id
+
+  settings {
+    security_header {
+      enabled            = true
+      preload            = true
+      max_age            = 31536000
+      include_subdomains = true
+      nosniff            = true
+    }
+  }
+}
+

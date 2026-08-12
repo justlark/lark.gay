@@ -1,0 +1,39 @@
+app = "sneakerparty-gathio"
+primary_region = "iad"
+
+[build]
+dockerfile = "Containerfile.gathio"
+
+[env]
+NODE_ENV = "production"
+
+[http_service]
+internal_port = 3000
+force_https = true
+auto_start_machines = true
+auto_stop_machines = "suspend"
+min_machines_running = 0
+
+[http_service.concurrency]
+type = "requests"
+soft_limit = 200
+hard_limit = 250
+
+# Gathio has no healthcheck endpoint, so we simply check if the frontend is up,
+# which **does not** necessarily mean it's connected to the DB and handling
+# requests.
+[[http_service.checks]]
+method = "GET"
+path = "/"
+interval = "30s"
+timeout = "5s"
+grace_period = "20s"
+
+[[mounts]]
+source = "sneakerparty_gathio_images"
+destination = "/app/public/events"
+initial_size = "1gb"
+
+[[vm]]
+size = "shared-cpu-1x"
+memory = "1gb"

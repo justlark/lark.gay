@@ -1,0 +1,14 @@
+app = "sneakerparty-gathio-mongo"
+primary_region = "iad"
+
+[build]
+dockerfile = "Containerfile.mongo"
+
+[[mounts]]
+source = "sneakerparty_gathio_mongo_data"
+destination = "/data/db"
+initial_size = "5gb"
+
+[[vm]]
+size = "shared-cpu-1x"
+memory = "1gb"
