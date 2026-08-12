@@ -1,20 +1,20 @@
 [general]
 domain = "sneaker.party"
 port = "3000"
-email = "notifications@sneaker.party"
+email = "lark@lark.gay"
 site_name = "Sneaker Party"
 is_federated = true
 delete_after_days = 7
 show_kofi = false
 show_public_event_list = false
-# mail_service = "nodemailer"
+mail_service = "nodemailer"
 creator_email_addresses = ["lark@lark.gay"]
 
 [database]
 mongodb_url = "${GATHIO_MONGODB_URL}"
 
-# [nodemailer]
-# smtp_server = "${GATHIO_SMTP_SERVER}"
-# smtp_port = "${GATHIO_SMTP_PORT}"
-# smtp_username = "${GATHIO_SMTP_USERNAME}"
-# smtp_password = "${GATHIO_SMTP_PASSWORD}"
+[nodemailer]
+smtp_server = "${GATHIO_SMTP_SERVER}"
+smtp_port = "${GATHIO_SMTP_PORT}"
+smtp_username = "${GATHIO_SMTP_USERNAME}"
+smtp_password = "${GATHIO_SMTP_PASSWORD}"
