@@ -53,7 +53,7 @@ list-links:
 # upload a file to be served from https://links.lark.gay
 [group("links")]
 upload-link-file filename file:
-  npx wrangler@latest r2 object put --remote 'lark-space-links/{{ filename }}' --file '{{ file }}'
+  rclone copyto '{{ file }}' lark-space-links:lark-space-links/{{ filename }} --s3-no-check-bucket
 
 # delete a file served from https://links.lark.gay
 [group("links")]
