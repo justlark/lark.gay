@@ -17,24 +17,28 @@ where the theme is "Where is furry?"_
 
 Recently, someone sent me
 [this article](https://drdevonprice.substack.com/p/queer-is-a-thing-you-do-and-the-people)
-from Dr. Devon Price, in which they define queerness not as something you are,
-but as something you do and the people you surround yourself with. It
-articulates something I've felt for a while--that "queer" is not just a synonym
-for "LGBT". "Queer" is counter-culture, a rejection of normative ideals. I'm not
-queer because I was simply born that way, or because I inject the gender juice
-once a week; I'm queer because I reject normative ideas about gender and
-sexuality, and because I live in community with others who do the same.
+by Dr. Devon Price, in which they define queerness not as something you are, but
+as something you do and the people you surround yourself with. It articulates
+something I've felt for a while--that "queer" is not just a synonym for "LGBT".
+"Queer" is counter-culture, a rejection of normative ideals. I'm not queer
+because I was simply born that way, or because I inject the gender juice once a
+week; I'm queer because I reject normative ideas about gender and sexuality, and
+because I live in community with others who do the same.
 
-I've been thinking about how this perspective applies to furry. As I said in my
-submission [last month](@/log/its-not-about-the-animals.md), "For me, furry
-isn't really about the animals; it's about the people." Being a furry is an
-active choice to participate in this silly little community of internet losers
-(affectionate).
+I've been thinking about how this perspective applies to furry. What makes me a
+furry? Like I talked about [last month](@/log/its-not-about-the-animals.md),
+it's not that I innately identity as an animal person.
+
+This month Ån asked the question, "Where is furry?", and while I could say that
+my primary touchpoint with furry is the in-person events--conventions, meetups,
+[Anville](https://anthroville.studio), etc.--I think it's worth introspecting
+about what brings me to these spaces in the first place.
 
 Folks who know me rarely see me without my collar--a leather collar with a
-nametag dangling from it. "Lark". I wear it pretty much everywhere, sometimes
-against my better judgement. Most people don't acknowledge it, sometimes I get
-compliments on it[^1], but wearing it in public has never been a problem[^2].
+nametag dangling from it. It says "Lark". I wear it pretty much everywhere,
+sometimes against my better judgement. Most people don't acknowledge it,
+sometimes I get compliments on it[^1], but wearing it in public has never been a
+problem[^2].
 
 Folk in the kink community generally read it as fetishwear--that I've been
 "collared"[^3]. Furries sometimes just read it as furry attire. Neither
@@ -61,9 +65,9 @@ than just the friends I've made and the events I attend, furry represents [TODO]
     strangers, which is also kinda sweet. Often they'll call it my "necklace".
 
 [^2]:
-    Ironically the _one_ time I got asked to take it off was at a much (a casual
-    social kink event), because the greeters were worried about attracting too
-    much attention from strangers.
+    Ironically the _one_ time I've been asked to take it off was at a much (a
+    casual social kink event), because the greeters were worried about
+    attracting too much attention from strangers.
 
 [^3]:
     If you're not familiar, "collaring" someone is a tradition in the kink
