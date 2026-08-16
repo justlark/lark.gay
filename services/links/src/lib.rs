@@ -31,7 +31,15 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
                 .expect("Failed to read object body")
                 .response_body()?;
 
-            HttpResponse::try_from(Response::from_body(response_body)?)
+            let mut response = Response::from_body(response_body)?;
+            let headers = response.headers_mut();
+
+            headers.set(
+                &http::header::CONTENT_DISPOSITION.to_string(),
+                &format!("inline; filename=\"{}\"", filename),
+            )?;
+
+            HttpResponse::try_from(response)
         }
         None => Ok(http::Response::builder()
             .status(http::StatusCode::NOT_FOUND)
