@@ -84,7 +84,8 @@ Interested in hosting the carnival? Leave a comment on this post or
   - You should update your call for submissions to link to the roundup.
 
 Want an example? Feel free to take a look at the
-[July 2026 call for submissions](@/log/furry-carnival-jul-2026.md).
+[July 2026 call for submissions](@/log/furry-carnival-jul-2026.md) and the
+[July 2026 roundup](@/log/furry-roundup-jul-2026.md).
 
 ## The Carnival
 
