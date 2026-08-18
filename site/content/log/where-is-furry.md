@@ -2,7 +2,6 @@
 title = "Where is furry?"
 description = "Tasked with describing not just what furry means to me, but where I find it, I reflect on normativity, counterculture, and personal growth."
 date = 2026-08-18
-draft = true
 
 [taxonomies]
 tags = ["furry", "community"]
