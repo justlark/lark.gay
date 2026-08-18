@@ -92,10 +92,9 @@ journey, and I owe much of what I've uncovered so far to this community.
 
 [^4]:
     If you're not familiar, "collaring" someone is a tradition in the kink
-    community that generally symbolizes reaching a certain level of commitment
-    in the relationship. It's not dissimilar to how couples in many cultures
-    exchange rings when they're married. Generally one person presents the other
-    with a collar, sometimes with the stipulation that they are not to remove it
-    without permission. Often a more subtle "day collar" is worn when in public,
-    if the person does not want to attract too much attention. My collar is
+    community that symbolizes reaching a certain level of commitment in the
+    relationship. Generally, one person presents the other with a collar for
+    them to wear, not unlike how couples in many cultures exchange rings when
+    they're married. Often a more subtle "day collar" is worn when in public, if
+    the person does not want to attract too much attention. My collar is
     definitely not subtle.
