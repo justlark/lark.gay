@@ -2,8 +2,8 @@
 {% block meta_vars %}
   {% set this = page | default(value=section) %}
   {% set canonical_url = this.permalink %}
-  {% set title = this.title | default(value=config.title) | markdown(inline=true) | striptags %}
-  {% set description = this.description | default(value=config.description) | markdown(inline=true) | striptags %}
+  {% set title = (this.title or config.title) | markdown(inline=true) | striptags %}
+  {% set description = (this.description or config.description) | markdown(inline=true) | striptags %}
 {% endblock %}
 {% block body %}
   <header class="site-header" aria-labelledby="site-title">
@@ -15,7 +15,7 @@
       <a href="/">Home</a>
       {% set log_path = get_section(path='log/_index.md') | get(key='path') %}
       {% set tags_url = get_taxonomy(kind='tags') | get(key='permalink') %}
-      <a class="{% if current_path is matching('^' ~ log_path) or current_url is matching('^' ~ tags_url) %}active{% endif %}"
+      <a class="{% if current_path is starting_with(pat=log_path) or current_url is starting_with(pat=tags_url) %}active{% endif %}"
          href="{{ get_url(path='@/log/_index.md') }}">Log</a>
       {% set now_path = get_page(path='now.md') | get(key='path') %}
       <a class="{% if current_path == now_path %}active{% endif %}"

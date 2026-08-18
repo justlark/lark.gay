@@ -6,7 +6,7 @@
       {% if page.date or page.updated %}
         <p>
           <i>
-            {% set last_updated = page.updated | default(value=page.date) %}
+            {% set last_updated = page.updated or page.date %}
             Last updated:
             <time datetime="{{ last_updated | date(timezone='Etc/UCT', format='%F') }}">
               {{ last_updated | date(timezone="Etc/UCT", format="%e %b %Y") }}

@@ -14,7 +14,7 @@
     href="{% if section %}{{ section.permalink | escape_xml | safe }}{% else %}{{ config.base_url | escape_xml | safe }}{% endif %}" />
   <generator
     uri="https://www.getzola.org/">Zola</generator>
-  <updated>{{ last_updated | date(format="%+") }}</updated>
+  <updated>{{ last_updated | date(format="%Y-%m-%dT%H:%M:%SZ") }}</updated>
   <id>{{
   feed_url | escape_xml | safe }}</id> {%- if config.author %} <author>
     <name>{{ config.author }}</name>
@@ -22,9 +22,9 @@
     xml:lang="{{ page.lang }}">
     <title>{{ page.title | markdown | striptags }}</title>
     <published>{{ page.date |
-  date(format="%+") }}</published>
-    <updated>{{ page.updated | default(value=page.date) |
-  date(format="%+") }}</updated> {% for author in page.authors %} <author>
+  date(format="%Y-%m-%dT%H:%M:%SZ") }}</published>
+    <updated>{{ (page.updated or page.date) |
+  date(format="%Y-%m-%dT%H:%M:%SZ") }}</updated> {% for author in page.authors %} <author>
       <name>{{ author }}</name>
     </author> {% else %} <author>
       <name>{% if config.author %}{{ config.author }}{% else %}Unknown{% endif %}</name>
@@ -37,7 +37,7 @@
   page.extra.uuid }}</id> {% if page.summary %} <summary type="html">{{ page.summary }}</summary> {%
   else %} <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content
   }}</content> {% endif %} {%- set published_year = page.date | date(format="%Y") -%} {%- set
-  updated_year = page.updated | default(value=page.date) | date(format="%Y") -%} <rights type="text">Copyright
+  updated_year = (page.updated or page.date) | date(format="%Y") -%} <rights type="text">Copyright
   © {% if page.authors %}{{ page.authors | join(sep=', ') }}{% else %}{{ config.author }}{% endif %}
   {% if published_year == updated_year %}{{ published_year }}{% else %}{{ published_year }}-{{
   updated_year }}{% endif %} {{ config.extra.license_name }}</rights>

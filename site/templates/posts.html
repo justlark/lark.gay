@@ -21,7 +21,7 @@
   </script>
 {% endblock %}
 {% block content %}
-  {% set pages = term.pages | default(value=section.pages) %}
+  {% set pages = term?.pages or section.pages %}
   {% set datetime_format = "%e %b %Y" %}
   {% set latest_publish_time = pages | first | get(key='date') %}
   <div class="page-lead">
