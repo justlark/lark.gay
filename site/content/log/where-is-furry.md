@@ -5,7 +5,7 @@ date = 2026-08-18
 draft = true
 
 [taxonomies]
-tags = ["carnival", "community"]
+tags = ["furry", "community"]
 
 [extra]
 uuid = "4e16e25f-d833-4b1b-af6d-081264044ae4"

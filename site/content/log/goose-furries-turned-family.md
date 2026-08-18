@@ -5,7 +5,7 @@ date = 2026-08-04
 authors = ["Goose"]
 
 [taxonomies]
-tags = ["carnival"]
+tags = ["furry"]
 
 [extra]
 uuid = "ad38c5d5-471f-4d61-9a38-0bb38592bfba"

@@ -4,7 +4,7 @@ description = "Midway Menagerie is a monthly furry blogging carnival. Here are t
 date = 2026-08-04
 
 [taxonomies]
-tags = ["carnival"]
+tags = ["furry"]
 
 [extra]
 uuid = "1c4b7a05-43d4-4f4f-ab28-9a0fde86d1a9"

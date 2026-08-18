@@ -4,7 +4,7 @@ description = "I reflect on my relationship with the furry community as a newcom
 date = 2026-07-13
 
 [taxonomies]
-tags = ["carnival", "community"]
+tags = ["furry", "community"]
 
 [extra]
 uuid = "a7c43bf9-ae4f-4b51-b633-2a25c00ad161"
