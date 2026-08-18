@@ -27,7 +27,7 @@ because I live in community with others who do the same.
 
 I've been thinking about how this perspective applies to furry. What makes me a
 furry? Like I talked about [last month](@/log/its-not-about-the-animals.md),
-it's not necessarily that I innately identity as an animal person.
+it's not necessarily that I innately identify as an animal person.
 
 This month Ån asks the question "Where is furry?", and while I could say that my
 primary touchpoint with furry is the in-person events--conventions, meetups,
@@ -72,7 +72,7 @@ don't hide who I am, because I don't feel like I can be my full authentic self
 otherwise.
 
 Where is furry? Furry is something I carry with me--symbolically on my body, but
-also a promise to be the most Lark I can be. More than just the friends I've
+also as a promise to be the most Lark I can be. More than just the friends I've
 made and the events I attend, furry represents growth. Finding myself has been a
 journey, and I owe much of what I've uncovered so far to this community.
 
