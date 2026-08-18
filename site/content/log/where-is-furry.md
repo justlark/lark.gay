@@ -36,10 +36,10 @@ about what brings me to these spaces in the first place.
 
 Furry isn't just a fandom; it's a counterculture. It's disproportionately queer
 and neurodivergent. It's a haven for people too weird to fit in; cringe culture
-broadly shuns furries[^1]--sufficiently weird as to trigger secondhand
-embarrassment. As my friend Loaf [puts it](https://kero.gay/blog_posts/furry):
-"being a furry is being gay for gay people". By adopting the label, furries are
-choosing to own that identity.
+broadly shuns furries[^1] as so weird as to trigger secondhand embarrassment. As
+my friend Loaf [puts it](https://kero.gay/blog_posts/furry): "being a furry is
+being gay for gay people". By adopting the label, furries are choosing to own
+that identity.
 
 I'm furry not because I'm an animal person, but because I choose to adopt the
 label and everything that comes with it. The way I present in public reflects
@@ -55,25 +55,30 @@ Folk in the kink community generally read it as fetishwear--that I've been
 "collared"[^4]. Goths and punks read it as alt fashion. Furries read it as furry
 attire. None of these explanations tell the full story.
 
-My collar doesn't symbolize my relationship with anyone else; you could say I'm
-self-collared. It also predates me identifying as a furry. It's a comfort item
-for me; I feel weird not wearing it. I'm so used to wearing it I sometimes
-forget to take it off before I sleep or shower.
+My collar isn't just alt fashion. It's not just queer signaling. It doesn't
+symbolize my relationship with anyone else. It also predates me identifying as a
+furry.
 
 My collar represents my relationship with normativity. My relationship with
 queerness. But most importantly, it represents a commitment to myself--a
 commitment to own my identity, live authentically, and not let internalized
 shame direct the course of my life.
 
-Where is furry? It's something I carry with me--literally wear on my body. More
-than just the friends I've made and the events I attend, furry represents
-growth. Finding myself has been a journey, and I owe much of what I've uncovered
-so far to this community.
+When I started wearing my collar out, I was terrified. But I pushed through the
+discomfort, hoping I would come out the other side of it more resilient. Wearing
+my collar out started as an exercise in getting over what strangers think of me,
+but it went on to embody a stubborn refusal to compromise on my identity. I
+don't hide who I am, because I don't feel like I can be my full authentic self
+otherwise.
+
+Where is furry? Furry is something I carry with me--symbolically on my body, but
+also a promise to be the most Lark I can be. More than just the friends I've
+made and the events I attend, furry represents growth. Finding myself has been a
+journey, and I owe much of what I've uncovered so far to this community.
 
 [^1]:
     The [Wikipedia article](https://en.wikipedia.org/wiki/Cringe_culture) on
-    cringe culture literally opens with a picture of fursuiters, specifically
-    calling out furries as a common target.
+    cringe culture literally opens with a picture of fursuiters.
 
 [^2]:
     Sometimes these compliments are a subtle "I see you; I know what you are",
