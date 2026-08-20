@@ -63,9 +63,45 @@ cd ./infra/vars/
 sops edit ./secrets.enc.yaml
 ```
 
+## Lark's Flipboard
+
+Lark has a 15×3
+[split-flap display](https://en.wikipedia.org/wiki/Split-flap_display) in its
+living room. Select friends with a secret link can send messages to its
+flipboard via [this form](https://lark.gay/flipboard/).
+
+## Discord Notifications
+
+This site has an endpoint for sending Lark notifications via Discord. Requests
+like this will send Lark a push notifications:
+
+```
+POST https://lark.gay/notifications/?token=REDACTED&msg=Hello%20World
+```
+
+Lark isn't a big fan of Discord, but it does admittedly make this sort of thing
+fairly easy to set up.
+
+## Static Files
+
+This site serves static files for various purposes from an S3-compatible bucket
+via https://share.lark.gay/. Lark mostly uses this to share large files with
+friends.
+
+Cloudflare R2 only supports uploading small files via the web interface and
+official CLI. Uploading larger files requires using the S3 API, which is easiest
+to do using [Rclone](https://rclone.org/).
+
+## Links
+
+This site includes a link shortener at https://links.lark.gay/ that Lark uses
+for various purposes. Links can redirect to other URLs or serve files from an
+S3-compatible bucket. There are [`just`](https://just.systems/) recipes for
+setting up these links.
+
 ## Matrix
 
-I self-host a [Matrix](https://matrix.org/) homeserver
+Lark self-hosts a [Matrix](https://matrix.org/) homeserver
 ([tuwunel](https://tuwunel.chat/)) on [Fly.io](https://fly.io/) at `lark.gay`.
 Supporting both this site and the homeserver on the same domain requires some
 special configuration, which is worth documenting here.
@@ -86,3 +122,9 @@ following endpoints:
 
 - `/_matrix/*`
 - `/_tuwunel/*`
+
+## Other Services
+
+Lark hosts various apps under `lark.gay`, mostly on [Fly.io](https://fly.io).
+The configuration for these services live under the [services/](./services/)
+directory.
