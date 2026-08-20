@@ -1,6 +1,6 @@
 # Lark Space
 
-This is my personal website and blog. It's a static site built with
+This is Lark's personal website and blog. It's a static site built with
 [Zola](https://www.getzola.org/) and hosted on
 [Cloudflare Workers](https://developers.cloudflare.com/workers/).
 
@@ -24,7 +24,7 @@ recipes.
 
 ## Blog
 
-The comments section for my blog is provided by
+The comments section for Lark's blog is provided by
 [Hyvor Talk](https://talk.hyvor.com/).
 
 ## Infrastructure
@@ -113,9 +113,9 @@ This site serves static JSON files at the following endpoints:
 
 These are JSON files used to configure _delegation_, a feature of Matrix that
 allows for the federation API endpoint to be served at a different domain and/or
-port than the public-facing server domain. This means that my Matrix username
-(`@lark:lark.gay`) case use the base domain, even though the homeserver is
-hosted at `matrix.lark.gay`.
+port than the public-facing server domain. This means that Lark's Matrix
+username (`@lark:lark.gay`) case use the base domain, even though the homeserver
+is hosted at `matrix.lark.gay`.
 
 For delegation to work, it is also necessary to reverse-proxy traffic to the
 following endpoints:
