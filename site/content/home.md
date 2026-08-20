@@ -111,10 +111,10 @@ No fee if I can get to you via the T.
 
 ## Buttons
 
-![Atom Space](https://atom.whimsy.gay/assets/buttons/atombutton.gif)
-![Foxriot](https://assets.foxriot.com/website/banner/an-banner.png)
-![Kero.gay](https://kero.gay/assets/images/banners/kerogaybanner.png)
-![Melody & Co.](https://melody.fyi/images/melody-and-co-button.gif)
+[![Atom Space](https://atom.whimsy.gay/assets/buttons/atombutton.gif)](https://atom.whimsy.gay/)
+[![Foxriot](https://assets.foxriot.com/website/banner/an-banner.png)](https://foxriot.com/)
+[![Kero.gay](https://kero.gay/assets/images/banners/kerogaybanner.png)](https://kero.gay/)
+[![Melody & Co.](https://melody.fyi/images/melody-and-co-button.gif)](https://melody.fyi/)
 
 ## Webrings
 
