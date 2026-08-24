@@ -25,7 +25,7 @@ and interpretation.
 If you want to participate, you can download your first bundle of files below.
 From there, you'll need to find other players you can meet up with
 in-person--likely first- and second-degree friends of Lark. If you meet Lark
-in-person, they'll give you a few files if they have any on them--just ask.
+in-person, they'll give you a few files--just ask.
 
 [the-lark-files-bundle.zip](https://share.lark.gay/the-lark-files-bundle.zip)
 
