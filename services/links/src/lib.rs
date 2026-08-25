@@ -36,7 +36,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
 
             headers.set(
                 &http::header::CONTENT_DISPOSITION.to_string(),
-                &format!("inline; filename=\"{}\"", filename),
+                &format!("attachment; filename=\"{}\"", filename),
             )?;
 
             HttpResponse::try_from(response)
