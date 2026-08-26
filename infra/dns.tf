@@ -1,4 +1,12 @@
-resource "cloudflare_record" "gemini_cname" {
+resource "cloudflare_record" "gemini_a" {
+  zone_id = data.cloudflare_zone.lark.id
+  type    = "A"
+  name    = "gemini"
+  content = "137.66.54.127"
+  proxied = false
+}
+
+resource "cloudflare_record" "gemini_aaaa" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "AAAA"
   name    = "gemini"
