@@ -27,13 +27,13 @@ post_template_file: "./templates/post.tera"
 #
 # Docs for the Tera templating language:
 # https://keats.github.io/tera/docs/#templates
-post_path: "/posts/{{ slug }}.gmi"
+post_path: "/log/{{ slug }}.gmi"
 
 # The URL path of the index page for your gemlog (required).
-index_path: "/posts/index.gmi"
+index_path: "/log/index.gmi"
 
 # The URL path to serve your capsule's Atom feed at (required).
-feed_path: "/posts/atom.xml"
+feed_path: "/log/feed.xml"
 
 # The title of your gemlog (required).
 title: "Lark Space"
