@@ -24,13 +24,21 @@ deploy: _install
 
 # deploy the gemini capsule
 [confirm("Deploy the capsule now?")]
-[working-directory: "./gemini/"]
 deploy-gemini:
-  gempost build
-  fly machine start --config ../services/gemini/fly.toml {{ gemini_fly_machine_id }}
-  fly ssh console --config ../services/gemini/fly.toml --command 'rm -rf /data/gmi/'
-  fly ssh sftp put --config ../services/gemini/fly.toml --recursive ../gemini/public/ /data/gmi/
-  fly machine restart --config ../services/gemini/fly.toml {{ gemini_fly_machine_id }}
+  #!/usr/bin/env nu
+
+  do {
+    cd ./gemini/
+    gempost build
+  }
+
+  fly machine start --config './services/gemini/fly.toml' (fly machine list --config './services/gemini/fly.toml' --json | from json | first | get "id")
+  fly ssh console --config './services/gemini/fly.toml' --command 'rm -rf /data/gmi/'
+  fly ssh sftp put --config './services/gemini/fly.toml' --recursive './gemini/public/' '/data/gmi/'
+
+  for machine in (fly machine list --config './services/gemini/fly.toml' --json | from json) {
+    fly machine restart --config './services/gemini/fly.toml' $machine.id
+  }
 
 # run an OpenTofu command
 tofu *args:

@@ -39,7 +39,7 @@ feed_path: "/log/feed.xml"
 title: "Lark Space"
 
 # The gemini:// URL of your capsule's homepage (required).
-url: "gemini://lark.gay"
+url: "gemini://gemini.lark.gay"
 
 # A subtitle for your gemlog (optional).
 subtitle: "Lark's personal capsule"
@@ -51,4 +51,4 @@ rights: "CC BY-NC 4.0"
 author:
   name: "Lark Aster" # Required
   email: "lark@lark.gay" # Optional
-  uri: "gemini://lark.gay" # Optional
+  uri: "https://lark.gay" # Optional
