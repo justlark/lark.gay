@@ -1,0 +1,25 @@
+app = "lark-gemini-capsule"
+primary_region = "iad"
+
+[build]
+dockerfile = "Containerfile"
+
+[[services]]
+internal_port = 1965
+protocol = "tcp"
+auto_start_machines = true
+auto_stop_machines = "suspend"
+min_machines_running = 0
+
+[[services.ports]]
+port = 1965
+
+[mounts]
+source = "lark_gemini_data"
+destination = "/data"
+initial_size = "1gb"
+
+[[vm]]
+memory = "512mb"
+cpu_kind = "shared"
+cpus = 1

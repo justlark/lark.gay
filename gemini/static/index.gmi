@@ -1,0 +1,68 @@
+# Lark's Space Capsule
+
+Welcome to my little space on the web! My name is Lark (they/it).
+
+## About
+
+Things to know about me:
+
+* 🏳️‍⚧️ trans
+* 🏳️‍🌈 queer
+* 🌶️ autistic
+* 💚 polyamorous
+* 😺 furry
+* ⏰ eastern time zone (UTC-04:00 / UTC-05:00)
+
+## This Capsule
+
+This capsule currently just mirrors the homepage of my website.
+
+=> https://lark.gay/ Lark Space
+
+In the future, this capsule might be home to stuff I don't want on the web. Stay tuned.
+
+## Projects
+
+=> https://acearchive.lgbt/ 🗃️ Ace Archive
+
+Ace Archive is a curated digital archive of asexual and aromantic history that I run under the name Frawley.
+
+=> https://fanjam.live/ 🗓️ FanJam
+
+FanJam is an event planning app that bridges the gap between a single person with a spreadsheet and the kinds of people who can afford enterprise event planning software.
+
+=> https://anthroville.studio/ 🛠️ Anville
+
+Anville is a Boston-area furry artist and maker collective.
+
+=> https://lark.gay/furry-carnival/ 🎪 Midway Menagerie
+
+Midway Menagerie is a monthly furry blogging carnival.
+
+=> https://codeberg.org/justlark/liteboxfs 🏷️ LiteboxFS
+
+LiteboxFS is a modern POSIX filesystem in a SQLite database.
+
+=> https://discuss.love/ 🖤 Discuss.love
+
+Discuss.love is a tool for negotiating relationships, in the style of the "relationship smorgasbord" exercise.
+
+=> https://lark.gay/the-lark-files/ 🔎 The Lark Files
+
+The Lark Files is a collaborative scavenger hunt for building lore, finding community, and getting offline.
+
+## Talks
+
+If you live in the Boston area and have an organization, club, or friend group who wants to listen to me yap for approximately 40 minutes, please get in touch! No fee if I can get to you via the T.
+
+🏛️ Archivist Rebellion: Defending Queer History
+
+Join Lark Aster from the Ace Archive project to learn how and guerrilla archiving and community support puts queer history back into the hands of queer people.
+
+Who do we entrust to preserve the history of our communities when the people in power are trying to erase us? In a landscape where schools, libraries, and academic institution are under attack, guerrilla archivists are turning out and running underground operations out of apartments, closets, and bedrooms across the country to save our history while we still can.
+
+Ace Archive is a participatory queer history project to archive the history of the asexual and aromantic communities. Learn what Lark's work as an amateur archivist has taught it about community engagement, resistance, and the nature of activism. Lark will talk about blogging carnivals, copyright law, asexual manifestos, emailing strangers, 19th-century German sexology, The Chastity Underground, and that zine they found in Providence that changed everything.
+
+💾 After Big Tech: Building a Sustainable Digital Future
+
+The tech industry has spent decades chasing bigger numbers, so why does it feel like our phones and laptops are only getting slower and more expensive every year? The digital world we've built for ourselves is a house of cards—an intractable system that is technologically, ecologically, and socially unsustainable. So what do we do? Furries are hacking game consoles and inventing new wireless communication protocols. An art collective operating out of a sailboat is building computers from e-waste. Indie developers are resurrecting a failed experiment that was almost the internet. Join digital archivist and recovering technologist Lark Aster to learn how we can wrestle power out of the hands of the tech elite to build a more sustainable and equitable digital future.

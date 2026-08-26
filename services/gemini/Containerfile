@@ -1,0 +1,3 @@
+FROM ghcr.io/mbrubeck/agate:latest
+
+ENTRYPOINT ["agate", "--addr", "0.0.0.0:1965", "--content", "/data/gmi/", "--certs", "/data/certs/", "--hostname", "lark.gay"]
