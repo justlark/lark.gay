@@ -1,6 +1,7 @@
 set shell := ["nu", "-c"]
 set dotenv-load
 
+gemini_fly_machine_id := "870617b0019168"
 links_namespace := "ed2a7afa62bb40d1a877e02d90e7a41a"
 
 # list recipes
@@ -20,6 +21,16 @@ _install:
 deploy: _install
   zola --root ./site/ build
   npx wrangler@latest deploy --env prod
+
+# deploy the gemini capsule
+[confirm("Deploy the capsule now?")]
+[working-directory: "./gemini/"]
+deploy-gemini:
+  gempost build
+  fly machine start --config ../services/gemini/fly.toml {{ gemini_fly_machine_id }}
+  fly ssh console --config ../services/gemini/fly.toml --command 'rm -rf /data/gmi/'
+  fly ssh sftp put --config ../services/gemini/fly.toml --recursive ../gemini/public/ /data/gmi/
+  fly machine restart --config ../services/gemini/fly.toml {{ gemini_fly_machine_id }}
 
 # run an OpenTofu command
 tofu *args:

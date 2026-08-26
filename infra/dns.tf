@@ -1,3 +1,11 @@
+resource "cloudflare_record" "gemini_cname" {
+  zone_id = data.cloudflare_zone.lark.id
+  type    = "AAAA"
+  name    = "gemini"
+  content = "2a09:8280:1::17c:662d:0"
+  proxied = false
+}
+
 resource "cloudflare_record" "matrix_cname" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "CNAME"

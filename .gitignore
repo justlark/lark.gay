@@ -1,4 +1,5 @@
 /site/public/
 /site/static/processed_images/
+/gemini/public/
 /worker/node_modules/
 .env
