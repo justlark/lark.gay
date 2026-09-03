@@ -9,9 +9,9 @@ _Midway Menagerie_ is a monthly furry blogging carnival.
 We have a [Telegram channel](https://t.me/+s3amTSjDLd5hNjMx) for receiving
 updates and reminders, but you do not need to join to participate.
 
-The theme for August 2026 is
-["Where is furry?"](https://foxriot.com/writing/midway-menagerie-aug-call-for-submissions.html),
-hosted by Ån.
+The theme for September 2026 is
+["Identity and the Self"](https://energyscarf.net/blog/midway-menagerie-september-2026-call-for-submissions/),
+hosted by Enii.
 
 ## What is a blogging carnival
 
@@ -92,5 +92,8 @@ Want an example? Feel free to take a look at the
 - **Jul 2026** | ["Fandom and Community"](@/log/furry-roundup-jul-2026.md)
   (Lark)
 - **Aug 2026** |
-  ["Where is furry?"](https://foxriot.com/writing/midway-menagerie-aug-call-for-submissions.html)
+  ["Where is furry?"](https://foxriot.com/blog/midway-menagerie-aug-roundup.html)
   (Ån)
+- **Sep 2026** |
+  ["Identity and the Self"](https://energyscarf.net/blog/midway-menagerie-september-2026-call-for-submissions/)
+  (Enii)
