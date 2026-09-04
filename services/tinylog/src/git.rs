@@ -126,7 +126,8 @@ impl GitHubClient {
             .headers(self.headers())
             .bearer_auth(self.token.expose_secret())
             .send()
-            .await?;
+            .await?
+            .error_for_status()?;
 
         #[derive(Deserialize)]
         struct ResponseObject {
@@ -159,7 +160,8 @@ impl GitHubClient {
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()
-            .await?;
+            .await?
+            .error_for_status()?;
 
         #[derive(Deserialize)]
         struct Response {
@@ -200,7 +202,8 @@ impl GitHubClient {
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()
-            .await?;
+            .await?
+            .error_for_status()?;
 
         #[derive(Deserialize)]
         struct Response {
@@ -239,7 +242,8 @@ impl GitHubClient {
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()
-            .await?;
+            .await?
+            .error_for_status()?;
 
         #[derive(Deserialize)]
         struct Response {
@@ -270,7 +274,8 @@ impl GitHubClient {
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()
-            .await?;
+            .await?
+            .error_for_status()?;
 
         Ok(())
     }
