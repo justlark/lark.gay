@@ -1,0 +1,18 @@
+[package]
+name = "lark-space-tinylog"
+version = "0.1.0"
+edition = "2024"
+authors = ["Lark Aster <lark@lark.gay>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+worker = { version = "0.8", features = ['http'] }
+worker-macros = { version = "0.8", features = ['http'] }
+http = "1.5"
+anyhow = "1.0.104"
+secrecy = "0.10.3"
+serde = { version = "1.0.229", features = ["derive"] }
+reqwest = { version = "0.13.4", features = ["json"] }
+serde_json = "1.0.151"

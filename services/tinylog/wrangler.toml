@@ -1,0 +1,12 @@
+name = "lark-space-tinylog"
+main = "build/index.js"
+compatibility_date = "2026-09-04"
+account_id = "9d143afa60e911e9904e835bd1db8504"
+preview_urls = false
+
+[build]
+command = "cargo install -q \"worker-build@^0.8\" && worker-build --release --panic-unwind"
+
+[route]
+pattern = "tinylog-bot.lark.gay"
+custom_domain = true
