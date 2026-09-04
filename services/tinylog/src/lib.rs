@@ -1,5 +1,7 @@
 mod git;
 
+use constant_time_eq::constant_time_eq;
+use secrecy::{ExposeSecret, SecretString};
 use worker::*;
 
 use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken};
@@ -10,6 +12,20 @@ const REPO_NAME: &str = "lark.gay";
 const COMMITTER_NAME: &str = "Lark Space Tinylog Bot";
 const COMMITTER_EMAIL: &str = "lark-tinylog[bot]@lark.gay";
 
+#[derive(Debug)]
+struct SecretToken(SecretString);
+
+impl From<String> for SecretToken {
+    fn from(token: String) -> Self {
+        SecretToken(SecretString::from(token))
+    }
+}
+
+impl ExposeSecret<str> for SecretToken {
+    fn expose_secret(&self) -> &str {
+        self.0.expose_secret()
+    }
+}
 async fn commit_file(
     client: &GitHubClient,
     path: &str,
@@ -35,9 +51,35 @@ async fn commit_file(
 }
 
 #[event(fetch)]
-async fn fetch(_req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
-    let token = GitHubToken::from(env.secret("GITHUB_TOKEN")?.to_string());
-    let client = GitHubClient::new(token, String::from(REPO_OWNER), String::from(REPO_NAME));
+async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
+    let url: Url = req.uri().to_string().parse()?;
+
+    let expected_secret = GitHubToken::from(env.secret("SECRET_TOKEN")?.to_string());
+    let actual_secret = url
+        .query_pairs()
+        .find(|(key, _)| key == "token")
+        .map(|(_, value)| SecretToken::from(value.to_string()));
+
+    if !actual_secret
+        .map(|actual_secret| {
+            constant_time_eq(
+                actual_secret.expose_secret().as_bytes(),
+                expected_secret.expose_secret().as_bytes(),
+            )
+        })
+        .unwrap_or(false)
+    {
+        return Ok(http::Response::builder()
+            .status(http::StatusCode::UNAUTHORIZED)
+            .body(Body::empty())?);
+    }
+
+    let github_token = GitHubToken::from(env.secret("GITHUB_TOKEN")?.to_string());
+    let client = GitHubClient::new(
+        github_token,
+        String::from(REPO_OWNER),
+        String::from(REPO_NAME),
+    );
 
     if let Err(err) = commit_file(
         &client,
