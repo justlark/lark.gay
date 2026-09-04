@@ -259,17 +259,16 @@ impl GitHubClient {
         sha: &GitCommitSha,
     ) -> anyhow::Result<()> {
         let url = format!(
-            "{}/repos/{}/{}/git/refs",
-            GITHUB_API_BASE, self.owner, self.repo
+            "{}/repos/{}/{}/git/refs/heads/{}",
+            GITHUB_API_BASE, self.owner, self.repo, branch
         );
 
         let body = json!({
-            "ref": format!("refs/heads/{}", branch),
             "sha": sha,
         });
 
         self.client
-            .post(&url)
+            .patch(&url)
             .headers(self.headers())
             .bearer_auth(self.token.expose_secret())
             .json(&body)
