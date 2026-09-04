@@ -52,13 +52,16 @@ async fn commit_file(
 
 #[event(fetch)]
 async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
-    let url: Url = req.uri().to_string().parse()?;
-
     let expected_secret = GitHubToken::from(env.secret("SECRET_TOKEN")?.to_string());
-    let actual_secret = url
-        .query_pairs()
-        .find(|(key, _)| key == "token")
-        .map(|(_, value)| SecretToken::from(value.to_string()));
+    let actual_secret = req.headers().get("Authorization").map(|header| {
+        SecretToken::from(
+            header
+                .to_str()
+                .unwrap_or_default()
+                .trim_start_matches("Bearer ")
+                .to_string(),
+        )
+    });
 
     if !actual_secret
         .map(|actual_secret| {
