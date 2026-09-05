@@ -31,4 +31,4 @@ jobs:
       - name: "Deploy gemini capsule"
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-        run: just deploy-gemini --yes
+        run: just --yes deploy-gemini
