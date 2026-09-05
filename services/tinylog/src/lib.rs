@@ -1,7 +1,9 @@
 mod git;
 
+use chrono::Utc;
 use constant_time_eq::constant_time_eq;
 use secrecy::{ExposeSecret, SecretString};
+use serde::Deserialize;
 use worker::*;
 
 use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken, GitRef};
@@ -59,8 +61,27 @@ async fn commit_file(
     Ok(())
 }
 
+async fn append_entry(content: &mut Vec<u8>, message: &str) {
+    let timestamp = Utc::now().format("%Y-%m-%d %H:%M +00:00").to_string();
+
+    content.extend(b"\n\n##");
+    content.extend(timestamp.as_bytes());
+    content.extend(message.as_bytes());
+}
+
+#[derive(Debug, Deserialize)]
+struct RequestBody {
+    message: String,
+}
+
 #[event(fetch)]
 async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
+    if req.method() != reqwest::Method::POST {
+        return Ok(http::Response::builder()
+            .status(http::StatusCode::METHOD_NOT_ALLOWED)
+            .body(Body::empty())?);
+    }
+
     let expected_secret = GitHubToken::from(env.secret("SECRET_TOKEN")?.to_string());
     let actual_secret = req.headers().get("Authorization").map(|header| {
         SecretToken::from(
@@ -86,6 +107,21 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
             .body(Body::empty())?);
     }
 
+    let message = match worker::Request::try_from(req)
+        .expect("Failed request type conversion.")
+        .json::<RequestBody>()
+        .await
+    {
+        Err(err) => {
+            console_error!("Error parsing request body: {:?}", err);
+
+            return Ok(http::Response::builder()
+                .status(http::StatusCode::BAD_REQUEST)
+                .body(Body::empty())?);
+        }
+        Ok(RequestBody { message }) => message,
+    };
+
     let github_token = GitHubToken::from(env.secret("GITHUB_TOKEN")?.to_string());
     let client = GitHubClient::new(
         github_token,
@@ -93,10 +129,23 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
         String::from(REPO_NAME),
     );
 
+    let mut content = match get_file(&client, "gemini/static/log.gmi").await {
+        Ok(content) => content,
+        Err(err) => {
+            console_error!("Error getting file: {:?}", err);
+
+            return Ok(http::Response::builder()
+                .status(http::StatusCode::INTERNAL_SERVER_ERROR)
+                .body(Body::empty())?);
+        }
+    };
+
+    append_entry(&mut content, &message).await;
+
     if let Err(err) = commit_file(
         &client,
         "gemini/static/log.gmi",
-        b"Hello, world!",
+        &content,
         "Update capsule tinylog",
     )
     .await
