@@ -3,6 +3,7 @@ use std::{
     fmt::{self, Display},
 };
 
+use base64::engine::{Engine, general_purpose::STANDARD as BASE64};
 use reqwest::header::HeaderMap;
 use secrecy::{ExposeSecret, SecretString};
 use serde::{Deserialize, Serialize};
@@ -10,6 +11,12 @@ use serde_json::json;
 
 const GITHUB_API_BASE: &str = "https://api.github.com";
 const GITHUB_API_VERSION: &str = "2026-03-10";
+
+#[derive(Debug, Clone, Copy)]
+enum MediaType {
+    Json,
+    Raw,
+}
 
 #[derive(Debug, Clone, Copy, Serialize)]
 pub enum GitFileMode {
@@ -20,6 +27,12 @@ pub enum GitFileMode {
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(transparent)]
 pub struct GitBlobSha(String);
+
+impl Display for GitBlobSha {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "{}", self.0)
+    }
+}
 
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(transparent)]
@@ -42,6 +55,22 @@ impl GitBranch {
 impl Display for GitBranch {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "{}", self.0)
+    }
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum GitRef {
+    Branch(GitBranch),
+    Commit(GitCommitSha),
+}
+
+impl Display for GitRef {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            GitRef::Branch(branch) => write!(f, "refs/heads/{}", branch),
+            GitRef::Commit(commit) => write!(f, "{}", commit.0),
+        }
     }
 }
 
@@ -89,15 +118,27 @@ impl GitHubClient {
         }
     }
 
-    fn headers(&self) -> HeaderMap {
+    fn headers(&self, media_type: MediaType) -> HeaderMap {
         let mut headers = HeaderMap::new();
 
-        headers.insert(
-            "Accept",
-            "application/vnd.github+json"
-                .parse()
-                .expect("Failed to parse header value."),
-        );
+        match media_type {
+            MediaType::Json => {
+                headers.insert(
+                    "Accept",
+                    "application/vnd.github+json"
+                        .parse()
+                        .expect("Failed to parse header value."),
+                );
+            }
+            MediaType::Raw => {
+                headers.insert(
+                    "Accept",
+                    "application/vnd.github.raw+json"
+                        .parse()
+                        .expect("Failed to parse header value."),
+                );
+            }
+        }
 
         headers.insert(
             "User-Agent",
@@ -123,7 +164,7 @@ impl GitHubClient {
         let response = self
             .client
             .get(&url)
-            .headers(self.headers())
+            .headers(self.headers(MediaType::Json))
             .bearer_auth(self.token.expose_secret())
             .send()
             .await?
@@ -142,21 +183,39 @@ impl GitHubClient {
         Ok(response.json::<Response>().await.map(|r| r.object.sha)?)
     }
 
-    pub async fn write_blob(&self, content: &str) -> anyhow::Result<GitBlobSha> {
+    pub async fn get_blob(&self, sha: &GitBlobSha) -> anyhow::Result<Vec<u8>> {
+        let url = format!(
+            "{}/repos/{}/{}/git/blobs/{}",
+            GITHUB_API_BASE, self.owner, self.repo, sha
+        );
+
+        let response = self
+            .client
+            .get(&url)
+            .headers(self.headers(MediaType::Raw))
+            .bearer_auth(self.token.expose_secret())
+            .send()
+            .await?
+            .error_for_status()?;
+
+        Ok(response.bytes().await?.to_vec())
+    }
+
+    pub async fn write_blob(&self, content: &[u8]) -> anyhow::Result<GitBlobSha> {
         let url = format!(
             "{}/repos/{}/{}/git/blobs",
             GITHUB_API_BASE, self.owner, self.repo
         );
 
         let body = json!({
-            "content": content,
-            "encoding": "utf-8"
+            "content": BASE64.encode(content),
+            "encoding": "base64"
         });
 
         let response = self
             .client
             .post(&url)
-            .headers(self.headers())
+            .headers(self.headers(MediaType::Json))
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()
@@ -169,6 +228,50 @@ impl GitHubClient {
         }
 
         Ok(response.json::<Response>().await.map(|r| r.sha)?)
+    }
+
+    pub async fn get_tree(
+        &self,
+        ref_name: &GitRef,
+        path: &str,
+    ) -> anyhow::Result<Option<GitBlobSha>> {
+        let url = format!(
+            "{}/repos/{}/{}/git/trees/{}/?recursive=1",
+            GITHUB_API_BASE, self.owner, self.repo, ref_name,
+        );
+
+        let response = self
+            .client
+            .get(&url)
+            .headers(self.headers(MediaType::Json))
+            .bearer_auth(self.token.expose_secret())
+            .send()
+            .await?
+            .error_for_status()?;
+
+        #[derive(Deserialize)]
+        struct TreeResponse {
+            path: String,
+            sha: GitBlobSha,
+        }
+
+        #[derive(Deserialize)]
+        struct Response {
+            tree: Vec<TreeResponse>,
+        }
+
+        Ok(response
+            .json::<Response>()
+            .await?
+            .tree
+            .into_iter()
+            .find_map(|item| {
+                if item.path == path {
+                    Some(item.sha)
+                } else {
+                    None
+                }
+            }))
     }
 
     pub async fn write_tree(
@@ -198,7 +301,7 @@ impl GitHubClient {
         let response = self
             .client
             .post(&url)
-            .headers(self.headers())
+            .headers(self.headers(MediaType::Json))
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()
@@ -238,7 +341,7 @@ impl GitHubClient {
         let response = self
             .client
             .post(&url)
-            .headers(self.headers())
+            .headers(self.headers(MediaType::Json))
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()
@@ -269,7 +372,7 @@ impl GitHubClient {
 
         self.client
             .patch(&url)
-            .headers(self.headers())
+            .headers(self.headers(MediaType::Json))
             .bearer_auth(self.token.expose_secret())
             .json(&body)
             .send()

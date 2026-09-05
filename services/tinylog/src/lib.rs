@@ -4,7 +4,7 @@ use constant_time_eq::constant_time_eq;
 use secrecy::{ExposeSecret, SecretString};
 use worker::*;
 
-use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken};
+use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken, GitRef};
 
 const DEFAULT_BRANCH: GitBranch = GitBranch::new("main");
 const REPO_OWNER: &str = "justlark";
@@ -26,10 +26,19 @@ impl ExposeSecret<str> for SecretToken {
         self.0.expose_secret()
     }
 }
+
+async fn get_file(client: &GitHubClient, path: &str) -> anyhow::Result<Vec<u8>> {
+    let blob_sha = client
+        .get_tree(&GitRef::Branch(DEFAULT_BRANCH), path)
+        .await?
+        .ok_or_else(|| anyhow::anyhow!("File not found: {}", path))?;
+
+    client.get_blob(&blob_sha).await
+}
 async fn commit_file(
     client: &GitHubClient,
     path: &str,
-    content: &str,
+    content: &[u8],
     message: &str,
 ) -> anyhow::Result<()> {
     let author = GitAuthor {
@@ -87,7 +96,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
     if let Err(err) = commit_file(
         &client,
         "gemini/static/log.gmi",
-        "Hello, world!",
+        b"Hello, world!",
         "Update capsule tinylog",
     )
     .await
