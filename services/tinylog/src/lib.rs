@@ -81,6 +81,18 @@ struct RequestBody {
 
 #[event(fetch)]
 async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
+    if req.method() == reqwest::Method::OPTIONS {
+        return Ok(http::Response::builder()
+            .status(http::StatusCode::OK)
+            .header("Access-Control-Allow-Origin", "https://lark.gay")
+            .header("Access-Control-Allow-Methods", "POST, OPTIONS")
+            .header(
+                "Access-Control-Allow-Headers",
+                "Authorization, Content-Type",
+            )
+            .body(Body::empty())?);
+    }
+
     if req.method() != reqwest::Method::POST {
         return Ok(http::Response::builder()
             .status(http::StatusCode::METHOD_NOT_ALLOWED)
