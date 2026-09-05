@@ -74,7 +74,7 @@ async fn append_entry(content: &mut Vec<u8>, message: &str) {
     content.extend(message.as_bytes());
 }
 
-pub fn set_cors_headers(headers: &mut http::HeaderMap) {
+fn set_cors_headers(headers: &mut http::HeaderMap) {
     headers.insert(
         "Access-Control-Allow-Origin",
         "https://lark.gay"
@@ -95,6 +95,12 @@ pub fn set_cors_headers(headers: &mut http::HeaderMap) {
     );
 }
 
+fn empty_response(status: http::StatusCode) -> Result<HttpResponse> {
+    let mut builder = http::Response::builder().status(status);
+    set_cors_headers(builder.headers_mut().unwrap());
+    Ok(builder.body(Body::empty())?)
+}
+
 #[derive(Debug, Deserialize)]
 struct RequestBody {
     message: String,
@@ -103,15 +109,11 @@ struct RequestBody {
 #[event(fetch)]
 async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
     if req.method() == reqwest::Method::OPTIONS {
-        let mut builder = http::Response::builder().status(http::StatusCode::OK);
-        set_cors_headers(builder.headers_mut().unwrap());
-        return Ok(builder.body(Body::empty())?);
+        return empty_response(http::StatusCode::OK);
     }
 
     if req.method() != reqwest::Method::POST {
-        return Ok(http::Response::builder()
-            .status(http::StatusCode::METHOD_NOT_ALLOWED)
-            .body(Body::empty())?);
+        return empty_response(http::StatusCode::METHOD_NOT_ALLOWED);
     }
 
     let expected_secret = GitHubToken::from(env.secret("SECRET_TOKEN")?.to_string());
@@ -134,9 +136,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
         })
         .unwrap_or(false)
     {
-        return Ok(http::Response::builder()
-            .status(http::StatusCode::UNAUTHORIZED)
-            .body(Body::empty())?);
+        return empty_response(http::StatusCode::UNAUTHORIZED);
     }
 
     let message = match worker::Request::try_from(req)
@@ -147,9 +147,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
         Err(err) => {
             console_error!("Error parsing request body: {:?}", err);
 
-            return Ok(http::Response::builder()
-                .status(http::StatusCode::BAD_REQUEST)
-                .body(Body::empty())?);
+            return empty_response(http::StatusCode::BAD_REQUEST);
         }
         Ok(RequestBody { message }) => message,
     };
@@ -166,9 +164,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
         Err(err) => {
             console_error!("Error getting file: {:?}", err);
 
-            return Ok(http::Response::builder()
-                .status(http::StatusCode::INTERNAL_SERVER_ERROR)
-                .body(Body::empty())?);
+            return empty_response(http::StatusCode::INTERNAL_SERVER_ERROR);
         }
     };
 
@@ -184,12 +180,8 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
     {
         console_error!("Error committing file: {:?}", err);
 
-        return Ok(http::Response::builder()
-            .status(http::StatusCode::INTERNAL_SERVER_ERROR)
-            .body(Body::empty())?);
+        return empty_response(http::StatusCode::INTERNAL_SERVER_ERROR);
     }
 
-    let mut builder = http::Response::builder().status(http::StatusCode::OK);
-    set_cors_headers(builder.headers_mut().unwrap());
-    return Ok(builder.body(Body::empty())?);
+    empty_response(http::StatusCode::OK)
 }
