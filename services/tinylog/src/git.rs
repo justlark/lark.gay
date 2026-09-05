@@ -9,8 +9,6 @@ use secrecy::{ExposeSecret, SecretString};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
-use crate::cors::set_cors_headers;
-
 const GITHUB_API_BASE: &str = "https://api.github.com";
 const GITHUB_API_VERSION: &str = "2026-03-10";
 
@@ -122,8 +120,6 @@ impl GitHubClient {
 
     fn headers(&self, media_type: MediaType) -> HeaderMap {
         let mut headers = HeaderMap::new();
-
-        set_cors_headers(&mut headers);
 
         match media_type {
             MediaType::Json => {

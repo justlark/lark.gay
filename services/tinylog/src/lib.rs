@@ -1,4 +1,3 @@
-mod cors;
 mod git;
 
 use chrono::Utc;
@@ -7,7 +6,6 @@ use secrecy::{ExposeSecret, SecretString};
 use serde::Deserialize;
 use worker::*;
 
-use crate::cors::set_cors_headers;
 use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken, GitRef};
 
 const DEFAULT_BRANCH: GitBranch = GitBranch::new("main");
@@ -74,6 +72,27 @@ async fn append_entry(content: &mut Vec<u8>, message: &str) {
     content.extend(timestamp.as_bytes());
     content.extend(b"\n");
     content.extend(message.as_bytes());
+}
+
+pub fn set_cors_headers(headers: &mut http::HeaderMap) {
+    headers.insert(
+        "Access-Control-Allow-Origin",
+        "https://lark.gay"
+            .parse()
+            .expect("Failed to parse header value."),
+    );
+    headers.insert(
+        "Access-Control-Allow-Methods",
+        "POST, OPTIONS"
+            .parse()
+            .expect("Failed to parse header value."),
+    );
+    headers.insert(
+        "Access-Control-Allow-Headers",
+        "Authorization, Content-Type"
+            .parse()
+            .expect("Failed to parse header value."),
+    );
 }
 
 #[derive(Debug, Deserialize)]
@@ -170,7 +189,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
             .body(Body::empty())?);
     }
 
-    Ok(http::Response::builder()
-        .status(http::StatusCode::OK)
-        .body(Body::empty())?)
+    let mut builder = http::Response::builder().status(http::StatusCode::OK);
+    set_cors_headers(builder.headers_mut().unwrap());
+    return Ok(builder.body(Body::empty())?);
 }
