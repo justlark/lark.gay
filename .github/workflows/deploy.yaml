@@ -1,9 +1,12 @@
-name: "Deploy"
+name: "Deploy Website"
 
 on:
   push:
     branches:
       - main
+    paths:
+      - site/**
+      - worker/**
   workflow_dispatch:
 
 jobs:

@@ -27,14 +27,9 @@ deploy: _install
 deploy-gemini:
   #!/usr/bin/env nu
 
-  do {
-    cd ./gemini/
-    gempost build
-  }
-
   fly machine start --config './services/gemini/fly.toml' (fly machine list --config './services/gemini/fly.toml' --json | from json | first | get "id")
   fly ssh console --config './services/gemini/fly.toml' --command 'rm -rf /data/gmi/'
-  fly ssh sftp put --config './services/gemini/fly.toml' --recursive './gemini/public/' '/data/gmi/'
+  fly ssh sftp put --config './services/gemini/fly.toml' --recursive './gemini/static/' '/data/gmi/'
 
   for machine in (fly machine list --config './services/gemini/fly.toml' --json | from json) {
     fly machine restart --config './services/gemini/fly.toml' $machine.id
