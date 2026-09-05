@@ -1,3 +1,4 @@
+mod cors;
 mod git;
 
 use chrono::Utc;
@@ -6,6 +7,7 @@ use secrecy::{ExposeSecret, SecretString};
 use serde::Deserialize;
 use worker::*;
 
+use crate::cors::set_cors_headers;
 use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken, GitRef};
 
 const DEFAULT_BRANCH: GitBranch = GitBranch::new("main");
@@ -82,15 +84,9 @@ struct RequestBody {
 #[event(fetch)]
 async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
     if req.method() == reqwest::Method::OPTIONS {
-        return Ok(http::Response::builder()
-            .status(http::StatusCode::OK)
-            .header("Access-Control-Allow-Origin", "https://lark.gay")
-            .header("Access-Control-Allow-Methods", "POST, OPTIONS")
-            .header(
-                "Access-Control-Allow-Headers",
-                "Authorization, Content-Type",
-            )
-            .body(Body::empty())?);
+        let mut builder = http::Response::builder().status(http::StatusCode::OK);
+        set_cors_headers(builder.headers_mut().unwrap());
+        return Ok(builder.body(Body::empty())?);
     }
 
     if req.method() != reqwest::Method::POST {

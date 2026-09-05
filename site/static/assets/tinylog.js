@@ -10,7 +10,7 @@ sendButton.addEventListener("click", async () => {
   const params = new URLSearchParams(location.search);
 
   if (message) {
-    let response = await fetch(`https://tinylog-bot.lark.gay/`, {
+    let response = await fetch("https://tinylog-bot.lark.gay/", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${params.get("token")}`,
