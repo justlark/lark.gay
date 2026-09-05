@@ -1,7 +1,7 @@
-const inputTextarea = document.getElementById("flipboard-input");
-const sendButton = document.getElementById("flipboard-send-button");
-const authWarningText = document.getElementById("flipboard-permission-warning");
-const successText = document.getElementById("flipboard-success");
+const inputTextarea = document.getElementById("tinylog-input");
+const sendButton = document.getElementById("tinylog-send-button");
+const authWarningText = document.getElementById("tinylog-permission-warning");
+const successText = document.getElementById("tinylog-success");
 
 const TOAST_TTL_MILLIS = 5000;
 
