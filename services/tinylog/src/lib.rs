@@ -134,7 +134,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
         String::from(REPO_NAME),
     );
 
-    let mut content = match get_file(&client, "gemini/static/log.gmi").await {
+    let mut content = match get_file(&client, "gemini/static/log/index.gmi").await {
         Ok(content) => content,
         Err(err) => {
             console_error!("Error getting file: {:?}", err);
@@ -149,7 +149,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
 
     if let Err(err) = commit_file(
         &client,
-        "gemini/static/log.gmi",
+        "gemini/static/log/index.gmi",
         &content,
         "Update capsule tinylog",
     )
