@@ -5,6 +5,3 @@ Log entries from Lark's little capsule in gemspace!
 author: @lark@gemini.lark.gay
 avatar: 🚀
 license: CC BY-NC 4.0
-
-
-##2026-09-05 17:57 +00:00Hello, world!

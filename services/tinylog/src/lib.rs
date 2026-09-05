@@ -66,6 +66,7 @@ async fn append_entry(content: &mut Vec<u8>, message: &str) {
 
     content.extend(b"\n\n##");
     content.extend(timestamp.as_bytes());
+    content.extend(b"\n");
     content.extend(message.as_bytes());
 }
 
