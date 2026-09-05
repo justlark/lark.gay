@@ -42,12 +42,6 @@ pub struct GitTreeSha(String);
 #[serde(transparent)]
 pub struct GitCommitSha(String);
 
-impl Display for GitCommitSha {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(transparent)]
 pub struct GitBranch(Cow<'static, str>);
@@ -61,6 +55,22 @@ impl GitBranch {
 impl Display for GitBranch {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "{}", self.0)
+    }
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+#[serde(untagged)]
+pub enum GitRef {
+    Branch(GitBranch),
+    Commit(GitCommitSha),
+}
+
+impl Display for GitRef {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            GitRef::Branch(branch) => write!(f, "refs/heads/{}", branch),
+            GitRef::Commit(commit) => write!(f, "{}", commit.0),
+        }
     }
 }
 
@@ -222,12 +232,12 @@ impl GitHubClient {
 
     pub async fn get_tree(
         &self,
-        sha: &GitCommitSha,
+        ref_name: &GitRef,
         path: &str,
     ) -> anyhow::Result<Option<GitBlobSha>> {
         let url = format!(
             "{}/repos/{}/{}/git/trees/{}/?recursive=1",
-            GITHUB_API_BASE, self.owner, self.repo, sha
+            GITHUB_API_BASE, self.owner, self.repo, ref_name,
         );
 
         let response = self

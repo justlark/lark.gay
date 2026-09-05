@@ -6,7 +6,7 @@ use secrecy::{ExposeSecret, SecretString};
 use serde::Deserialize;
 use worker::*;
 
-use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken};
+use crate::git::{GitAuthor, GitBranch, GitFileMode, GitHubClient, GitHubToken, GitRef};
 
 const DEFAULT_BRANCH: GitBranch = GitBranch::new("main");
 const REPO_OWNER: &str = "justlark";
@@ -30,15 +30,13 @@ impl ExposeSecret<str> for SecretToken {
 }
 
 async fn get_file(client: &GitHubClient, path: &str) -> anyhow::Result<Vec<u8>> {
-    let commit_sha = client.get_head(&DEFAULT_BRANCH).await?;
     let blob_sha = client
-        .get_tree(&commit_sha, path)
+        .get_tree(&GitRef::Branch(DEFAULT_BRANCH), path)
         .await?
         .ok_or_else(|| anyhow::anyhow!("File not found: {}", path))?;
 
     client.get_blob(&blob_sha).await
 }
-
 async fn commit_file(
     client: &GitHubClient,
     path: &str,
