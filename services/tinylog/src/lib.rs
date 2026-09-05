@@ -64,7 +64,7 @@ async fn commit_file(
 async fn append_entry(content: &mut Vec<u8>, message: &str) {
     let timestamp = Utc::now().format("%Y-%m-%d %H:%M +00:00").to_string();
 
-    content.extend(b"\n\n##");
+    content.extend(b"\n\n## ");
     content.extend(timestamp.as_bytes());
     content.extend(b"\n");
     content.extend(message.as_bytes());
