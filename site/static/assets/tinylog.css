@@ -1,0 +1,19 @@
+#tinylog-title {
+  text-align: center;
+}
+
+#tinylog-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+#tinylog-input {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  max-width: 400px;
+  padding: 0.5rem;
+}

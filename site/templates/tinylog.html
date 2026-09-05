@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block meta_vars %}
+  {% set this = page | default(value=section) %}
+  {% set canonical_url = this.permalink %}
+  {% set title = (this.title or config.title) | markdown(inline=true) | striptags %}
+  {% set description = (this.description or config.description) | markdown(inline=true) | striptags %}
+{% endblock %}
+{% block body %}
+  <script src="/assets/tinylog.js" defer></script>
+  <header aria-labelledby="tinylog-title">
+    <h1 id="tinylog-title">{{ title }}</h1>
+  </header>
+  <p class="page-lead">{{ description }}</p>
+  <main class="page-body">
+    <p>
+      You don't have permission to use this! This page is only for Lark, and
+      only works with a magic link.
+    </p>
+    <form id="tinylog-form">
+      <textarea id="tinylog-input" placeholder="Type a message here…"></textarea>
+      <button id="tinylog-send-button" type="button">Send</button>
+    </form>
+    <p id="tinylog-permission-warning" hidden class="bright-red">
+      You don't have permission to do this! The log was not updated.
+    </p>
+    <p id="tinylog-success" hidden class="bright-green">
+      Message sent!
+    </p>
+    <p>
+      <- <a href="/">Back to Lark Space</a>
+    </p>
+  </main>
+{% endblock %}
