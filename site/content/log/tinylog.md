@@ -64,7 +64,8 @@ blobs, and commits by hand. It is unclear why I chose this path.
 
 Once the updated gemtext file is in `main`, I use
 [a CI pipeline](https://github.com/justlark/lark.gay/blob/main/.github/workflows/gemini.yaml)
-to copy the file to my VPS over SFTP.
+to copy the file to my VPS over SFTP. The CI pipeline in turn calls
+[a `just` recipe](https://github.com/justlark/lark.gay/blob/main/justfile).
 
 It's clunky and inefficient. Posting a single tinylog entry takes over 30
 seconds start to finish.
