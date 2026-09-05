@@ -1,1 +1,7 @@
-Hello, world!
+# Lark's Mission Log
+
+Log entries from Lark's little capsule in gemspace!
+
+author: @lark@gemini.lark.gay
+avatar: 🚀
+license: CC BY-NC 4.0
