@@ -236,7 +236,7 @@ impl GitHubClient {
         path: &str,
     ) -> anyhow::Result<Option<GitBlobSha>> {
         let url = format!(
-            "{}/repos/{}/{}/git/trees/{}/?recursive=1",
+            "{}/repos/{}/{}/git/trees/{}?recursive=1",
             GITHUB_API_BASE, self.owner, self.repo, ref_name,
         );
 
