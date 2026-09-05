@@ -10,7 +10,7 @@ tags = ["personal", "tech"]
 uuid = "16c72f9b-c4e9-477f-aab8-d897f67b84ea"
 +++
 
-# Starting a tinylog
+## Starting a tinylog
 
 After Twitter died but before Bluesky won the race to replace it[^1], Mastodon
 was picking up a lot of attention from outside the usual FOSS crowd. I had never
@@ -44,7 +44,7 @@ I even set up a flow so I can post tinylog entries from my phone! That turned
 out to be much more complicated than I anticipated, so the rest of this post is
 going to be my devlog.
 
-# The devlog
+## The devlog
 
 The tinylog itself is a single
 [gemtext](https://geminiprotocol.net/docs/gemtext.gmi) file that is appended to
