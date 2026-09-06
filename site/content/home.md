@@ -65,6 +65,10 @@ always happy to have guests, so feel free to make yourself at home.
 > _The Lark Files_ is a collaborative scavenger hunt for building lore, finding
 > community, and getting offline.
 
+🛰️ [Lark's Mission Log](gemini://gemini.lark.gay/log/)
+
+> My tinylog in gemspace!
+
 ## Talks
 
 If you live in the Boston area and have an organization, club, or friend group
