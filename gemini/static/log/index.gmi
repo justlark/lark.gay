@@ -19,4 +19,7 @@ Just posted a log entry on my website about the silly things I needed to do to g
 Testing pushing a message to my tinylog!
 
 ## 2026-09-05 18:12
-Hello, world!
+Hello, world
+## 2026-09-06 13:07
+Apparently tinylog entries are supposed to be ordered from most to least recent (which makes more sense). Fixing that.
+!
