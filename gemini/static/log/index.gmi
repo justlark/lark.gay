@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-09-06 13:13
+Apparently tinylog entries are supposed to be ordered from most to least recent (which makes more sense). Fixing that.
+
 ## 2026-09-06 12:14
 Showing off my tinylog posting pipeline to friends
 
