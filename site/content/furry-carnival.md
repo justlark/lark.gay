@@ -97,3 +97,4 @@ Want an example? Feel free to take a look at the
 - **Sep 2026** |
   ["Identity and the Self"](https://energyscarf.net/blog/midway-menagerie-september-2026-call-for-submissions/)
   (Enii)
+- **Oct 2026** | ??? (Anchovie)
