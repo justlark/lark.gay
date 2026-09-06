@@ -3,7 +3,6 @@ use std::{
     fmt::{self, Display},
 };
 
-use base64::engine::{Engine, general_purpose::STANDARD as BASE64};
 use reqwest::header::HeaderMap;
 use secrecy::{ExposeSecret, SecretString};
 use serde::{Deserialize, Serialize};
@@ -183,7 +182,7 @@ impl GitHubClient {
         Ok(response.json::<Response>().await.map(|r| r.object.sha)?)
     }
 
-    pub async fn get_blob(&self, sha: &GitBlobSha) -> anyhow::Result<Vec<u8>> {
+    pub async fn get_blob(&self, sha: &GitBlobSha) -> anyhow::Result<String> {
         let url = format!(
             "{}/repos/{}/{}/git/blobs/{}",
             GITHUB_API_BASE, self.owner, self.repo, sha
@@ -198,18 +197,18 @@ impl GitHubClient {
             .await?
             .error_for_status()?;
 
-        Ok(response.bytes().await?.to_vec())
+        Ok(String::from_utf8(response.bytes().await?.to_vec())?)
     }
 
-    pub async fn write_blob(&self, content: &[u8]) -> anyhow::Result<GitBlobSha> {
+    pub async fn write_blob(&self, content: &str) -> anyhow::Result<GitBlobSha> {
         let url = format!(
             "{}/repos/{}/{}/git/blobs",
             GITHUB_API_BASE, self.owner, self.repo
         );
 
         let body = json!({
-            "content": BASE64.encode(content),
-            "encoding": "base64"
+            "content": content,
+            "encoding": "utf-8"
         });
 
         let response = self

@@ -29,7 +29,7 @@ impl ExposeSecret<str> for SecretToken {
     }
 }
 
-async fn get_file(client: &GitHubClient, path: &str) -> anyhow::Result<Vec<u8>> {
+async fn get_file(client: &GitHubClient, path: &str) -> anyhow::Result<String> {
     let blob_sha = client
         .get_tree(&GitRef::Branch(DEFAULT_BRANCH), path)
         .await?
@@ -40,7 +40,7 @@ async fn get_file(client: &GitHubClient, path: &str) -> anyhow::Result<Vec<u8>> 
 async fn commit_file(
     client: &GitHubClient,
     path: &str,
-    content: &[u8],
+    content: &str,
     message: &str,
 ) -> anyhow::Result<()> {
     let author = GitAuthor {
@@ -61,17 +61,33 @@ async fn commit_file(
     Ok(())
 }
 
-async fn append_entry(content: &mut Vec<u8>, message: &str) {
-    let timestamp = Utc::now().format("%Y-%m-%d %H:%M +00:00").to_string();
+async fn add_entry(content: &mut String, message: &str) {
+    let timestamp = Utc::now().format("%Y-%m-%d %H:%M").to_string();
 
-    while content.ends_with(b"\n") {
+    while content.ends_with('\n') {
         content.pop();
     }
 
-    content.extend(b"\n\n## ");
-    content.extend(timestamp.as_bytes());
-    content.extend(b"\n");
-    content.extend(message.as_bytes());
+    let mut split_index = 0;
+
+    for line in content.lines() {
+        if line.starts_with("## ") {
+            break;
+        }
+
+        // Add one for the newline character.
+        split_index += line.len() + 1;
+    }
+
+    let entries_after = content.split_off(split_index - 1);
+
+    content.push_str("\n## ");
+    content.push_str(timestamp.as_str());
+    content.push('\n');
+    content.push_str(message);
+    content.push('\n');
+
+    content.push_str(entries_after.as_str());
 }
 
 fn set_cors_headers(headers: &mut http::HeaderMap) {
@@ -168,7 +184,7 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
         }
     };
 
-    append_entry(&mut content, &message).await;
+    add_entry(&mut content, &message).await;
 
     if let Err(err) = commit_file(
         &client,
