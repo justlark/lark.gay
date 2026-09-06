@@ -17,3 +17,6 @@ Just posted a log entry on my website about the silly things I needed to do to g
 
 ## 2026-09-06 00:50 +00:00
 meow uwu
+
+## 2026-09-06 12:14 +00:00
+Showing off my tinylog posting pipeline to friends
