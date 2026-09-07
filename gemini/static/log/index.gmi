@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-09-07 21:45
+The tinylog format supports replies, but the tool I wrote to post this doesn't implement that yet. Gotta work on that next
+
 ## 2026-09-06 17:58
 Ån if you're reading this, I'm very excited for you to make that tinylog client
 
