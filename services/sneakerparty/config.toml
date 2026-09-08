@@ -9,6 +9,7 @@ show_kofi = false
 show_public_event_list = false
 mail_service = "nodemailer"
 creator_email_addresses = ["lark@lark.gay"]
+redirect_to_instance = "https://gath.io"
 
 [database]
 mongodb_url = "${GATHIO_MONGODB_URL}"
