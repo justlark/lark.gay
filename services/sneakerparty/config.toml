@@ -8,7 +8,7 @@ delete_after_days = 0
 show_kofi = false
 show_public_event_list = false
 mail_service = "nodemailer"
-creator_email_addresses = ["lark@lark.gay"]
+creator_email_addresses = ["lark@lark.gay", "ravensteres@gmail.com"]
 redirect_to_instance = "https://gath.io"
 
 [database]
