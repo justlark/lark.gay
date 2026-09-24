@@ -123,7 +123,7 @@ struct RequestBody {
 }
 
 #[event(fetch)]
-async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse> {
+async fn fetch(req: HttpRequest, env: Env, ctx: Context) -> Result<HttpResponse> {
     if req.method() == reqwest::Method::OPTIONS {
         return empty_response(http::StatusCode::OK);
     }
@@ -175,29 +175,33 @@ async fn fetch(req: HttpRequest, env: Env, _ctx: Context) -> Result<HttpResponse
         String::from(REPO_NAME),
     );
 
-    let mut content = match get_file(&client, "gemini/static/log/index.gmi").await {
-        Ok(content) => content,
-        Err(err) => {
-            console_error!("Error getting file: {:?}", err);
+    // Waiting for the new post to commit before returning a response to the client makes for a
+    // laggy experience posting new tinylog entries. We just trust that this will probably succeed,
+    // and if we don't see the new entry in the tinylog, we can just check the worker logs to see what
+    // went wrong.
+    ctx.wait_until(async move {
+        let mut content = match get_file(&client, "gemini/static/log/index.gmi").await {
+            Ok(content) => content,
+            Err(err) => {
+                console_error!("Error getting file: {:?}", err);
 
-            return empty_response(http::StatusCode::INTERNAL_SERVER_ERROR);
+                return;
+            }
+        };
+
+        add_entry(&mut content, &message).await;
+
+        if let Err(err) = commit_file(
+            &client,
+            "gemini/static/log/index.gmi",
+            &content,
+            "Update capsule tinylog",
+        )
+        .await
+        {
+            console_error!("Error committing file: {:?}", err);
         }
-    };
-
-    add_entry(&mut content, &message).await;
-
-    if let Err(err) = commit_file(
-        &client,
-        "gemini/static/log/index.gmi",
-        &content,
-        "Update capsule tinylog",
-    )
-    .await
-    {
-        console_error!("Error committing file: {:?}", err);
-
-        return empty_response(http::StatusCode::INTERNAL_SERVER_ERROR);
-    }
+    });
 
     empty_response(http::StatusCode::OK)
 }

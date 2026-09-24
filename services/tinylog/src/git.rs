@@ -8,6 +8,7 @@ use secrecy::{ExposeSecret, SecretString};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
+const GITHUB_API_USER_AGENT: &str = "justlark";
 const GITHUB_API_BASE: &str = "https://api.github.com";
 const GITHUB_API_VERSION: &str = "2026-03-10";
 
@@ -105,7 +106,7 @@ pub struct GitHubClient {
 impl GitHubClient {
     pub fn new(token: GitHubToken, owner: String, repo: String) -> Self {
         let client = reqwest::Client::builder()
-            .user_agent("justlark")
+            .user_agent(GITHUB_API_USER_AGENT)
             .build()
             .expect("Failed to build reqwest client.");
 
