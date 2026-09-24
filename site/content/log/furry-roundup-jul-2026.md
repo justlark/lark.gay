@@ -182,5 +182,5 @@ month's submissions, or just the carnival as a whole. Also let me know if you
 would like to volunteer to host the carnival in September!
 
 The theme for next month (August 2026) is
-["Where is furry?"](https://foxriot.com/writing/midway-menagerie-aug-call-for-submissions.html),
+["Where is furry?"](https://foxriot.com/blog/midway-menagerie-aug-call-for-submissions.html),
 hosted by Ån.
