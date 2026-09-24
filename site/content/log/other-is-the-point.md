@@ -37,11 +37,11 @@ strong affinity toward a particular animal, object, or concept. It's moreso that
 my gender goals feel misaligned with humanity in an abstract sense.
 
 Staring HRT[^1] was a critical step in my transition, and one of the best
-decisions I've ever made. I've managed hit many of the goals I had set out for
-myself when I started my transition, which feels good. The more time I've spent
-living in my new body, however, the more I've come to realize there are still
-aspects of my physiology that don't feel aligned with my gender. But of the
-various alternatives, none of the options available to humans feel correct.
+decisions I've ever made. I've managed to hit many of the goals I had set out
+for myself when I started my transition, which feels good. The more time I've
+spent living in my new body, however, the more I've come to realize there are
+still aspects of my physiology that don't feel aligned with my gender. But of
+the various alternatives, none of the options available to humans feel correct.
 
 This is a really weird spot to be in, particularly because in some cases I don't
 even understand what an ideal state _would_ look like. There's just a vague
