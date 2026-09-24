@@ -70,6 +70,14 @@ Lark has a 15×3
 living room. Select friends with a secret link can send messages to its
 flipboard via [this form](https://lark.gay/flipboard/).
 
+## Tinylog
+
+Lark can post messages to its
+[tinylog](https://git.sr.ht/~bacardi55/gemini-tinylog-rfc) via a
+[web form](https://lark.gay/tinylog/) which calls an edge function that does
+some silly shenanigans. See [the devlog post](https://lark.gay/log/tinylog/) for
+details.
+
 ## Discord Notifications
 
 This site has an endpoint for sending Lark notifications via Discord. Requests
