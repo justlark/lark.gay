@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-09-28 13:49
+I'm trying to design a declarative DSL for defining data pipelines, and it turns out designing a language is *hard*. This project is kicking my ass haha. The goal is to use it for Ace Archive, but I still don't know if it'll actually be worth the effort
+
 ## 2026-09-26 13:52
 First Anville event back at Fabville for the new school year went very well. About 30 people showed up, including some new faces! As expected I got approximately zero actual work done and had a great time hanging out with my friends instead 💚
 
