@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-09-30 12:49
+Damn I remember when having a GitHub account felt cool. I'm slowly working on migrating projects over to Codeberg, but have come to realize how dependent I've become on Microsoft's free CI/CD… which is maybe the point. I self-host my own Forgejo Actions runner to use on Codeberg, but that does unfortunately mean I have no way to test my software on Windows and macOS. GitHub Actions is the only way I was able to do that previously
+
 ## 2026-09-28 13:49
 I'm trying to design a declarative DSL for defining data pipelines, and it turns out designing a language is *hard*. This project is kicking my ass haha. The goal is to use it for Ace Archive, but I still don't know if it'll actually be worth the effort
 
