@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-10-05 14:42
+Also! I made a (fairly minor) feature request for one of the official Omeka S plug-in modules, and I got an email the following day that it was implemented and would be going out in the next release. Definitely inspires confidence in the maintenance of the project.
+
 ## 2026-10-05 14:41
 It took a full day of experimenting, fiddling, and scripting, but I was able to get the entire Ace Archive collection imported into Omeka S, which is rad. The API documentation… leaves a lot to be desired. Maybe when this is all over I rewrite it for them.
 
