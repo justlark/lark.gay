@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-10-05 14:41
+It took a full day of experimenting, fiddling, and scripting, but I was able to get the entire Ace Archive collection imported into Omeka S, which is rad. The API documentation… leaves a lot to be desired. Maybe when this is all over I rewrite it for them.
+
 ## 2026-10-02 15:12
 I've decided I'm going to be migrating Ace Archive over to a new backend called Omeka S. It's a collection management system designed for digital archives, whereas currently the Ace Archive backend is a haphazard collection of bespoke services built from scratch. I got it deployed and I've been poking around learning how to use it, and I'm very excited. I'm still going to need to build a layer to bridge Omeka with the way  the site exists currently, if for no other reason so that links don't break. Migrating the existing collection into it is also going to be… fun…
 
