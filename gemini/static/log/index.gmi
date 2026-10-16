@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-10-16 04:12
+I'm diving into learning about RDF and JSON-LD this week, with the goal of integrating Ace Archive into the semantic web. It's very cool and I'm very excited.
+
 ## 2026-10-14 11:45
 I finished migrating Ace Archive over to the new backend! The old backend was split across about a dozen git repos, and archiving all of them felt *very* good
 
