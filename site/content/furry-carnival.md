@@ -88,14 +88,14 @@ Want an example? Feel free to take a look at the
 
 ## The Carnival
 
-- **Jul 2026** | ["Fandom and Community"](@/log/furry-roundup-jul-2026.md)
-  (Lark)
-- **Aug 2026** |
-  ["Where is furry?"](https://foxriot.com/blog/midway-menagerie-aug-roundup.html)
-  (Ån)
+- **Nov 2026** | ??? (Atom)
+- **Oct 2026** | ["Furry Dreams"](https://anchovie.fish/blog/2026-09-25)
+  (Anchovie)
 - **Sep 2026** |
   ["Identity and the Self"](https://energyscarf.net/blog/midway-menagerie-september-2026-roundup/)
   (Enii)
-- **Oct 2026** | ["Furry Dreams"](https://anchovie.fish/blog/2026-09-25)
-  (Anchovie)
-- **Nov 2026** | ??? (Atom)
+- **Aug 2026** |
+  ["Where is furry?"](https://foxriot.com/blog/midway-menagerie-aug-roundup.html)
+  (Ån)
+- **Jul 2026** | ["Fandom and Community"](@/log/furry-roundup-jul-2026.md)
+  (Lark)
