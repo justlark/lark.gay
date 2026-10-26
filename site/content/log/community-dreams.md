@@ -80,11 +80,11 @@ I don't think Anville having its own space is in the cards for the foreseeable
 future, but I think keeping the dream is worthwhile.
 
 Earlier this year I met someone at a punk festival in Iceland who runs an
-anarchist community house in Reykjavík, named Andrými. The place is amazing.
-They have a library, community fridge, community kitchen, free store, wood shop,
-bike repair shop, a childcare space, a meeting space, and an events space. They
-provide legal assistance, support for immigrants, childcare, support groups,
-etc.
+anarchist community house in Reykjavík, named Andrými. I had the opportunity to
+visit, and the place is amazing. They have a library, community fridge,
+community kitchen, free store, wood shop, bike repair shop, a childcare space, a
+meeting space, and an events space. They provide legal assistance, support for
+immigrants, childcare, support groups, etc.
 
 > Andrými aims to provide a space for grassroots and non-governmental
 > organizations to organize and host events, as well as being a welcoming space
