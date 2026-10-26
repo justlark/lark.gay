@@ -11,7 +11,7 @@ mail_service = "nodemailer"
 creator_email_addresses = [
   "lark@lark.gay",
   "ravensteres@gmail.com",
-  "scootyfrooty@gmail.com",
+  "scootyfrooty.art@gmail.com",
 ]
 redirect_to_instance = "https://gath.io"
 
