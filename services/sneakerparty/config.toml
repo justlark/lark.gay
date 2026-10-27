@@ -1,7 +1,7 @@
 [general]
 domain = "sneaker.party"
 port = "3000"
-email = "lark@lark.gay"
+email = "noreply@sneaker.party"
 site_name = "Sneaker Party"
 is_federated = true
 delete_after_days = 0
