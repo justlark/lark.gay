@@ -44,17 +44,17 @@ resource "cloudflare_record" "apex_txt_spf" {
 
 resource "cloudflare_record" "apex_cname_dkim" {
   for_each = {
-    protonmail1 = {
+    fastmail1 = {
       name    = "fm1._domainkey"
       content = "fm1.lark.gay.dkim.fmhosted.com"
     }
 
-    protonmail2 = {
+    fastmail2 = {
       name    = "fm2._domainkey"
       content = "fm2.lark.gay.dkim.fmhosted.com"
     }
 
-    protonmail3 = {
+    fastmail3 = {
       name    = "fm3._domainkey"
       content = "fm3.lark.gay.dkim.fmhosted.com"
     }
@@ -130,22 +130,14 @@ resource "cloudflare_record" "sneakerparty_apex_cname" {
   proxied = false
 }
 
-resource "cloudflare_record" "sneakerparty_apex_txt_mxroute_verification" {
-  zone_id = data.cloudflare_zone.sneakerparty.id
-  type    = "TXT"
-  name    = "_da-verify-c3fc95dea613673d3daed256d7f2616c"
-  content = "domain-verified"
-  proxied = false
-}
-
 resource "cloudflare_record" "sneakerparty_apex_mx" {
   for_each = {
     route1 = {
-      content  = "witcher.mxrouting.net"
+      content  = "eu1-smtp.messagingengine.com"
       priority = 10
     }
     route2 = {
-      content  = "witcher-relay.mxrouting.net"
+      content  = "eu2-smtp.messagingengine.com"
       priority = 20
     }
   }
@@ -158,18 +150,35 @@ resource "cloudflare_record" "sneakerparty_apex_mx" {
   proxied  = false
 }
 
+resource "cloudflare_record" "sneakerparty_apex_cname_dkim" {
+  for_each = {
+    fastmail1 = {
+      name    = "fm1._domainkey"
+      content = "fm1.sneaker.party.dkim.fmhosted.com"
+    }
+
+    fastmail2 = {
+      name    = "fm2._domainkey"
+      content = "fm2.sneaker.party.dkim.fmhosted.com"
+    }
+
+    fastmail3 = {
+      name    = "fm3._domainkey"
+      content = "fm3.sneaker.party.dkim.fmhosted.com"
+    }
+  }
+
+  zone_id = data.cloudflare_zone.sneakerparty.id
+  type    = "CNAME"
+  name    = each.value.name
+  content = each.value.content
+  proxied = false
+}
+
 resource "cloudflare_record" "sneakerparty_apex_txt_spf" {
   zone_id = data.cloudflare_zone.sneakerparty.id
   type    = "TXT"
   name    = "@"
-  content = "v=spf1 include:mxroute.com -all"
-  proxied = false
-}
-
-resource "cloudflare_record" "sneakerparty_apex_txt_dmarc" {
-  zone_id = data.cloudflare_zone.sneakerparty.id
-  type    = "TXT"
-  name    = "x._domainkey"
-  content = "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApoLdaWZuNonT08voVLddSs7npIJoumPAyyVVe6ix1DPaAvuwpVrECaQYjgqS3XctEa3MzSrKcK74MyQNOktRjUgU+jhHq79fNnqLbU8V9hA6CXBwp3ibVC9yY15olGwKGPLBeHW3s+zZzJbw7gj/wvjdDI9H037gEHYOgL1ED8ezXYAIqa/YLsMIY9BvTtadRvP7aR3UmACXr0+oSxpKOKIRKeinHqQhmqjf6+zDkki48mDXYJ3Xh/ClZ0cueh/6wPpVshpFCOaVAN2ENUjycd/87rheWFkEUGzeOvfdDRjNM3v42a72Dg5lVOGawn2HdCJYL0C2OtDGJeTTyXgoKQIDAQAB"
+  content = "v=spf1 include:spf.messagingengine.com ?all"
   proxied = false
 }
