@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-10-28 09:24
+Decided I'm switching off Proton to Fastmail. Got a feeling that as Proton goes mainstream they might go the way of big tech. Plus Fastmail offers unlimited custom domains, which is something I really need. Hard to find a provider that offers more than 1-3 custom domain slots
+
 ## 2026-10-16 04:12
 I'm diving into learning about RDF and JSON-LD this week, with the goal of integrating Ace Archive into the semantic web. It's very cool and I'm very excited.
 
