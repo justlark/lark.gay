@@ -67,6 +67,14 @@ resource "cloudflare_record" "apex_cname_dkim" {
   proxied = false
 }
 
+resource "cloudflare_record" "apex_txt_dmarc" {
+  zone_id = data.cloudflare_zone.lark.id
+  type    = "TXT"
+  name    = "_dmarc"
+  content = "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s"
+  proxied = false
+}
+
 resource "cloudflare_record" "apex_txt_atproto" {
   zone_id = data.cloudflare_zone.lark.id
   type    = "TXT"
@@ -180,5 +188,13 @@ resource "cloudflare_record" "sneakerparty_apex_txt_spf" {
   type    = "TXT"
   name    = "@"
   content = "v=spf1 include:spf.messagingengine.com ?all"
+  proxied = false
+}
+
+resource "cloudflare_record" "sneakerparty_apex_txt_dmarc" {
+  zone_id = data.cloudflare_zone.sneakerparty.id
+  type    = "TXT"
+  name    = "_dmarc"
+  content = "v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s"
   proxied = false
 }
