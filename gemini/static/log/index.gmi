@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-10-29 21:37
+Oh wow THE DAY AFTER my log entry about migrating off Proton, 404 Media publishes a story about their CEO going completely off the rails. Very glad I made that decision before my annual renewal. Just finished the migration and fully canceled my subscription.
+
 ## 2026-10-28 09:24
 Decided I'm switching off Proton to Fastmail. Got a feeling that as Proton goes mainstream they might go the way of big tech. Plus Fastmail offers unlimited custom domains, which is something I really need. Hard to find a provider that offers more than 1-3 custom domain slots
 
