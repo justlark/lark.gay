@@ -9,8 +9,9 @@ _Midway Menagerie_ is a monthly furry blogging carnival.
 We have a [Telegram channel](https://t.me/+s3amTSjDLd5hNjMx) for receiving
 updates and reminders, but you do not need to join to participate.
 
-The theme for October 2026 is
-["Furry Dreams"](https://anchovie.fish/blog/2026-09-25), hosted by Anchovie.
+The theme for November 2026 is
+["Furry, Sexuality, and Kink"](https://atom.whimsy.gay/blog/mm26/), hosted by
+Atom.
 
 ## What is a blogging carnival
 
@@ -88,8 +89,9 @@ Want an example? Feel free to take a look at the
 
 ## The Carnival
 
-- **Nov 2026** | ??? (Atom)
-- **Oct 2026** | ["Furry Dreams"](https://anchovie.fish/blog/2026-09-25)
+- **Nov 2026** |
+  ["Furry, Sexuality, and Kink"](https://atom.whimsy.gay/blog/mm26/) (Atom)
+- **Oct 2026** | ["Furry Dreams"](https://anchovie.fish/blog/2026-11-01)
   (Anchovie)
 - **Sep 2026** |
   ["Identity and the Self"](https://energyscarf.net/blog/midway-menagerie-september-2026-roundup/)
