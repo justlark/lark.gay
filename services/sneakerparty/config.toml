@@ -9,9 +9,10 @@ show_kofi = false
 show_public_event_list = false
 mail_service = "nodemailer"
 creator_email_addresses = [
-  "lark@lark.gay",
-  "ravensteres@gmail.com",
-  "scootyfrooty.art@gmail.com",
+  "${GATHIO_CREATOR_EMAIL_LARK}",
+  "${GATHIO_CREATOR_EMAIL_RIVEN}",
+  "${GATHIO_CREATOR_EMAIL_SCOOT}",
+  "${GATHIO_CREATOR_EMAIL_AN}",
 ]
 redirect_to_instance = "https://gath.io"
 
