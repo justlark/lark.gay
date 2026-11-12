@@ -81,6 +81,8 @@ Interested in hosting the carnival? Leave a comment on this post or
     them, and even provide your own (positive!) commentary if you want.
   - Your roundup post should link back to this page and your call for
     submissions.
+  - Once next month's call for submissions goes up, you should update your
+    roundup post to link to it.
   - You should update your call for submissions to link to the roundup.
 
 Want an example? Feel free to take a look at the
