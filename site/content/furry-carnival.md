@@ -91,6 +91,7 @@ Want an example? Feel free to take a look at the
 
 ## The Carnival
 
+- **Dec 2026** | ??? (Yen)
 - **Nov 2026** |
   ["Furry, Sexuality, and Kink"](https://atom.whimsy.gay/blog/mm26/) (Atom)
 - **Oct 2026** | ["Furry Dreams"](https://anchovie.fish/blog/2026-11-01)
