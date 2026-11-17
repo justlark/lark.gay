@@ -20,7 +20,7 @@ TUWUNEL_WELL_KNOWN__SERVER = "matrix.lark.gay:8448"
 internal_port = 8080
 protocol = "tcp"
 auto_start_machines = true
-auto_stop_machines = "off"
+auto_stop_machines = "suspend"
 min_machines_running = 1
 
 [[services.ports]]

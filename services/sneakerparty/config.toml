@@ -14,6 +14,7 @@ creator_email_addresses = [
   "${GATHIO_CREATOR_EMAIL_SCOOT}",
   "${GATHIO_CREATOR_EMAIL_AN}",
 ]
+allow_comments_after_event_default = false
 redirect_to_instance = "https://gath.io"
 
 [database]
