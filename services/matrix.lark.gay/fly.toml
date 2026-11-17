@@ -42,7 +42,7 @@ path = "/_matrix/client/versions"
 [mounts]
 source = "lark_tuwunel_data"
 destination = "/var/lib/tuwunel"
-initial_size = "1GB"
+initial_size = "5GB"
 auto_extend_size_threshold = 80
 auto_extend_size_increment = "1GB"
 auto_extend_size_limit = "30GB"
