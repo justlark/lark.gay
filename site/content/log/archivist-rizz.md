@@ -11,6 +11,10 @@ tags = ["personal", "furry"]
 uuid = "09182ceb-f60d-4f38-b4b9-3d1fe02a88f6"
 +++
 
+_This post was written for the
+[November 2026 Midway Menagerie](https://atom.whimsy.gay/blog/mm26/), where the
+theme is "furry, sexuality, and kink"._
+
 So I identify as asexual--demisexual if you want to be specific about
 labels--but these days I'm a bit more shy about sharing that part of my identity
 than I used to be.
