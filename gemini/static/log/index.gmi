@@ -6,6 +6,9 @@ author: @lark@gemini.lark.gay
 avatar: 🛰️
 license: CC BY-NC 4.0
 
+## 2026-11-23 14:36
+So apparently Pillowfort is shutting down in two weeks, and I may have just signed myself up to help with the archival effort. I don't really need more projects right now, but there are a lot of ace blogs on Pillowfort that I would hate to see lost.
+
 ## 2026-11-13 12:29
 Frantically transferred about a dozen domains from Namecheap to Porkbun this week after reports of Namecheap suspending accounts that don't produce a government ID. I hate having to run from service to service seeking refuge as the internet collapses around us
 
