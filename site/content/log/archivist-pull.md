@@ -1,8 +1,7 @@
 +++
-title = "You just can't have rizz as a queer history archivist"
+title = "Archivists got no pull apparently"
 description = "Being ace in a sex-positive community and the assumptions people make about me"
-date = 2026-11-21
-draft = true
+date = 2026-11-27
 
 [taxonomies]
 tags = ["personal", "furry"]
@@ -32,8 +31,11 @@ with my body is a complicating factor, but it's not a "no, never" situation.
 I don't like people making assumptions about me in general, but especially when
 those assumptions lock me out of experiences. Well-meaning friends have withheld
 invitations--or even discouraged me from attending events--because they have the
-impression that I'm too asexual (or autistic!) to have a good time. I also get
-anxious that it affects how people approach me personally.
+impression that I'm too asexual (or autistic!) to have a good time.
+
+I also get anxious that it affects how people approach me personally. Do people
+ever choose not to engage because I'm ace? Because they assume I'll never be
+interested?
 
 I just want to feel desired, ya know?
 
@@ -42,3 +44,8 @@ communities. And I think that's great! I enjoy being in sex-positive spaces,
 regardless of how or to what extent I choose to engage with it. But being
 surrounded by horny furries does exacerbate some of these feelings--feeling left
 out, not feeling desired, feeling ẘ̨ͤͦ̊̎͝e͆ͥī̵̛̲r̹͓̀̿͟ḑ̎ about my body.
+
+I love that the furry community makes so much space for authentic expressions of
+sexuality. And I appreciate that it's largely optional! But while engaging with
+that side of the fandom can be challenging sometimes, I don't need to be
+protected from it.
